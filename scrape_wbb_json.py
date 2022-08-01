@@ -19,7 +19,7 @@ path_to_raw = "wbb/json/raw"
 path_to_final = "wbb/json/final"
 path_to_errors = "wbb/errors"
 run_processing = True
-rescrape_all = True
+rescrape_all = False
 def main():
 
     years_arr = range(2022,2023)
