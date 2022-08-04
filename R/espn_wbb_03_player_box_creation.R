@@ -58,11 +58,7 @@ wbb_player_box_games <- function(y){
       expr = {
         if(boxScoreAvailable == TRUE && length(players_box_score_df[["statistics"]])>1 && 
            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]])>1){
-          players_df <- players_box_score_df %>%
-            tidyr::unnest(.data$statistics) %>%
-            tidyr::unnest(.data$athletes)
-          if(length(players_df)>1){
-            stat_cols <- players_df$names[[1]]
+          players_xxt_cols <- players_df$names[[1]]
             stats <- players_df$stats
             if(length(stat_cols)==length(stats[[1]]) ){
               stats_df <- as.data.frame(do.call(rbind,stats))
