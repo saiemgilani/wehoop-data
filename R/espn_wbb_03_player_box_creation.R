@@ -58,7 +58,7 @@ wbb_player_box_games <- function(y){
       expr = {
         if(boxScoreAvailable == TRUE && length(players_box_score_df[["statistics"]])>1 && 
            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]])>1){
-          players_xxt_cols <- players_df$names[[1]]
+            stat_cols <- players_df$names[[1]]
             stats <- players_df$stats
             if(length(stat_cols)==length(stats[[1]]) ){
               stats_df <- as.data.frame(do.call(rbind,stats))
@@ -98,9 +98,6 @@ wbb_player_box_games <- function(y){
               }
             }
           }
-        } else {
-          player_box_score <- data.frame()
-        }
       },
       error = function(e) {
         message(glue::glue("{Sys.time()}: Invalid arguments or no player box data available {gameId}!"))
