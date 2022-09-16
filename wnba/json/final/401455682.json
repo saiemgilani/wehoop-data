@@ -28336,7 +28336,7 @@
       "type": "playoff",
       "title": "Playoff Series",
       "description": "Playoff Series",
-      "summary": "LV leads series 2-0",
+      "summary": "LV leads series 2-1",
       "completed": false,
       "totalCompetitions": 5,
       "events": [
@@ -28557,36 +28557,20 @@
           "uid": "s:40~l:59~e:401455683~c:401455683",
           "date": "2022-09-16T01:00:00Z",
           "timeValid": true,
-          "status": "in",
+          "status": "post",
           "statusType": {
-            "id": "23",
-            "name": "STATUS_HALFTIME",
-            "state": "in",
-            "completed": false,
-            "description": "Halftime",
-            "detail": "Halftime",
-            "shortDetail": "Halftime"
+            "id": "3",
+            "name": "STATUS_FINAL",
+            "state": "post",
+            "completed": true,
+            "description": "Final",
+            "detail": "Final",
+            "shortDetail": "Final"
           },
-          "broadcasts": [
-            {
-              "type": {
-                "id": "1",
-                "shortName": "TV"
-              },
-              "market": {
-                "id": "1",
-                "type": "National"
-              },
-              "media": {
-                "shortName": "ESPN"
-              },
-              "lang": "en",
-              "region": "us"
-            }
-          ],
           "competitors": [
             {
               "homeAway": "home",
+              "winner": true,
               "team": {
                 "id": "18",
                 "uid": "s:40~l:59~t:18",
@@ -28604,10 +28588,11 @@
                 ],
                 "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/conn.png"
               },
-              "score": "53"
+              "score": "105"
             },
             {
               "homeAway": "away",
+              "winner": false,
               "team": {
                 "id": "17",
                 "uid": "s:40~l:59~t:17",
@@ -28625,34 +28610,34 @@
                 ],
                 "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png"
               },
-              "score": "42"
+              "score": "76"
             }
           ],
           "links": [
             {
               "language": "en-US",
               "rel": [
-                "live",
+                "summary",
                 "desktop",
                 "event"
               ],
-              "href": "https://www.espn.com/wnba/game?gameId=401455683",
+              "href": "http://www.espn.com/wnba/game/_/gameId/401455683",
               "text": "Gamecast",
-              "shortText": "Gamecast",
+              "shortText": "Summary",
               "isExternal": false,
               "isPremium": false
             },
             {
               "language": "en-US",
               "rel": [
-                "live",
+                "summary",
                 "sportscenter",
                 "app",
                 "event"
               ],
               "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401455683",
               "text": "Gamecast",
-              "shortText": "Gamecast",
+              "shortText": "Summary",
               "isExternal": false,
               "isPremium": false
             }
