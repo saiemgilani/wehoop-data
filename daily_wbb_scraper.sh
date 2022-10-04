@@ -1,7 +1,5 @@
 #!/bin/bash
-git pull
-python scrape_wbb_schedules.py
-python scrape_wbb_json.py
+
 git pull
 git add .
 "C:\Program Files\R\R-4.2.1\bin\Rscript.exe" R/espn_wbb_01_pbp_creation.R
