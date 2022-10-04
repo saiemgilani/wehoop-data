@@ -15,7 +15,7 @@ suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc="C:\\Users
 
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- wehoop:::most_recent_wbb_season()
+years_vec <- wehoop:::most_recent_wbb_season()-1
 # --- compile into team_box_{year}.parquet ---------
 
 wbb_team_box_games <- function(y){
@@ -24,13 +24,13 @@ wbb_team_box_games <- function(y){
   team_box_list <- list.files(path = glue::glue('wbb/json/final/'))
   sched <- data.table::fread(paste0('wbb/schedules/csv/wbb_schedule_',y,'.csv'))
   team_box_game_ids <- as.integer(gsub('.json','',team_box_list))
-  team_box_list <- sched %>% 
-    dplyr::filter(.data$game_id %in% team_box_game_ids) %>% 
+  team_box_list <- sched %>%
+    dplyr::filter(.data$game_id %in% team_box_game_ids) %>%
     dplyr::pull(.data$game_id)
-  
+
   team_box_g <- purrr::map_dfr(team_box_list, function(x){
     game_json <- jsonlite::fromJSON(glue::glue('wbb/json/final/{x}.json'))
-    
+
     team_box_score <- data.frame()
     teams_box_score_df <- data.frame()
     teams_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[['boxscore']][['teams']]), flatten=TRUE))
@@ -38,7 +38,7 @@ wbb_team_box_games <- function(y){
     season <- game_json[['header']][['season']][['year']]
     season_type <- game_json[['header']][['season']][['type']]
     boxScoreAvailable = game_json[['header']][['competitions']][["boxscoreAvailable"]]
-    
+
     homeAwayTeam1 = toupper(game_json[['header']][['competitions']][['competitors']][[1]][['homeAway']][1])
     homeAwayTeam2 = toupper(game_json[['header']][['competitions']][['competitors']][[1]][['homeAway']][2])
     homeTeamId = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['id']][1]
@@ -47,7 +47,7 @@ wbb_team_box_games <- function(y){
     awayTeamMascot = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['name']][2]
     homeTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][1]
     awayTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][2]
-    
+
     homeTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][1]
     awayTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][2]
     game_date = as.Date(substr(game_json[['header']][['competitions']][['date']],0,10))
@@ -61,7 +61,7 @@ wbb_team_box_games <- function(y){
             teams_box_score_df_1 <- teams_box_score_df[['statistics']][[1]] %>%
               dplyr::select(.data$displayValue, .data$name) %>%
               dplyr::rename(Away = .data$displayValue)
-            
+
             teams2 <- data.frame(t(teams_box_score_df_2$Home))
             colnames(teams2) <- t(teams_box_score_df_2$name)
             teams2$homeAway <- homeAwayTeam2
@@ -69,7 +69,7 @@ wbb_team_box_games <- function(y){
             teams2$OpponentName <- awayTeamName
             teams2$OpponentMascot <- awayTeamMascot
             teams2$OpponentAbbrev <- awayTeamAbbrev
-            
+
             teams1 <- data.frame(t(teams_box_score_df_1$Away))
             colnames(teams1) <- t(teams_box_score_df_1$name)
             teams1$homeAway <- homeAwayTeam1
@@ -81,7 +81,7 @@ wbb_team_box_games <- function(y){
             team_box_score <- teams_box_score_df %>%
               # dplyr::select(-.data$statistics) %>%
               dplyr::bind_cols(teams)
-            
+
             team_box_score <- team_box_score %>%
               dplyr::mutate(
                 game_id = gameId,
@@ -108,21 +108,21 @@ wbb_team_box_games <- function(y){
   if(nrow(team_box_g)>0){
     team_box_g <- team_box_g %>%
       wehoop:::make_wehoop_data("ESPN WBB Team Boxscore Information from wehoop data repository",Sys.time())
-    
+
     ifelse(!dir.exists(file.path("wbb/team_box")), dir.create(file.path("wbb/team_box")), FALSE)
     ifelse(!dir.exists(file.path("wbb/team_box/csv")), dir.create(file.path("wbb/team_box/csv")), FALSE)
     data.table::fwrite(team_box_g, file=paste0("wbb/team_box/csv/team_box_",y,".csv.gz"))
-    
+
     ifelse(!dir.exists(file.path("wbb/team_box/qs")), dir.create(file.path("wbb/team_box/qs")), FALSE)
     qs::qsave(team_box_g,glue::glue("wbb/team_box/qs/team_box_{y}.qs"))
-    
+
     ifelse(!dir.exists(file.path("wbb/team_box/rds")), dir.create(file.path("wbb/team_box/rds")), FALSE)
     saveRDS(team_box_g,glue::glue("wbb/team_box/rds/team_box_{y}.rds"))
-    
+
     ifelse(!dir.exists(file.path("wbb/team_box/parquet")), dir.create(file.path("wbb/team_box/parquet")), FALSE)
     arrow::write_parquet(team_box_g, glue::glue("wbb/team_box/parquet/team_box_{y}.parquet"))
   }
-  
+
   sched <- sched %>%
     dplyr::mutate(
       game_id = as.integer(.data$id),
@@ -137,7 +137,7 @@ wbb_team_box_games <- function(y){
     sched$team_box <- FALSE
   }
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
-  
+
   final_sched <- final_sched %>%
     wehoop:::make_wehoop_data("ESPN WBB Schedule Information from wehoop data repository",Sys.time())
   data.table::fwrite(final_sched,paste0("wbb/schedules/csv/wbb_schedule_",y,".csv"))

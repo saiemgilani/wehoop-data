@@ -15,7 +15,7 @@ suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc="C:\\Users
 
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- wehoop:::most_recent_wbb_season()
+years_vec <- wehoop:::most_recent_wbb_season()-1
 # --- compile into player_box_{year}.parquet ---------
 
 wbb_player_box_games <- function(y){
@@ -23,8 +23,8 @@ wbb_player_box_games <- function(y){
   player_box_list <- list.files(path = glue::glue('wbb/json/final/'))
   sched <- data.table::fread(paste0('wbb/schedules/csv/wbb_schedule_',y,'.csv'))
   player_box_game_ids <- as.integer(gsub('.json','',player_box_list))
-  player_box_list <- sched %>% 
-    dplyr::filter(.data$game_id %in% player_box_game_ids) %>% 
+  player_box_list <- sched %>%
+    dplyr::filter(.data$game_id %in% player_box_game_ids) %>%
     dplyr::pull(.data$game_id)
   cli::cli_process_start("Starting wbb player_box parse for {y}!")
   
@@ -56,59 +56,61 @@ wbb_player_box_games <- function(y){
     
     tryCatch(
       expr = {
-        if(boxScoreAvailable == TRUE && length(players_box_score_df[["statistics"]])>1 && 
+        if(boxScoreAvailable == TRUE && length(players_box_score_df[["statistics"]])>1 &&
            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]])>1){
-            stat_cols <- players_df$names[[1]]
-            stats <- players_df$stats
-            if(length(stat_cols)==length(stats[[1]]) ){
-              stats_df <- as.data.frame(do.call(rbind,stats))
-              colnames(stats_df) <- stat_cols
-              cols <- c('starter','ejected', 'didNotPlay','active',
-                        'athlete.displayName','athlete.jersey',
-                        'athlete.id','athlete.shortName',
-                        'athlete.headshot.href','athlete.position.name',
-                        'athlete.position.abbreviation', 'team.shortDisplayName',
-                        'team.name', 'team.logo', 'team.id', 'team.abbreviation',
-                        'team.color')
-              
-              if(length(stats_df)>0){
-                players_df <- players_df %>%
-                  dplyr::filter(!.data$didNotPlay) %>%
-                  dplyr::select(tidyselect::any_of(cols))
-                
-                players_df <- dplyr::bind_cols(stats_df,players_df) %>%
-                  dplyr::select(tidyselect::any_of(c('athlete.displayName','team.shortDisplayName')), tidyr::everything())
-                
-                
-                players_df <- players_df %>%
-                  janitor::clean_names() %>%
-                  dplyr::rename(
-                    fg3 = .data$x3pt
-                  )
-                player_box_score <- players_df %>%
-                  dplyr::mutate(
-                    game_id = gameId,
-                    season = season,
-                    season_type = season_type,
-                    game_date = game_date
-                  ) 
-                drop <- c("statistics")
-                player_box_score = player_box_score[,!(names(player_box_score) %in% drop)]
-                
-              }
-            }
-          }
+          players_df <- players_box_score_df %>%
+            tidyr::unnest(.data$statistics) %>%
+            tidyr::unnest(.data$athletes)
+          stat_cols <- players_df$names[[1]]
+          stats <- players_df$stats
+          
+          stats_df <- as.data.frame(do.call(rbind,stats))
+          colnames(stats_df) <- stat_cols
+          cols <- c('starter','ejected', 'didNotPlay','active',
+                    'athlete.displayName','athlete.jersey',
+                    'athlete.id','athlete.shortName',
+                    'athlete.headshot.href','athlete.position.name',
+                    'athlete.position.abbreviation', 'team.shortDisplayName',
+                    'team.name', 'team.logo', 'team.id', 'team.abbreviation',
+                    'team.color')
+          
+          players_df <- players_df %>%
+            dplyr::filter(!.data$didNotPlay) %>%
+            dplyr::select(tidyselect::any_of(cols))
+          if(length(stats_df)>0){
+            players_df <- dplyr::bind_cols(stats_df,players_df) %>%
+              dplyr::select(.data$athlete.displayName,.data$team.shortDisplayName, tidyr::everything())
+            
+            
+            players_df <- players_df %>%
+              janitor::clean_names() %>%
+              dplyr::rename(
+                fg3 = .data$x3pt
+              )
+            player_box_score <- players_df %>%
+              dplyr::mutate(
+                game_id = gameId,
+                season = season,
+                season_type = season_type,
+                game_date = game_date
+              ) 
+            drop <- c("statistics")
+            player_box_score = player_box_score[,!(names(player_box_score) %in% drop)]
+            
+          
+        }
+        }
       },
-      error = function(e) {
-        message(glue::glue("{Sys.time()}: Invalid arguments or no player box data available {gameId}!"))
-      },
-      warning = function(w) {
-      },
-      finally = {
-      }
+    error = function(e) {
+      message(glue::glue("{Sys.time()}: Invalid arguments or no player box data available {gameId}!"))
+    },
+    warning = function(w) {
+    },
+    finally = {
+    }
     )
     return(player_box_score)
-  })
+    })
   if(nrow(player_box_g)>1){
     player_box_g <- player_box_g %>%
       wehoop:::make_wehoop_data("ESPN WBB Player Boxscore Information from wehoop data repository",Sys.time())

@@ -17,7 +17,7 @@ suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc="C:\\Users
 
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- wehoop:::most_recent_wbb_season()
+years_vec <- wehoop:::most_recent_wbb_season()-1
 # --- compile into play_by_play_{year}.parquet ---------
 wbb_pbp_games <- function(y){
   cli::cli_process_start("Starting wbb play_by_play parse for {y}!")
@@ -25,8 +25,8 @@ wbb_pbp_games <- function(y){
   pbp_list <- list.files(path = glue::glue('wbb/json/final/'))
   sched <- data.table::fread(paste0('wbb/schedules/csv/wbb_schedule_',y,'.csv'))
   pbp_game_ids <- as.integer(gsub('.json','',pbp_list))
-  pbp_list <- sched %>% 
-    dplyr::filter(.data$game_id %in% pbp_game_ids) %>% 
+  pbp_list <- sched %>%
+    dplyr::filter(.data$game_id %in% pbp_game_ids) %>%
     dplyr::pull(.data$game_id)
   pbp_g <- purrr::map_dfr(pbp_list, function(x){
     pbp <- jsonlite::fromJSON(glue::glue('wbb/json/final/{x}.json'))$plays
@@ -37,13 +37,13 @@ wbb_pbp_games <- function(y){
   })
   if(nrow(pbp_g)>0 && length(pbp_g)>1){
     pbp_g <- pbp_g %>% janitor::clean_names()
-    pbp_g <- pbp_g %>% 
+    pbp_g <- pbp_g %>%
       dplyr::mutate(
         game_id = as.integer(.data$game_id)
       )
   }
   if(!('coordinate_x' %in% colnames(pbp_g)) && length(pbp_g)>1){
-    pbp_g <- pbp_g %>% 
+    pbp_g <- pbp_g %>%
       dplyr::mutate(
         coordinate_x = NA_real_,
         coordinate_y = NA_real_
@@ -55,17 +55,17 @@ wbb_pbp_games <- function(y){
     pbp_g <- pbp_g %>%
       wehoop:::make_wehoop_data("ESPN WBB Play-by-Play Information from wehoop data repository",Sys.time())
     data.table::fwrite(pbp_g, file=paste0("wbb/pbp/csv/play_by_play_",y,".csv.gz"))
-    
+
     ifelse(!dir.exists(file.path("wbb/pbp/qs")), dir.create(file.path("wbb/pbp/qs")), FALSE)
     qs::qsave(pbp_g,glue::glue("wbb/pbp/qs/play_by_play_{y}.qs"))
-    
+
     ifelse(!dir.exists(file.path("wbb/pbp/rds")), dir.create(file.path("wbb/pbp/rds")), FALSE)
     saveRDS(pbp_g,glue::glue("wbb/pbp/rds/play_by_play_{y}.rds"))
-    
+
     ifelse(!dir.exists(file.path("wbb/pbp/parquet")), dir.create(file.path("wbb/pbp/parquet")), FALSE)
     arrow::write_parquet(pbp_g, glue::glue("wbb/pbp/parquet/play_by_play_{y}.parquet"))
   }
-  
+
   sched <- sched %>%
     dplyr::mutate(
       game_id = as.integer(.data$id),
@@ -77,7 +77,7 @@ wbb_pbp_games <- function(y){
   } else {
     sched$PBP <- FALSE
   }
-  
+
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
   final_sched <- final_sched %>%
     wehoop:::make_wehoop_data("ESPN WBB Schedule Information from wehoop data repository",Sys.time())
