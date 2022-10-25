@@ -1,23 +1,31 @@
 rm(list = ls())
 gc()
-.libPaths("C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")
-Sys.setenv(R_LIBS="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")
-if (!requireNamespace('pacman', quietly = TRUE)){
-  install.packages('pacman',lib=Sys.getenv("R_LIBS"), repos='http://cran.us.r-project.org')
-}
-suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(data.table, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(qs, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
 
+lib_path <- Sys.getenv("R_LIBS")
+
+if (!requireNamespace('pacman', quietly = TRUE)){
+  install.packages('pacman',lib=lib_path, repos='http://cran.us.r-project.org')
+}
+
+suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(data.table, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(qs, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc=lib_path)))
+
+option_list = list(
+  make_option(c("-s", "--start_year"), action="store", default=wehoop:::most_recent_wnba_season(), type='integer', help="Start year of the seasons to process"),
+  make_option(c("-e", "--end_year"), action="store", default=wehoop:::most_recent_wnba_season(), type='integer', help="End year of the seasons to process")
+)
+opt = parse_args(OptionParser(option_list=option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- wehoop:::most_recent_wnba_season()
+years_vec <- opt$s:opt$e
 # --- compile into team_box_{year}.parquet ---------
 
 wnba_team_box_games <- function(y){
@@ -26,13 +34,13 @@ wnba_team_box_games <- function(y){
   team_box_list <- list.files(path = glue::glue('wnba/json/final/'))
   sched <- data.table::fread(paste0('wnba/schedules/csv/wnba_schedule_',y,'.csv'))
   team_box_game_ids <- as.integer(gsub('.json','',team_box_list))
-  team_box_list <- sched %>% 
-    dplyr::filter(.data$game_id %in% team_box_game_ids) %>% 
+  team_box_list <- sched %>%
+    dplyr::filter(.data$game_id %in% team_box_game_ids) %>%
     dplyr::pull(.data$game_id)
-  
+
   team_box_g <- purrr::map_dfr(team_box_list, function(x){
     game_json <- jsonlite::fromJSON(glue::glue('wnba/json/final/{x}.json'))
-    
+
     team_box_score <- data.frame()
     teams_box_score_df <- data.frame()
     teams_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[['boxscore']][['teams']]), flatten=TRUE))
@@ -49,7 +57,7 @@ wnba_team_box_games <- function(y){
     awayTeamMascot = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['name']][2]
     homeTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][1]
     awayTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][2]
-    
+
     homeTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][1]
     awayTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][2]
     game_date = as.Date(substr(game_json[['header']][['competitions']][['date']],0,10))
@@ -63,7 +71,7 @@ wnba_team_box_games <- function(y){
             teams_box_score_df_1 <- teams_box_score_df[['statistics']][[1]] %>%
               dplyr::select(.data$displayValue, .data$name) %>%
               dplyr::rename(Away = .data$displayValue)
-            
+
             teams2 <- data.frame(t(teams_box_score_df_2$Home))
             colnames(teams2) <- t(teams_box_score_df_2$name)
             teams2$homeAway <- homeAwayTeam2
@@ -71,7 +79,7 @@ wnba_team_box_games <- function(y){
             teams2$OpponentName <- awayTeamName
             teams2$OpponentMascot <- awayTeamMascot
             teams2$OpponentAbbrev <- awayTeamAbbrev
-            
+
             teams1 <- data.frame(t(teams_box_score_df_1$Away))
             colnames(teams1) <- t(teams_box_score_df_1$name)
             teams1$homeAway <- homeAwayTeam1
@@ -83,7 +91,7 @@ wnba_team_box_games <- function(y){
             team_box_score <- teams_box_score_df %>%
               # dplyr::select(-.data$statistics) %>%
               dplyr::bind_cols(teams)
-            
+
             team_box_score <- team_box_score %>%
               dplyr::mutate(
                 game_id = gameId,
@@ -107,22 +115,22 @@ wnba_team_box_games <- function(y){
     team_box_score = team_box_score[,!(names(team_box_score) %in% drop)]
     return(team_box_score)
   })
-  
+
   if(nrow(team_box_g)>1){
     team_box_g <- team_box_g %>%
       wehoop:::make_wehoop_data("ESPN WNBA Team Box Information from wehoop data repository",Sys.time())
-    
+
     ifelse(!dir.exists(file.path("wnba/team_box")), dir.create(file.path("wnba/team_box")), FALSE)
-    
+
     ifelse(!dir.exists(file.path("wnba/team_box/csv")), dir.create(file.path("wnba/team_box/csv")), FALSE)
     data.table::fwrite(team_box_g, file=paste0("wnba/team_box/csv/team_box_",y,".csv.gz"))
-    
+
     ifelse(!dir.exists(file.path("wnba/team_box/qs")), dir.create(file.path("wnba/team_box/qs")), FALSE)
     qs::qsave(team_box_g,glue::glue("wnba/team_box/qs/team_box_{y}.qs"))
-    
+
     ifelse(!dir.exists(file.path("wnba/team_box/rds")), dir.create(file.path("wnba/team_box/rds")), FALSE)
     saveRDS(team_box_g,glue::glue("wnba/team_box/rds/team_box_{y}.rds"))
-    
+
     ifelse(!dir.exists(file.path("wnba/team_box/parquet")), dir.create(file.path("wnba/team_box/parquet")), FALSE)
     arrow::write_parquet(team_box_g, glue::glue("wnba/team_box/parquet/team_box_{y}.parquet"))
   }
@@ -139,7 +147,7 @@ wnba_team_box_games <- function(y){
   } else {
     sched$team_box <- FALSE
   }
-  
+
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
   final_sched <- final_sched %>%
     wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository",Sys.time())

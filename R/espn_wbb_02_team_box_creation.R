@@ -1,21 +1,31 @@
 rm(list = ls())
 gc()
-.libPaths("C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")
-Sys.setenv(R_LIBS="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")
-if (!requireNamespace('pacman', quietly = TRUE)){
-  install.packages('pacman',lib=Sys.getenv("R_LIBS"), repos='http://cran.us.r-project.org')
-}
-suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
-suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc="C:\\Users\\saiem\\AppData\\Local\\R\\win-library\\4.2")))
 
+lib_path <- Sys.getenv("R_LIBS")
+
+if (!requireNamespace('pacman', quietly = TRUE)){
+  install.packages('pacman',lib=lib_path, repos='http://cran.us.r-project.org')
+}
+
+suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(data.table, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(qs, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc=lib_path)))
+
+option_list = list(
+  make_option(c("-s", "--start_year"), action="store", default=wehoop:::most_recent_wbb_season(), type='integer', help="Start year of the seasons to process"),
+  make_option(c("-e", "--end_year"), action="store", default=wehoop:::most_recent_wbb_season(), type='integer', help="End year of the seasons to process")
+)
+opt = parse_args(OptionParser(option_list=option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- wehoop:::most_recent_wbb_season()-1
+years_vec <- opt$s:opt$e
 # --- compile into team_box_{year}.parquet ---------
 
 wbb_team_box_games <- function(y){
