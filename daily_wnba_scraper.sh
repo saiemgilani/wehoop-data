@@ -17,3 +17,7 @@ Rscript R/espn_wnba_02_team_box_creation.R -s $START_YEAR -e $END_YEAR
 Rscript R/espn_wnba_03_player_box_creation.R -s $START_YEAR -e $END_YEAR
 git pull
 git add wnba/* wnba_schedule_master.parquet
+git pull
+git commit -m "WNBA Play-by-Play and Schedules update (Start: $START_YEAR End: $END_YEAR)" || echo "No changes to commit"
+git pull
+git push

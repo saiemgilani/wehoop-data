@@ -32,7 +32,7 @@ wnba_pbp_games <- function(y){
   cli::cli_process_start("Starting wnba play_by_play parse for {y}!")
   pbp_g <- data.frame()
   pbp_list <- list.files(path = glue::glue('wnba/json/final/'))
-  sched <- data.table::fread(paste0('wnba/schedules/csv/wnba_schedule_',y,'.csv'))
+  sched <- data.table::fread(paste0('/wnba/schedules/csv/wnba_schedule_',y,'.csv'))
   pbp_game_ids <- as.integer(gsub('.json','',pbp_list))
   pbp_list <- sched %>%
     dplyr::filter(.data$game_id %in% pbp_game_ids) %>%
