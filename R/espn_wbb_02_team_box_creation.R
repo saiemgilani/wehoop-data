@@ -36,7 +36,7 @@ wbb_team_box_games <- function(y){
   team_box_game_ids <- as.integer(gsub('.json','',team_box_list))
   team_box_list <- sched %>%
     dplyr::filter(.data$game_id %in% team_box_game_ids) %>%
-    dplyr::pull(.data$game_id)
+    dplyr::pull("game_id")
 
   team_box_g <- purrr::map_dfr(team_box_list, function(x){
     game_json <- jsonlite::fromJSON(glue::glue('wbb/json/final/{x}.json'))
@@ -66,11 +66,15 @@ wbb_team_box_games <- function(y){
         if(boxScoreAvailable == TRUE){
           if(length(teams_box_score_df[["statistics"]][[1]])>0){
             teams_box_score_df_2 <- teams_box_score_df[['statistics']][[2]] %>%
-              dplyr::select(.data$displayValue, .data$name) %>%
-              dplyr::rename(Home = .data$displayValue)
+              dplyr::select(
+                "displayValue",
+                "name") %>%
+              dplyr::rename("Home" = "displayValue")
             teams_box_score_df_1 <- teams_box_score_df[['statistics']][[1]] %>%
-              dplyr::select(.data$displayValue, .data$name) %>%
-              dplyr::rename(Away = .data$displayValue)
+              dplyr::select(
+                "displayValue",
+                "name") %>%
+              dplyr::rename("Away" = "displayValue")
 
             teams2 <- data.frame(t(teams_box_score_df_2$Home))
             colnames(teams2) <- t(teams_box_score_df_2$name)

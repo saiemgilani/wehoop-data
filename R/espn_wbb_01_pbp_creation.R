@@ -35,7 +35,7 @@ wbb_pbp_games <- function(y){
   pbp_game_ids <- as.integer(gsub('.json','',pbp_list))
   pbp_list <- sched %>%
     dplyr::filter(.data$game_id %in% pbp_game_ids) %>%
-    dplyr::pull(.data$game_id)
+    dplyr::pull("game_id")
   pbp_g <- purrr::map_dfr(pbp_list, function(x){
     pbp <- jsonlite::fromJSON(glue::glue('wbb/json/final/{x}.json'))$plays
     if(length(pbp)>1){

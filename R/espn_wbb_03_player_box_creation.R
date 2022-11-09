@@ -35,7 +35,7 @@ wbb_player_box_games <- function(y){
   player_box_game_ids <- as.integer(gsub('.json','',player_box_list))
   player_box_list <- sched %>%
     dplyr::filter(.data$game_id %in% player_box_game_ids) %>%
-    dplyr::pull(.data$game_id)
+    dplyr::pull("game_id")
   cli::cli_process_start("Starting wbb player_box parse for {y}!")
 
   player_box_g <- purrr::map_dfr(player_box_list, function(x){
@@ -69,8 +69,8 @@ wbb_player_box_games <- function(y){
         if(boxScoreAvailable == TRUE && length(players_box_score_df[["statistics"]])>1 &&
            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]])>1){
           players_df <- players_box_score_df %>%
-            tidyr::unnest(.data$statistics) %>%
-            tidyr::unnest(.data$athletes)
+            tidyr::unnest("statistics") %>%
+            tidyr::unnest("athletes")
           stat_cols <- players_df$names[[1]]
           stats <- players_df$stats
 
@@ -89,13 +89,16 @@ wbb_player_box_games <- function(y){
             dplyr::select(tidyselect::any_of(cols))
           if(length(stats_df)>0){
             players_df <- dplyr::bind_cols(stats_df,players_df) %>%
-              dplyr::select(.data$athlete.displayName,.data$team.shortDisplayName, tidyr::everything())
+              dplyr::select(
+                "athlete.displayName",
+                "team.shortDisplayName",
+                tidyr::everything())
 
 
             players_df <- players_df %>%
               janitor::clean_names() %>%
               dplyr::rename(
-                fg3 = .data$x3pt
+                "fg3" = "x3pt"
               )
             player_box_score <- players_df %>%
               dplyr::mutate(
