@@ -5569,6 +5569,18 @@
         "shortText": "Team Stats",
         "isExternal": false,
         "isPremium": false
+      },
+      {
+        "rel": [
+          "videos",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/video?gameId=401492381",
+        "text": "Videos",
+        "shortText": "Videos",
+        "isExternal": false,
+        "isPremium": false
       }
     ],
     "week": 1,
@@ -16438,7 +16450,101 @@
     }
   ],
   "article": [],
-  "videos": [],
+  "videos": [
+    {
+      "source": "espn",
+      "id": 35432662,
+      "headline": "Columbia Opens Season With Road Win Over Memphis  - Via Ivy League",
+      "description": "Abbey Hsu scored 24 points and grabbed five rebounds to help Columbia past Memphis.",
+      "ad": {
+        "sport": "ncw",
+        "bundle": "no_show"
+      },
+      "tracking": {
+        "sportName": "ncw",
+        "leagueName": "No League",
+        "coverageType": "Final Game Highlight",
+        "trackingName": "columbia_opens_season_wi_63c04da73f0022018717460b",
+        "trackingId": "63c04da73f0022018717460b"
+      },
+      "cerebroId": "63c04dfcbe6ab31ff7ef6c48",
+      "lastModified": "2023-01-12T18:18:09Z",
+      "originalPublishDate": "2023-01-12T18:07:35Z",
+      "timeRestrictions": {
+        "embargoDate": "2023-01-12T18:07:35Z",
+        "expirationDate": "2025-01-12T18:07:35Z"
+      },
+      "deviceRestrictions": {
+        "type": "whitelist",
+        "devices": [
+          "desktop",
+          "settop",
+          "handset",
+          "tablet"
+        ]
+      },
+      "duration": 190,
+      "thumbnail": "https://a.espncdn.com/media/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261.jpg",
+      "links": {
+        "api": {
+          "self": {
+            "href": "http://api.espn.com/v1/video/clips/35432662"
+          },
+          "artwork": {
+            "href": "https://artwork.api.espn.com/artwork/collections/media/1e230f69-10bb-486c-9bf9-7319f0107b25"
+          }
+        },
+        "web": {
+          "href": "https://www.espn.com/video/clip?id=35432662&ex_cid=espnapi_internal",
+          "short": {
+            "href": "https://www.espn.com/video/clip?id=35432662"
+          },
+          "self": {
+            "href": "https://www.espn.com/video/clip?id=35432662&ex_cid=espnapi_internal"
+          }
+        },
+        "source": {
+          "mezzanine": {
+            "href": "https://media.video-origin.espn.com/espnvideo/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261.mp4"
+          },
+          "flash": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261.smil"
+          },
+          "hds": {
+            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261_rel.smil/manifest.f4m"
+          },
+          "HLS": {
+            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261/playlist.m3u8",
+            "HD": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261/playlist.m3u8"
+            }
+          },
+          "HD": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261_720p30_2896k.mp4"
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261_360p30_1464k.mp4"
+          },
+          "href": "https://media.video-cdn.espn.com/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261_360p30_1464k.mp4"
+        },
+        "mobile": {
+          "alert": {
+            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35432662&ex_cid=espnapi_internal"
+          },
+          "source": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0112/ss_20230112_131421723_2155261/ss_20230112_131421723_2155261.mp4"
+          },
+          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/1e230f69-10bb-486c-9bf9-7319f0107b25/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35432662",
+          "streaming": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/1e230f69-10bb-486c-9bf9-7319f0107b25/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35432662"
+          },
+          "progressiveDownload": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/1e230f69-10bb-486c-9bf9-7319f0107b25/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35432662"
+          }
+        }
+      }
+    }
+  ],
   "standings": {
     "fullViewLink": {
       "text": "Full Standings",
@@ -16674,8 +16780,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "9-5",
-                  "displayValue": "9-5"
+                  "summary": "10-5",
+                  "displayValue": "10-5"
                 },
                 {
                   "name": "gamesBehind",
