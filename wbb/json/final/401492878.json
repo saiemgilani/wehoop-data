@@ -20250,7 +20250,7 @@
         "uid": "s:40~l:54~e:401492878~c:401492878",
         "date": "2023-01-09T23:30Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -20447,6 +20447,13 @@
           }
         },
         "broadcasts": [],
+        "groups": {
+          "id": "26",
+          "name": "Southwestern Athletic Conference",
+          "abbreviation": "swac",
+          "shortName": "SWAC",
+          "midsizeName": "SWAC"
+        },
         "home": {
           "id": "2582",
           "uid": "s:40~l:54~t:2582",
@@ -20749,10 +20756,10 @@
         "standings": {
           "entries": [
             {
-              "team": "Jackson State",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2296/jackson-state-lady-tigers",
-              "id": "2296",
-              "uid": "s:40~l:54~t:2296",
+              "team": "Prairie View A&M",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2504/prairie-view-am-lady-panthers",
+              "id": "2504",
+              "uid": "s:40~l:54~t:2504",
               "stats": [
                 {
                   "id": "0",
@@ -20762,8 +20769,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-7",
-                  "displayValue": "6-7"
+                  "summary": "7-9",
+                  "displayValue": "7-9"
                 },
                 {
                   "name": "gamesBehind",
@@ -20783,13 +20790,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-0",
-                  "displayValue": "3-0"
+                  "summary": "4-1",
+                  "displayValue": "4-1"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -20802,10 +20809,10 @@
               ]
             },
             {
-              "team": "Prairie View A&M",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2504/prairie-view-am-lady-panthers",
-              "id": "2504",
-              "uid": "s:40~l:54~t:2504",
+              "team": "Southern",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2582/southern-jaguars",
+              "id": "2582",
+              "uid": "s:40~l:54~t:2582",
               "stats": [
                 {
                   "id": "0",
@@ -20815,8 +20822,61 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-9",
-                  "displayValue": "6-9"
+                  "summary": "7-9",
+                  "displayValue": "7-9"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 0.0,
+                  "displayValue": "-"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "4-1",
+                  "displayValue": "4-1"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Jackson State",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2296/jackson-state-lady-tigers",
+              "id": "2296",
+              "uid": "s:40~l:54~t:2296",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "6-8",
+                  "displayValue": "6-8"
                 },
                 {
                   "name": "gamesBehind",
@@ -20842,7 +20902,7 @@
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2504.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -20908,59 +20968,6 @@
               ]
             },
             {
-              "team": "Southern",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2582/southern-jaguars",
-              "id": "2582",
-              "uid": "s:40~l:54~t:2582",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "6-9",
-                  "displayValue": "6-9"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 0.5,
-                  "displayValue": "0.5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "3-1",
-                  "displayValue": "3-1"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2018-06-05T12:08Z"
-                }
-              ]
-            },
-            {
               "team": "Alabama A&M",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2010/alabama-am-bulldogs",
               "id": "2010",
@@ -21014,10 +21021,10 @@
               ]
             },
             {
-              "team": "Grambling",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2755/grambling-lady-tigers",
-              "id": "2755",
-              "uid": "s:40~l:54~t:2755",
+              "team": "Bethune-Cookman",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2065/bethune-cookman-wildcats",
+              "id": "2065",
+              "uid": "s:40~l:54~t:2065",
               "stats": [
                 {
                   "id": "0",
@@ -21027,8 +21034,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "4-11",
-                  "displayValue": "4-11"
+                  "summary": "4-10",
+                  "displayValue": "4-10"
                 },
                 {
                   "name": "gamesBehind",
@@ -21054,7 +21061,7 @@
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -21067,10 +21074,10 @@
               ]
             },
             {
-              "team": "Bethune-Cookman",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2065/bethune-cookman-wildcats",
-              "id": "2065",
-              "uid": "s:40~l:54~t:2065",
+              "team": "Grambling",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2755/grambling-lady-tigers",
+              "id": "2755",
+              "uid": "s:40~l:54~t:2755",
               "stats": [
                 {
                   "id": "0",
@@ -21080,8 +21087,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "3-10",
-                  "displayValue": "3-10"
+                  "summary": "4-12",
+                  "displayValue": "4-12"
                 },
                 {
                   "name": "gamesBehind",
@@ -21101,13 +21108,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-1",
-                  "displayValue": "2-1"
+                  "summary": "3-2",
+                  "displayValue": "3-2"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -21133,8 +21140,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "3-11",
-                  "displayValue": "3-11"
+                  "summary": "4-11",
+                  "displayValue": "4-11"
                 },
                 {
                   "name": "gamesBehind",
@@ -21143,8 +21150,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 2.5,
-                  "displayValue": "2.5"
+                  "value": 2.0,
+                  "displayValue": "2"
                 },
                 {
                   "id": "9",
@@ -21154,8 +21161,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "1-3",
-                  "displayValue": "1-3"
+                  "summary": "2-3",
+                  "displayValue": "2-3"
                 }
               ],
               "logo": [
@@ -21173,10 +21180,10 @@
               ]
             },
             {
-              "team": "Texas Southern",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2640/texas-southern-tigers",
-              "id": "2640",
-              "uid": "s:40~l:54~t:2640",
+              "team": "Alcorn State",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2016/alcorn-state-lady-braves",
+              "id": "2016",
+              "uid": "s:40~l:54~t:2016",
               "stats": [
                 {
                   "id": "0",
@@ -21186,8 +21193,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "1-14",
-                  "displayValue": "1-14"
+                  "summary": "5-10",
+                  "displayValue": "5-10"
                 },
                 {
                   "name": "gamesBehind",
@@ -21213,7 +21220,7 @@
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -21226,10 +21233,10 @@
               ]
             },
             {
-              "team": "Alcorn State",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2016/alcorn-state-lady-braves",
-              "id": "2016",
-              "uid": "s:40~l:54~t:2016",
+              "team": "Texas Southern",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2640/texas-southern-tigers",
+              "id": "2640",
+              "uid": "s:40~l:54~t:2640",
               "stats": [
                 {
                   "id": "0",
@@ -21239,8 +21246,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "4-10",
-                  "displayValue": "4-10"
+                  "summary": "1-15",
+                  "displayValue": "1-15"
                 },
                 {
                   "name": "gamesBehind",
@@ -21260,13 +21267,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "0-3",
-                  "displayValue": "0-3"
+                  "summary": "1-4",
+                  "displayValue": "1-4"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -21283,59 +21290,6 @@
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/50/florida-am-rattlers",
               "id": "50",
               "uid": "s:40~l:54~t:50",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "2-12",
-                  "displayValue": "2-12"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 3.0,
-                  "displayValue": "3"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "0-3",
-                  "displayValue": "0-3"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2018-06-05T12:08Z"
-                }
-              ]
-            },
-            {
-              "team": "Mississippi Valley State",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2400/mississippi-valley-state-devilettes",
-              "id": "2400",
-              "uid": "s:40~l:54~t:2400",
               "stats": [
                 {
                   "id": "0",
@@ -21368,6 +21322,59 @@
                   "type": "vsconf",
                   "summary": "0-4",
                   "displayValue": "0-4"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Mississippi Valley State",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2400/mississippi-valley-state-devilettes",
+              "id": "2400",
+              "uid": "s:40~l:54~t:2400",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "2-14",
+                  "displayValue": "2-14"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 4.0,
+                  "displayValue": "4"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "0-5",
+                  "displayValue": "0-5"
                 }
               ],
               "logo": [
@@ -21948,7 +21955,7 @@
     "uid": "s:40~l:54~e:401492878~c:401492878",
     "date": "2023-01-09T23:30Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -22145,6 +22152,13 @@
       }
     },
     "broadcasts": [],
+    "groups": {
+      "id": "26",
+      "name": "Southwestern Athletic Conference",
+      "abbreviation": "swac",
+      "shortName": "SWAC",
+      "midsizeName": "SWAC"
+    },
     "home": {
       "id": "2582",
       "uid": "s:40~l:54~t:2582",
