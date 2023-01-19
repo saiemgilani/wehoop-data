@@ -622,7 +622,7 @@
                   "1",
                   "1",
                   "2",
-                  "6",
+                  "5",
                   "0",
                   "0",
                   "3",
@@ -710,13 +710,13 @@
                 "ejected": false,
                 "stats": [
                   "34",
-                  "6-18",
-                  "0-4",
+                  "6-16",
+                  "0-2",
                   "4-6",
                   "5",
                   "7",
                   "12",
-                  "6",
+                  "7",
                   "0",
                   "0",
                   "4",
@@ -804,8 +804,8 @@
                 "ejected": false,
                 "stats": [
                   "39",
-                  "3-7",
-                  "2-6",
+                  "3-9",
+                  "2-8",
                   "0-0",
                   "1",
                   "1",
@@ -3388,8 +3388,8 @@
                   "shortDisplayName": "FG",
                   "description": "Field Goal makes and attempts.",
                   "abbreviation": "FG",
-                  "value": 0.333333,
-                  "displayValue": "6/18"
+                  "value": 0.375,
+                  "displayValue": "6/16"
                 },
                 {
                   "name": "freeThrows",
@@ -3409,7 +3409,7 @@
           "displayName": "Assists",
           "leaders": [
             {
-              "displayValue": "6",
+              "displayValue": "7",
               "athlete": {
                 "id": "4595910",
                 "uid": "s:40~l:54~a:4595910",
@@ -3445,8 +3445,8 @@
                   "shortDisplayName": "AST",
                   "description": "The number of times a player who passes the ball to a teammate in a way that leads to a score by field goal, meaning that he or she was \"assisting\" in the basket. There is some judgment involved in deciding whether a passer should be credited with an assist.",
                   "abbreviation": "AST",
-                  "value": 6.0,
-                  "displayValue": "6"
+                  "value": 7.0,
+                  "displayValue": "7"
                 },
                 {
                   "name": "turnovers",
@@ -3472,8 +3472,8 @@
                   "shortDisplayName": "AST/TO",
                   "description": "The average number of assists a player or team records per turnover",
                   "abbreviation": "AST/TO",
-                  "value": 1.5,
-                  "displayValue": "1.5"
+                  "value": 1.75,
+                  "displayValue": "1.8"
                 }
               ]
             }
@@ -5281,7 +5281,7 @@
         "uid": "s:40~l:54~e:401498645~c:401498645",
         "date": "2023-01-14T04:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5495,7 +5495,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "21",
+          "name": "Pac-12 Conference",
+          "abbreviation": "pac12",
+          "shortName": "Pac-12",
+          "midsizeName": "Pac-12"
+        }
       }
     ],
     "links": [
