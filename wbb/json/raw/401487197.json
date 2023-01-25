@@ -5025,7 +5025,7 @@
         "uid": "s:40~l:54~e:401487197~c:401487197",
         "date": "2023-01-18T00:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5222,7 +5222,14 @@
             "shortDetail": "Final"
           }
         },
-        "broadcasts": []
+        "broadcasts": [],
+        "groups": {
+          "id": "4",
+          "name": "Big East Conference",
+          "abbreviation": "bige",
+          "shortName": "Big East",
+          "midsizeName": "Big East"
+        }
       }
     ],
     "links": [
@@ -5369,7 +5376,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/womens-college-basketball/scoreboard",
+          "href": "https://www.espn.com/womens-college-basketball/scoreboard",
           "text": "Scores"
         },
         {
@@ -14688,8 +14695,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "12-6",
-                  "displayValue": "12-6"
+                  "summary": "13-6",
+                  "displayValue": "13-6"
                 },
                 {
                   "name": "gamesBehind",
@@ -14698,8 +14705,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.5,
-                  "displayValue": "4.5"
+                  "value": 4.0,
+                  "displayValue": "4"
                 },
                 {
                   "id": "9",
@@ -14709,8 +14716,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "7-4",
+                  "displayValue": "7-4"
                 }
               ],
               "logo": [
@@ -14887,59 +14894,6 @@
               ]
             },
             {
-              "team": "Providence",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2507/providence-friars",
-              "id": "2507",
-              "uid": "s:40~l:54~t:2507",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "12-9",
-                  "displayValue": "12-9"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 7.5,
-                  "displayValue": "7.5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "3-7",
-                  "displayValue": "3-7"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2018-06-05T12:08Z"
-                }
-              ]
-            },
-            {
               "team": "Georgetown",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/46/georgetown-hoyas",
               "id": "46",
@@ -14989,6 +14943,59 @@
                     "default"
                   ],
                   "lastUpdated": "2022-12-09T15:57Z"
+                }
+              ]
+            },
+            {
+              "team": "Providence",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2507/providence-friars",
+              "id": "2507",
+              "uid": "s:40~l:54~t:2507",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "12-10",
+                  "displayValue": "12-10"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 8.0,
+                  "displayValue": "8"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "3-8",
+                  "displayValue": "3-8"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
                 }
               ]
             },
