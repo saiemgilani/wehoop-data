@@ -5093,7 +5093,7 @@
         "uid": "s:40~l:54~e:401493190~c:401493190",
         "date": "2023-01-22T19:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5305,7 +5305,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "3",
+          "name": "Atlantic 10 Conference",
+          "abbreviation": "atl10",
+          "shortName": "A 10",
+          "midsizeName": "Atlantic 10"
+        }
       }
     ],
     "links": [
@@ -14843,7 +14850,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -14896,7 +14903,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -14949,7 +14956,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15002,7 +15009,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15048,6 +15055,59 @@
               ]
             },
             {
+              "team": "George Washington",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/45/george-washington-colonials",
+              "id": "45",
+              "uid": "s:40~l:54~t:45",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "season",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "13-8",
+                  "displayValue": "13-8"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 2.5,
+                  "displayValue": "2.5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "5-3",
+                  "displayValue": "5-3"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/45.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2022-12-09T16:51Z"
+                }
+              ]
+            },
+            {
               "team": "Davidson",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2166/davidson-wildcats",
               "id": "2166",
@@ -15055,7 +15115,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15108,7 +15168,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15154,59 +15214,6 @@
               ]
             },
             {
-              "team": "George Washington",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/45/george-washington-colonials",
-              "id": "45",
-              "uid": "s:40~l:54~t:45",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "12-8",
-                  "displayValue": "12-8"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 3.0,
-                  "displayValue": "3"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "4-3",
-                  "displayValue": "4-3"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/45.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2022-12-09T16:51Z"
-                }
-              ]
-            },
-            {
               "team": "Duquesne",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2184/duquesne-dukes",
               "id": "2184",
@@ -15214,7 +15221,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15267,7 +15274,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15320,7 +15327,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15373,7 +15380,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15426,7 +15433,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15479,7 +15486,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
@@ -15532,14 +15539,14 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "6-13",
-                  "displayValue": "6-13"
+                  "summary": "6-14",
+                  "displayValue": "6-14"
                 },
                 {
                   "name": "gamesBehind",
@@ -15548,8 +15555,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.5,
-                  "displayValue": "5.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -15559,8 +15566,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "1-5",
-                  "displayValue": "1-5"
+                  "summary": "1-6",
+                  "displayValue": "1-6"
                 }
               ],
               "logo": [
@@ -15585,7 +15592,7 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "overall",
+                  "name": "season",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
