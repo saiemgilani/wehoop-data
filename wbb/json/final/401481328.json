@@ -18729,7 +18729,7 @@
         "uid": "s:40~l:54~e:401481328~c:401481328",
         "date": "2023-01-21T21:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -18942,6 +18942,13 @@
             "region": "us"
           }
         ],
+        "groups": {
+          "id": "25",
+          "name": "Southland Conference",
+          "abbreviation": "land",
+          "shortName": "Southland",
+          "midsizeName": "Southland"
+        },
         "home": {
           "id": "2320",
           "uid": "s:40~l:54~t:2320",
@@ -19278,8 +19285,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "11-7",
-                  "displayValue": "11-7"
+                  "summary": "12-7",
+                  "displayValue": "12-7"
                 },
                 {
                   "name": "gamesBehind",
@@ -19288,8 +19295,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 3.0,
-                  "displayValue": "3"
+                  "value": 2.5,
+                  "displayValue": "2.5"
                 },
                 {
                   "id": "9",
@@ -19299,8 +19306,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "6-1",
-                  "displayValue": "6-1"
+                  "summary": "7-1",
+                  "displayValue": "7-1"
                 }
               ],
               "logo": [
@@ -19318,59 +19325,6 @@
               ]
             },
             {
-              "team": "Texas A&M-Commerce",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2837/texas-am-commerce-lions",
-              "id": "2837",
-              "uid": "s:40~l:54~t:2837",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "8-11",
-                  "displayValue": "8-11"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 0.0,
-                  "displayValue": "-"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "6-1",
-                  "displayValue": "6-1"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2023-01-23T22:21Z"
-                }
-              ]
-            },
-            {
               "team": "SE Louisiana",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2545/se-louisiana-lady-lions",
               "id": "2545",
@@ -19384,8 +19338,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "10-7",
-                  "displayValue": "10-7"
+                  "summary": "11-7",
+                  "displayValue": "11-7"
                 },
                 {
                   "name": "gamesBehind",
@@ -19405,8 +19359,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-2",
-                  "displayValue": "5-2"
+                  "summary": "6-2",
+                  "displayValue": "6-2"
                 }
               ],
               "logo": [
@@ -19424,6 +19378,59 @@
               ]
             },
             {
+              "team": "Texas A&M-Commerce",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2837/texas-am-commerce-lions",
+              "id": "2837",
+              "uid": "s:40~l:54~t:2837",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "8-12",
+                  "displayValue": "8-12"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 1.0,
+                  "displayValue": "1"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "6-2",
+                  "displayValue": "6-2"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2023-01-23T22:21Z"
+                }
+              ]
+            },
+            {
               "team": "McNeese",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2377/mcneese-cowgirls",
               "id": "2377",
@@ -19437,8 +19444,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "7-11",
-                  "displayValue": "7-11"
+                  "summary": "8-11",
+                  "displayValue": "8-11"
                 },
                 {
                   "name": "gamesBehind",
@@ -19458,8 +19465,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "4-3",
-                  "displayValue": "4-3"
+                  "summary": "5-3",
+                  "displayValue": "5-3"
                 }
               ],
               "logo": [
@@ -19490,8 +19497,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "9-9",
-                  "displayValue": "9-9"
+                  "summary": "10-9",
+                  "displayValue": "10-9"
                 },
                 {
                   "name": "gamesBehind",
@@ -19511,8 +19518,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-4",
-                  "displayValue": "3-4"
+                  "summary": "4-4",
+                  "displayValue": "4-4"
                 }
               ],
               "logo": [
@@ -19530,10 +19537,10 @@
               ]
             },
             {
-              "team": "Houston Christian",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2277/houston-christian-huskies",
-              "id": "2277",
-              "uid": "s:40~l:54~t:2277",
+              "team": "Northwestern State",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2466/northwestern-state-lady-demons",
+              "id": "2466",
+              "uid": "s:40~l:54~t:2466",
               "stats": [
                 {
                   "id": "0",
@@ -19564,13 +19571,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-4",
-                  "displayValue": "3-4"
+                  "summary": "4-4",
+                  "displayValue": "4-4"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2466.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -19583,10 +19590,10 @@
               ]
             },
             {
-              "team": "Northwestern State",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2466/northwestern-state-lady-demons",
-              "id": "2466",
-              "uid": "s:40~l:54~t:2466",
+              "team": "Houston Christian",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2277/houston-christian-huskies",
+              "id": "2277",
+              "uid": "s:40~l:54~t:2277",
               "stats": [
                 {
                   "id": "0",
@@ -19596,8 +19603,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "7-10",
-                  "displayValue": "7-10"
+                  "summary": "8-11",
+                  "displayValue": "8-11"
                 },
                 {
                   "name": "gamesBehind",
@@ -19606,8 +19613,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 3.0,
-                  "displayValue": "3"
+                  "value": 4.0,
+                  "displayValue": "4"
                 },
                 {
                   "id": "9",
@@ -19617,13 +19624,13 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-4",
-                  "displayValue": "3-4"
+                  "summary": "3-5",
+                  "displayValue": "3-5"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2466.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -19649,8 +19656,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "7-10",
-                  "displayValue": "7-10"
+                  "summary": "7-11",
+                  "displayValue": "7-11"
                 },
                 {
                   "name": "gamesBehind",
@@ -19659,8 +19666,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.0,
-                  "displayValue": "4"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
@@ -19670,8 +19677,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-5",
-                  "displayValue": "2-5"
+                  "summary": "2-6",
+                  "displayValue": "2-6"
                 }
               ],
               "logo": [
@@ -19702,8 +19709,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "3-13",
-                  "displayValue": "3-13"
+                  "summary": "3-14",
+                  "displayValue": "3-14"
                 },
                 {
                   "name": "gamesBehind",
@@ -19712,8 +19719,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.0,
-                  "displayValue": "4"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
@@ -19723,8 +19730,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-5",
-                  "displayValue": "2-5"
+                  "summary": "2-6",
+                  "displayValue": "2-6"
                 }
               ],
               "logo": [
@@ -19755,8 +19762,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "4-14",
-                  "displayValue": "4-14"
+                  "summary": "4-15",
+                  "displayValue": "4-15"
                 },
                 {
                   "name": "gamesBehind",
@@ -19765,8 +19772,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -19776,8 +19783,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "1-6",
-                  "displayValue": "1-6"
+                  "summary": "1-7",
+                  "displayValue": "1-7"
                 }
               ],
               "logo": [
@@ -20358,7 +20365,7 @@
     "uid": "s:40~l:54~e:401481328~c:401481328",
     "date": "2023-01-21T21:00Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -20571,6 +20578,13 @@
         "region": "us"
       }
     ],
+    "groups": {
+      "id": "25",
+      "name": "Southland Conference",
+      "abbreviation": "land",
+      "shortName": "Southland",
+      "midsizeName": "Southland"
+    },
     "home": {
       "id": "2320",
       "uid": "s:40~l:54~t:2320",
