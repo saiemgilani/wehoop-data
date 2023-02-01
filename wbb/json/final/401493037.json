@@ -24892,7 +24892,7 @@
         "uid": "s:40~l:54~e:401493037~c:401493037",
         "date": "2023-01-21T20:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -25105,6 +25105,13 @@
             "region": "us"
           }
         ],
+        "groups": {
+          "id": "62",
+          "name": "American Athletic Conference",
+          "abbreviation": "aac",
+          "shortName": "American",
+          "midsizeName": "American"
+        },
         "home": {
           "id": "2567",
           "uid": "s:40~l:54~t:2567",
@@ -25441,8 +25448,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "20-4",
-                  "displayValue": "20-4"
+                  "summary": "21-4",
+                  "displayValue": "21-4"
                 },
                 {
                   "name": "gamesBehind",
@@ -25462,8 +25469,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "9-0",
-                  "displayValue": "9-0"
+                  "summary": "10-0",
+                  "displayValue": "10-0"
                 }
               ],
               "logo": [
@@ -25504,8 +25511,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 3.5,
-                  "displayValue": "3.5"
+                  "value": 4.0,
+                  "displayValue": "4"
                 },
                 {
                   "id": "9",
@@ -25557,8 +25564,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 3.5,
-                  "displayValue": "3.5"
+                  "value": 4.0,
+                  "displayValue": "4"
                 },
                 {
                   "id": "9",
@@ -25587,59 +25594,6 @@
               ]
             },
             {
-              "team": "East Carolina",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/151/east-carolina-pirates",
-              "id": "151",
-              "uid": "s:40~l:54~t:151",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "14-7",
-                  "displayValue": "14-7"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 3.5,
-                  "displayValue": "3.5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "5-3",
-                  "displayValue": "5-3"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2022-08-31T21:06Z"
-                }
-              ]
-            },
-            {
               "team": "Houston",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/248/houston-cougars",
               "id": "248",
@@ -25663,8 +25617,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 3.5,
-                  "displayValue": "3.5"
+                  "value": 4.0,
+                  "displayValue": "4"
                 },
                 {
                   "id": "9",
@@ -25693,6 +25647,59 @@
               ]
             },
             {
+              "team": "East Carolina",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/151/east-carolina-pirates",
+              "id": "151",
+              "uid": "s:40~l:54~t:151",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "14-8",
+                  "displayValue": "14-8"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 4.5,
+                  "displayValue": "4.5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "5-4",
+                  "displayValue": "5-4"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2022-08-31T21:06Z"
+                }
+              ]
+            },
+            {
               "team": "Memphis",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/235/memphis-tigers",
               "id": "235",
@@ -25716,8 +25723,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.5,
-                  "displayValue": "4.5"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
@@ -25769,8 +25776,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.5,
-                  "displayValue": "4.5"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
@@ -25822,8 +25829,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.5,
-                  "displayValue": "5.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -25875,8 +25882,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.0,
-                  "displayValue": "6"
+                  "value": 6.5,
+                  "displayValue": "6.5"
                 },
                 {
                   "id": "9",
@@ -25928,8 +25935,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
@@ -25981,8 +25988,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 8.0,
-                  "displayValue": "8"
+                  "value": 8.5,
+                  "displayValue": "8.5"
                 },
                 {
                   "id": "9",
@@ -26585,7 +26592,7 @@
     "uid": "s:40~l:54~e:401493037~c:401493037",
     "date": "2023-01-21T20:00Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -26798,6 +26805,13 @@
         "region": "us"
       }
     ],
+    "groups": {
+      "id": "62",
+      "name": "American Athletic Conference",
+      "abbreviation": "aac",
+      "shortName": "American",
+      "midsizeName": "American"
+    },
     "home": {
       "id": "2567",
       "uid": "s:40~l:54~t:2567",
