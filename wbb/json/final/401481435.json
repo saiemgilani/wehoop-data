@@ -24920,7 +24920,7 @@
         "uid": "s:40~l:54~e:401481435~c:401481435",
         "date": "2022-11-17T01:00Z",
         "neutralSite": false,
-        "conferenceCompetition": true,
+        "conferenceCompetition": false,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -25107,13 +25107,6 @@
             "region": "us"
           }
         ],
-        "groups": {
-          "id": "52",
-          "name": "NCAA Basketball",
-          "abbreviation": "NCAAW",
-          "shortName": "NCAA Basketball",
-          "midsizeName": "NCAA Basketball"
-        },
         "home": {
           "id": "357",
           "uid": "s:40~l:54~t:357",
@@ -25459,8 +25452,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "vsconf_gamesbehind",
-                      "value": 1.0,
-                      "displayValue": "1"
+                      "value": 1.5,
+                      "displayValue": "1.5"
                     },
                     {
                       "id": "9",
@@ -25489,6 +25482,59 @@
                   ]
                 },
                 {
+                  "team": "Queens University",
+                  "link": "http://www.espn.com/womens-college-basketball/team/_/id/2511/queens-university-royals",
+                  "id": "2511",
+                  "uid": "s:40~l:54~t:2511",
+                  "stats": [
+                    {
+                      "id": "0",
+                      "name": "overall",
+                      "abbreviation": "Season",
+                      "displayName": "Team Season Record",
+                      "shortDisplayName": "Season",
+                      "description": "Overall Record",
+                      "type": "total",
+                      "summary": "8-13",
+                      "displayValue": "8-13"
+                    },
+                    {
+                      "name": "gamesBehind",
+                      "displayName": "Games Back",
+                      "shortDisplayName": "GB",
+                      "description": "Games Back",
+                      "abbreviation": "GB",
+                      "type": "vsconf_gamesbehind",
+                      "value": 6.0,
+                      "displayValue": "6"
+                    },
+                    {
+                      "id": "9",
+                      "name": "vs. Conf.",
+                      "abbreviation": "VS CONF",
+                      "displayName": "CONF",
+                      "shortDisplayName": "CONF",
+                      "description": "Conference Record",
+                      "type": "vsconf",
+                      "summary": "3-7",
+                      "displayValue": "3-7"
+                    }
+                  ],
+                  "logo": [
+                    {
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
+                      "width": 500,
+                      "height": 500,
+                      "alt": "",
+                      "rel": [
+                        "full",
+                        "default"
+                      ],
+                      "lastUpdated": "2022-07-22T17:10Z"
+                    }
+                  ]
+                },
+                {
                   "team": "Southern Indiana",
                   "link": "http://www.espn.com/womens-college-basketball/team/_/id/88/southern-indiana-screaming-eagles",
                   "id": "88",
@@ -25502,8 +25548,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "9-12",
-                      "displayValue": "9-12"
+                      "summary": "9-13",
+                      "displayValue": "9-13"
                     },
                     {
                       "name": "gamesBehind",
@@ -25512,8 +25558,8 @@
                       "description": "Games Back",
                       "abbreviation": "GB",
                       "type": "vsconf_gamesbehind",
-                      "value": 7.5,
-                      "displayValue": "7.5"
+                      "value": 8.0,
+                      "displayValue": "8"
                     },
                     {
                       "id": "9",
@@ -25523,8 +25569,8 @@
                       "shortDisplayName": "CONF",
                       "description": "Conference Record",
                       "type": "vsconf",
-                      "summary": "3-7",
-                      "displayValue": "3-7"
+                      "summary": "3-8",
+                      "displayValue": "3-8"
                     }
                   ],
                   "logo": [
@@ -25555,61 +25601,8 @@
                       "shortDisplayName": "Season",
                       "description": "Overall Record",
                       "type": "total",
-                      "summary": "6-15",
-                      "displayValue": "6-15"
-                    },
-                    {
-                      "name": "gamesBehind",
-                      "displayName": "Games Back",
-                      "shortDisplayName": "GB",
-                      "description": "Games Back",
-                      "abbreviation": "GB",
-                      "type": "vsconf_gamesbehind",
-                      "value": 5.0,
-                      "displayValue": "5"
-                    },
-                    {
-                      "id": "9",
-                      "name": "vs. Conf.",
-                      "abbreviation": "VS CONF",
-                      "displayName": "CONF",
-                      "shortDisplayName": "CONF",
-                      "description": "Conference Record",
-                      "type": "vsconf",
-                      "summary": "2-6",
-                      "displayValue": "2-6"
-                    }
-                  ],
-                  "logo": [
-                    {
-                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/284.png",
-                      "width": 500,
-                      "height": 500,
-                      "alt": "",
-                      "rel": [
-                        "full",
-                        "default"
-                      ],
-                      "lastUpdated": "2023-01-25T21:35Z"
-                    }
-                  ]
-                },
-                {
-                  "team": "Queens University",
-                  "link": "http://www.espn.com/womens-college-basketball/team/_/id/2511/queens-university-royals",
-                  "id": "2511",
-                  "uid": "s:40~l:54~t:2511",
-                  "stats": [
-                    {
-                      "id": "0",
-                      "name": "overall",
-                      "abbreviation": "Season",
-                      "displayName": "Team Season Record",
-                      "shortDisplayName": "Season",
-                      "description": "Overall Record",
-                      "type": "total",
-                      "summary": "7-13",
-                      "displayValue": "7-13"
+                      "summary": "6-16",
+                      "displayValue": "6-16"
                     },
                     {
                       "name": "gamesBehind",
@@ -25635,7 +25628,7 @@
                   ],
                   "logo": [
                     {
-                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
+                      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/284.png",
                       "width": 500,
                       "height": 500,
                       "alt": "",
@@ -25643,7 +25636,7 @@
                         "full",
                         "default"
                       ],
-                      "lastUpdated": "2022-07-22T17:10Z"
+                      "lastUpdated": "2023-01-25T21:35Z"
                     }
                   ]
                 },
@@ -26247,7 +26240,7 @@
     "uid": "s:40~l:54~e:401481435~c:401481435",
     "date": "2022-11-17T01:00Z",
     "neutralSite": false,
-    "conferenceCompetition": true,
+    "conferenceCompetition": false,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -26434,13 +26427,6 @@
         "region": "us"
       }
     ],
-    "groups": {
-      "id": "52",
-      "name": "NCAA Basketball",
-      "abbreviation": "NCAAW",
-      "shortName": "NCAA Basketball",
-      "midsizeName": "NCAA Basketball"
-    },
     "home": {
       "id": "357",
       "uid": "s:40~l:54~t:357",

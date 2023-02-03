@@ -19591,7 +19591,7 @@
         "uid": "s:40~l:54~e:401487218~c:401487218",
         "date": "2023-02-02T00:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -19789,6 +19789,13 @@
           }
         },
         "broadcasts": [],
+        "groups": {
+          "id": "4",
+          "name": "Big East Conference",
+          "abbreviation": "bige",
+          "shortName": "Big East",
+          "midsizeName": "Big East"
+        },
         "home": {
           "id": "2507",
           "uid": "s:40~l:54~t:2507",
@@ -19893,6 +19900,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401487218",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401487218",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -20460,99 +20479,6 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/36214538-d061-46bb-b56e-b503744c3235/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573617"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 35573634,
-      "headline": "Dorka Juhasz somehow gets the and-1 to fall",
-      "description": "Dorka Juhasz somehow gets the and-1 to fall",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
-      "tracking": {
-        "sportName": "ncw",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "NCW_One-Play (Dorka Juhasz somehow gets the and-1 to fall) 2023/02/02 ESHEET",
-        "trackingId": "dm_20230202_NCW_dorka_juhasz_somehow_gets_the_and1_to_fall"
-      },
-      "cerebroId": "63db12aebe6ab31ff737aa8d",
-      "lastModified": "2023-02-02T01:49:38Z",
-      "originalPublishDate": "2023-02-02T01:32:28Z",
-      "timeRestrictions": {
-        "embargoDate": "2023-02-02T01:32:28Z",
-        "expirationDate": "2037-12-31T05:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "duration": 24,
-      "thumbnail": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/35573634"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/c83b7411-9364-4ba3-b72b-9b6bae40a9aa"
-          }
-        },
-        "web": {
-          "href": "https://www.espn.com/video/clip?id=35573634&ex_cid=espnapi_internal",
-          "short": {
-            "href": "https://www.espn.com/video/clip?id=35573634"
-          },
-          "self": {
-            "href": "https://www.espn.com/video/clip?id=35573634&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041/playlist.m3u8",
-            "HD": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041/playlist.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35573634&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634"
           }
         }
       }
@@ -21158,7 +21084,404 @@
       }
     ]
   },
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "24bc64e46f3fb",
+    "keywords": [],
+    "description": "\u2014 Dorka Juhasz had 19 points and 17 rebounds and Nika Muhl added 14 points as No. 5 UConn held off Providence 64-54 on Wednesday night.",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35573634,
+        "dataSourceIdentifier": "ca9c7ea7b0aa1",
+        "headline": "Dorka Juhasz somehow gets the and-1 to fall",
+        "caption": "Dorka Juhasz somehow gets the and-1 to fall",
+        "description": "Dorka Juhasz somehow gets the and-1 to fall",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Dorka Juhasz somehow gets the and-1 to fall) 2023/02/02 ESHEET",
+          "trackingId": "dm_20230202_NCW_dorka_juhasz_somehow_gets_the_and1_to_fall"
+        },
+        "cerebroId": "63db12aebe6ab31ff737aa8d",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-02T01:49:38Z",
+        "originalPublishDate": "2023-02-02T01:32:28Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-02T01:32:28Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 24,
+        "categories": [
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 4746,
+            "description": "UConn Huskies",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 41,
+            "team": {
+              "id": 41,
+              "description": "UConn Huskies",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/41"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/41/uconn-huskies"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=41"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:41"
+          },
+          {
+            "id": 273753,
+            "description": "Dorka Juhasz",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4398938,
+            "athlete": {
+              "id": 4398938,
+              "description": "Dorka Juhasz",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4398938"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4398938/dorka-juhasz"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4398938"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4398938"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35573634"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/c83b7411-9364-4ba3-b72b-9b6bae40a9aa"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35573634",
+            "short": {
+              "href": "https://es.pn/3l3IlLf"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35573634"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35573634"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/c83b7411-9364-4ba3-b72b-9b6bae40a9aa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573634"
+            }
+          }
+        },
+        "title": "Dorka Juhasz somehow gets the and-1 to fall"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35573824",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35573824"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401487218"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401487218",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35573824"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401487218&version=mobile"
+      }
+    },
+    "id": 35573824,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4757,
+        "description": "Providence Friars",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 2507,
+        "team": {
+          "id": 2507,
+          "description": "Providence Friars",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2507"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/2507/providence-friars"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=2507"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:2507"
+      },
+      {
+        "id": 4746,
+        "description": "UConn Huskies",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 41,
+        "team": {
+          "id": 41,
+          "description": "UConn Huskies",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/41"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/41/uconn-huskies"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=41"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:41"
+      }
+    ],
+    "headline": "Juhasz, Muhl lead No. 5 UConn over Providence 64-54",
+    "gameId": "401487218",
+    "images": [
+      {
+        "name": "Dorka Juhasz somehow gets the and-1 to fall",
+        "width": 576,
+        "alt": "",
+        "caption": "Dorka Juhasz somehow gets the and-1 to fall",
+        "url": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_203232054_2176041/ss_20230201_203232054_2176041.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Juhasz, Muhl lead No. 5 UConn over Providence 64-54",
+    "published": "2023-02-02T02:18:28Z",
+    "allowComments": true,
+    "lastModified": "2023-02-02T03:43:09Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">PROVIDENCE, R.I. -- \u2014 Dorka Juhasz had 19 points and 17 rebounds and Nika Muhl added 14 points as No. 5 UConn held off Providence 64-54 on Wednesday night. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Lou Lopez Senechal and Aubrey Griffin each finished with 13 points as the Huskies registered their 14th straight win. The quest for the 15th straight win will feature a rematch of last year\u2019s national title game as UConn squares off against undefeated No. 1 South Carolina on Sunday.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cWe\u2019re already focusing on that game. It\u2019s going to be an exciting challenge for us,\u201d said Juhasz.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Huskies (21-2, 13-0 Big East) shot 51% and held the Friars to 36%. UConn committed 20 turnovers, many of which helped Providence (13-11, 4-9) stay in the picture. Olivia Olsen led Providence with 13 points while Janai Crooms and Nariah Scott each had 11 points. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Huskies shot 69% in the first quarter in building a 20-14 lead that likely would have been greater had UConn not turned the ball over six times. There were more turnover issues in the second quarter, yet UConn carried a 37-26 lead into halftime.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UConn coach Geno Auriemma found comfort in Juhasz and her ability to dominate inside while supplying some firepower from the outside.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cShe\u2019s trying really hard. Her effort is good,\u201d said Auriemma. \u201cShe goes and rebounds the ball over here and over there. She doesn\u2019t stand there and wait for a rebound to come to her.\u201d\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UConn appeared on the verge of seizing control after a layup from Lopez Senechal made it 45-30, but the underdog Friars made it interesting. Five straight points from Scott capped off a 9-0 run that forced UConn to call timeout with 1:23 left in the third quarter after Providence pulled to within six. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cWe were getting stops and that was starting our offense,\u201d said Providence coach Jim Crowley. \u201cReally proud of the way our kids kept competing. It\u2019s something we can build on heading into this stretch run.\u201d\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">HELPING HAND\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The nation\u2019s leader in assists, Muhl handed out nine assists Wednesday night. She now has 192 assists on the season, good for a spot within the top 10 of the single-season program record.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cI would say the biggest growth in my game is listening to what I need to do so I can work on it even more,\u201d said Muhl, who had five turnovers against the Friars. \u201cThat\u2019s not a reflection of what I can do. I\u2019m disappointed in that part of my performance, but we\u2019ll learn from it.\u201d\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">BIG PICTURE\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UConn: The busy stretch comes at a time when Auriemma only has eight healthy players. The walking wounded included two sophomore guards as Caroline Ducharme (concussion) and Azzi Fudd (right knee). Ducharme missed her 10th straight game Wednesday while Fudd sat out for the 14th time this season, spanning two stints. Between Ducharme and Fudd, the Huskies are seeking to fill 27 combined points each time they hit the court.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cI wish I could say, \u2018Here\u2019s the date.\u2019 We could certainly use one or both of those guys, for sure,\u201d said Auriemma.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Providence: The Friars fell to UConn for the 33rd consecutive time. The last time Providence got the better of the Huskies was the semifinals of the 1993 Big East Tournament. \u2026 Providence is now 1/3 against nationally ranked opponents this season.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UP NEXT\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UConn: Returns home for a Sunday showdown against top-ranked South Carolina. It will be the sixth game of the season against a Top 25 team. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Providence: Travels to Seton Hall on Saturday.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: <a href=\"https://apnews.com/hub/womens-college-basketball\">https://apnews.com/hub/womens-college-basketball</a> and <a href=\"https://apnews.com/hub/ap-top-25-womens-college-basketball-poll\">https://apnews.com/hub/ap-top-25-womens-college-basketball-poll</a> and <a href=\"https://twitter.com/AP--Top25\">https://twitter.com/AP--Top25</a>\n\n\r\n"
+  },
   "leaders": [
     {
       "team": {
@@ -21739,7 +22062,7 @@
     "uid": "s:40~l:54~e:401487218~c:401487218",
     "date": "2023-02-02T00:00Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -21937,6 +22260,13 @@
       }
     },
     "broadcasts": [],
+    "groups": {
+      "id": "4",
+      "name": "Big East Conference",
+      "abbreviation": "bige",
+      "shortName": "Big East",
+      "midsizeName": "Big East"
+    },
     "home": {
       "id": "2507",
       "uid": "s:40~l:54~t:2507",

@@ -23514,7 +23514,7 @@
         "uid": "s:40~l:54~e:401494176~c:401494176",
         "date": "2023-02-02T00:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -23728,6 +23728,13 @@
             "region": "us"
           }
         ],
+        "groups": {
+          "id": "8",
+          "name": "Big 12 Conference",
+          "abbreviation": "big12",
+          "shortName": "Big 12",
+          "midsizeName": "Big 12"
+        },
         "home": {
           "id": "277",
           "uid": "s:40~l:54~t:277",
@@ -23832,6 +23839,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401494176",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401494176",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -24327,99 +24346,6 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/efd79ba3-3ff8-41ea-915d-046181936168/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573230"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 35573550,
-      "headline": "Sonya Morris shows off the range on trey",
-      "description": "Sonya Morris shows off the range on trey",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
-      "tracking": {
-        "sportName": "ncw",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "NCW_One-Play (Sonya Morris shows off the range on trey) 2023/02/02 ESHEET",
-        "trackingId": "dm_20230202_NCW_sonya_morris_shows_off_the_range_on_trey"
-      },
-      "cerebroId": "63db0ee8be6ab31ff73777d5",
-      "lastModified": "2023-02-02T01:57:40Z",
-      "originalPublishDate": "2023-02-02T01:16:22Z",
-      "timeRestrictions": {
-        "embargoDate": "2023-02-02T01:16:22Z",
-        "expirationDate": "2037-12-31T05:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "duration": 17,
-      "thumbnail": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/35573550"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/95139bb6-7c0c-4df8-b122-b5e22ea19aa2"
-          }
-        },
-        "web": {
-          "href": "https://www.espn.com/video/clip?id=35573550&ex_cid=espnapi_internal",
-          "short": {
-            "href": "https://www.espn.com/video/clip?id=35573550"
-          },
-          "self": {
-            "href": "https://www.espn.com/video/clip?id=35573550&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007/playlist.m3u8",
-            "HD": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007/playlist.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35573550&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550"
           }
         }
       }
@@ -25065,7 +24991,404 @@
       }
     ]
   },
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "4d97c72215dbb",
+    "keywords": [],
+    "description": "\u2014 Sonya Morris scored 17 points, Rori Harmon scored nine of her 14 in the fourth quarter and No. 24 Texas turned back West Virginia 69-56 on Wednesday night to stay on top of the Big 12 Conference standings.",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35573550,
+        "dataSourceIdentifier": "ba60a7bbac318",
+        "headline": "Sonya Morris shows off the range on trey",
+        "caption": "Sonya Morris shows off the range on trey",
+        "description": "Sonya Morris shows off the range on trey",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Sonya Morris shows off the range on trey) 2023/02/02 ESHEET",
+          "trackingId": "dm_20230202_NCW_sonya_morris_shows_off_the_range_on_trey"
+        },
+        "cerebroId": "63db0ee8be6ab31ff73777d5",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-02T01:57:40Z",
+        "originalPublishDate": "2023-02-02T01:16:22Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-02T01:16:22Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 17,
+        "categories": [
+          {
+            "id": 268645,
+            "description": "Sonya Morris",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4399343,
+            "athlete": {
+              "id": 4399343,
+              "description": "Sonya Morris",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4399343"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4399343/sonya-morris"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4399343"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4399343"
+          },
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 4796,
+            "description": "Texas Longhorns",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 251,
+            "team": {
+              "id": 251,
+              "description": "Texas Longhorns",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/251"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/251/texas-longhorns"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=251"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:251"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35573550"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/95139bb6-7c0c-4df8-b122-b5e22ea19aa2"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35573550",
+            "short": {
+              "href": "https://es.pn/3Y8Szs0"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35573550"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35573550"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/95139bb6-7c0c-4df8-b122-b5e22ea19aa2/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35573550"
+            }
+          }
+        },
+        "title": "Sonya Morris shows off the range on trey"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35573869",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35573869"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401494176"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401494176",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35573869"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401494176&version=mobile"
+      }
+    },
+    "id": 35573869,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4755,
+        "description": "West Virginia Mountaineers",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 277,
+        "team": {
+          "id": 277,
+          "description": "West Virginia Mountaineers",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/277"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/277/west-virginia-mountaineers"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=277"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:277"
+      },
+      {
+        "id": 4796,
+        "description": "Texas Longhorns",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 251,
+        "team": {
+          "id": 251,
+          "description": "Texas Longhorns",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/251"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/251/texas-longhorns"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=251"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:251"
+      }
+    ],
+    "headline": "Morris, Harmon help No. 24 Texas top West Virginia 69-56",
+    "gameId": "401494176",
+    "images": [
+      {
+        "name": "Sonya Morris shows off the range on trey",
+        "width": 576,
+        "alt": "",
+        "caption": "Sonya Morris shows off the range on trey",
+        "url": "https://a.espncdn.com/media/motion/2023/0201/ss_20230201_201626414_2176007/ss_20230201_201626414_2176007.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Morris, Harmon help No. 24 Texas top West Virginia 69-56",
+    "published": "2023-02-02T02:30:08Z",
+    "allowComments": true,
+    "lastModified": "2023-02-02T02:30:08Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">MORGANTOWN, W. Va. -- \u2014 Sonya Morris scored 17 points, Rori Harmon scored nine of her 14 in the fourth quarter and No. 24 Texas turned back West Virginia 69-56 on Wednesday night to stay on top of the Big 12 Conference standings.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Longhorns led from the start, running their stretch without trailing to 143 minutes, but it wasn't until Harmon scored Texas' last seven points over 2 1/2 minutes that the win was secured. The final margin matched the largest of the game.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">With No. 12 Iowa State losing at Kansas State, Texas is alone at the top of the Big 12.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Taylor Jones had 12 points on 6-of-8 shooting for Texas (17-6, 8-2), which held its seven opponents below 60 points. Shaylee Gonzales added 11 points. Harmon had six rebounds, six assists and four steals. Deyona Gaston had eight points and nine rebounds.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Longhorns had a 39-25 rebounding average and held West Virginia to 3 of 18 behind the arc.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Sarah Bates had 12 points off the bench for the Mountaineers (14-6, 5-4).\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Gaston opened the game with a three-point play and after a West Virginia basket the Longhorns ran off 10 straight point, the last four by Jones. But the Mountaineers scored the last six to trail 19-14 after one quarter.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">West Virginia scored the last eight points of the third quarter to trail 48-45. The Longhorns led by 13 in the middle of the quarter. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Texas is at Kansas on Saturday when West Virginia goes to No. 20 Oklahoma.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://twitter.com/AP--Top25\n\n\r\n"
+  },
   "leaders": [
     {
       "team": {
@@ -25659,7 +25982,7 @@
     "uid": "s:40~l:54~e:401494176~c:401494176",
     "date": "2023-02-02T00:00Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -25873,6 +26196,13 @@
         "region": "us"
       }
     ],
+    "groups": {
+      "id": "8",
+      "name": "Big 12 Conference",
+      "abbreviation": "big12",
+      "shortName": "Big 12",
+      "midsizeName": "Big 12"
+    },
     "home": {
       "id": "277",
       "uid": "s:40~l:54~t:277",
