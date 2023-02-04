@@ -4891,7 +4891,7 @@
         "uid": "s:40~l:54~e:401488926~c:401488926",
         "date": "2023-02-03T00:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5104,7 +5104,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "2",
+          "name": "Atlantic Coast Conference",
+          "abbreviation": "acc",
+          "shortName": "ACC",
+          "midsizeName": "ACC"
+        }
       }
     ],
     "links": [
@@ -5117,6 +5124,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401488926",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401488926",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -15353,17 +15372,439 @@
       "shootingPlay": false
     }
   ],
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "3f82512ac5703",
+    "keywords": [],
+    "description": "\u2014 Olivia Miles and Sonia Citron had already scored 10 straight points to put away Boston College when they turned their attention to other things.",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35578607,
+        "dataSourceIdentifier": "096eb13c70fbc",
+        "headline": "Kylee Watson elevates for the bigtime block",
+        "caption": "Kylee Watson elevates for the bigtime block",
+        "description": "Kylee Watson elevates for the bigtime block",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Kylee Watson elevates for the bigtime block) 2023/02/03 ESHEET",
+          "trackingId": "dm_20230203_NCW_kylee_watson_elevates_for_the_bigtime_block"
+        },
+        "cerebroId": "63dc546cca84b70e7e9e06d3",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-03T02:06:15Z",
+        "originalPublishDate": "2023-02-03T00:25:15Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-03T00:25:15Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 25,
+        "categories": [
+          {
+            "id": 556232,
+            "description": "Kylee Watson",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4433735,
+            "athlete": {
+              "id": 4433735,
+              "description": "Kylee Watson",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4433735"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4433735/kylee-watson"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4433735"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4433735"
+          },
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 4748,
+            "description": "Notre Dame Fighting Irish",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 87,
+            "team": {
+              "id": 87,
+              "description": "Notre Dame Fighting Irish",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/87"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/87/notre-dame-fighting-irish"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=87"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:87"
+          },
+          {
+            "id": 4749,
+            "description": "Boston College Eagles",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 103,
+            "team": {
+              "id": 103,
+              "description": "Boston College Eagles",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/103"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/103/boston-college-eagles"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=103"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:103"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35578607"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/0d5659f0-ab8a-4ba0-8aea-a9d7c707b5a3"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35578607",
+            "short": {
+              "href": "https://es.pn/3Ygye3S"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35578607"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35578607"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/0d5659f0-ab8a-4ba0-8aea-a9d7c707b5a3/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578607",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/0d5659f0-ab8a-4ba0-8aea-a9d7c707b5a3/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578607"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/0d5659f0-ab8a-4ba0-8aea-a9d7c707b5a3/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578607"
+            }
+          }
+        },
+        "title": "Kylee Watson elevates for the bigtime block"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35579262",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35579262"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401488926"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401488926",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35579262"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401488926&version=mobile"
+      }
+    },
+    "id": 35579262,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4749,
+        "description": "Boston College Eagles",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 103,
+        "team": {
+          "id": 103,
+          "description": "Boston College Eagles",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/103"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/103/boston-college-eagles"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=103"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:103"
+      },
+      {
+        "id": 4748,
+        "description": "Notre Dame Fighting Irish",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 87,
+        "team": {
+          "id": 87,
+          "description": "Notre Dame Fighting Irish",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/87"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/87/notre-dame-fighting-irish"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=87"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:87"
+      }
+    ],
+    "headline": "Miles, Citron lead No. 9 Irish past Boston College 72-59",
+    "gameId": "401488926",
+    "images": [
+      {
+        "name": "Kylee Watson elevates for the bigtime block",
+        "width": 576,
+        "alt": "",
+        "caption": "Kylee Watson elevates for the bigtime block",
+        "url": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_192518015_2176753/ss_20230202_192518015_2176753.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Miles, Citron lead No. 9 Irish past Boston College 72-59",
+    "published": "2023-02-03T02:00:47Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T02:57:47Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">BOSTON -- \u2014 Olivia Miles and Sonia Citron had already scored 10 straight points to put away Boston College when they turned their attention to other things.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cI told Sonia I needed two more assists for the double-double. And she was like, \u2018All right, I\u2019ve got you,\u2019\u201d Miles said after helping No. 9 Notre Dame beat BC 72-59 on Thursday night.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cThat\u2019s just kind of our communication on the court,\u201d said Miles, who found Citron for baskets on the next two Irish possessions to complete a 14-0 run \u2014 with all 14 points from Miles and Citron. \"We just really play off each other really well.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Miles scored 22 points with 10 assists and eight rebounds, and Citron scored 23 for the Irish (18-2, 9-1 Atlantic Coast Conference).\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Maria Gakdeng scored 16 points, T\u2019Yana Todd had 13 and Andrea Daly scored 10 with eight rebounds for BC (14-11, 4-8). The Irish beat BC at home 85-48 on New Year\u2019s Day but hadn\u2019t won in Chestnut Hill since 2019.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cThis is such a tough place to play,\u201d said Notre Dame coach Niele Ivey, whose team faces No. 16 Duke next. \u201cWe\u2019ll celebrate it until about 12:30, and then we\u2019ve got film. Tomorrow we start focusing on Duke.\u201d \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">BC came within five points, 55-50, before the Irish ran off 14 points in a row \u2014 nine by Citron, and five by Miles. That put an end to what had been a back-and-forth game in which the Irish opened big leads and then frittered them away. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cI always feel like we\u2019re close,\u201d BC coach Joanna Bernabei-McNamee said. \"They\u2019re young; I think consistency comes with experience. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">\u201cI think it\u2019s a big improvement from the first time we played Notre Dame,\u201d she said. \u201cI still want to see more, and I want to see us grow up as fast as humanly possible because I think we do have a dangerous team when we going well.\u201d\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Notre Dame led by 11 in the first quarter and held a 38-30 lead with two minutes gone in the third. BC scored 13 of the next 18 points, capitalizing on back-to-back Irish turnovers to tie it 43-all with three minutes left in the quarter.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">But Natalija Marshall put back the rebound of her own miss, Miles drove to the basket, Maddy Westbeld added a pair of baskets and then Miles stole the ball and found Citron on the fast break to make it 53-43.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">BIG PICTURE\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Notre Dame bounced back from their first league loss of the season, a 69-65 defeat at North Carolina State on Sunday. Now they face No. 16 Duke.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Eagles, who beat Pittsburgh on Sunday to snap a five-game losing streak, were looking for their second victory over a Top 25 team this season, having also beaten then-No. 10 N.C. State on Jan. 5.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UP NEXT\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Notre Dame: Hosts No. 16 Duke on Sunday. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Boston College: Visits Syracuse on Sunday. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll\n\n\r\n"
+  },
   "videos": [
     {
       "source": "espn",
       "id": 35578607,
       "headline": "Kylee Watson elevates for the bigtime block",
       "description": "Kylee Watson elevates for the bigtime block",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
       "tracking": {
         "sportName": "ncw",
         "leagueName": "No League",
@@ -15371,7 +15812,6 @@
         "trackingName": "NCW_One-Play (Kylee Watson elevates for the bigtime block) 2023/02/03 ESHEET",
         "trackingId": "dm_20230203_NCW_kylee_watson_elevates_for_the_bigtime_block"
       },
-      "cerebroId": "63dc546cca84b70e7e9e06d3",
       "lastModified": "2023-02-03T02:06:15Z",
       "originalPublishDate": "2023-02-03T00:25:15Z",
       "timeRestrictions": {

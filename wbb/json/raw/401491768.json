@@ -5337,7 +5337,14 @@
             "shortDetail": "Final"
           }
         },
-        "broadcasts": []
+        "broadcasts": [],
+        "groups": {
+          "id": "11",
+          "name": "Conference USA",
+          "abbreviation": "usa",
+          "shortName": "C-USA",
+          "midsizeName": "Conference USA"
+        }
       }
     ],
     "links": [
@@ -5350,6 +5357,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401491768",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401491768",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -15026,6 +15045,70 @@
       "shootingPlay": false
     },
     {
+      "id": "401491768104999501",
+      "sequenceNumber": "104999501",
+      "type": {
+        "id": "598",
+        "text": "Lost Ball Turnover"
+      },
+      "text": "Kseniya Malashka Turnover.",
+      "awayScore": 62,
+      "homeScore": 62,
+      "period": {
+        "number": 4,
+        "displayValue": "4th Quarter"
+      },
+      "clock": {
+        "displayValue": "0:04"
+      },
+      "scoringPlay": false,
+      "scoreValue": 0,
+      "team": {
+        "id": "2393"
+      },
+      "participants": [
+        {
+          "athlete": {
+            "id": "4399493"
+          }
+        }
+      ],
+      "wallclock": "2023-02-03T03:46:01Z",
+      "shootingPlay": false
+    },
+    {
+      "id": "401491768104999502",
+      "sequenceNumber": "104999502",
+      "type": {
+        "id": "607",
+        "text": "Steal"
+      },
+      "text": "Avery Crouse Steal.",
+      "awayScore": 62,
+      "homeScore": 62,
+      "period": {
+        "number": 4,
+        "displayValue": "4th Quarter"
+      },
+      "clock": {
+        "displayValue": "0:04"
+      },
+      "scoringPlay": false,
+      "scoreValue": 0,
+      "team": {
+        "id": "2638"
+      },
+      "participants": [
+        {
+          "athlete": {
+            "id": "4595247"
+          }
+        }
+      ],
+      "wallclock": "2023-02-03T03:46:01Z",
+      "shootingPlay": false
+    },
+    {
       "id": "401491768104999902",
       "sequenceNumber": "104999902",
       "type": {
@@ -15165,9 +15248,193 @@
       "scoreValue": 0,
       "wallclock": "2023-02-03T03:48:06Z",
       "shootingPlay": false
+    },
+    {
+      "id": "401491768104999906",
+      "sequenceNumber": "104999906",
+      "type": {
+        "id": "402",
+        "text": "End Game"
+      },
+      "text": "End of Game",
+      "awayScore": 62,
+      "homeScore": 65,
+      "period": {
+        "number": 4,
+        "displayValue": "4th Quarter"
+      },
+      "clock": {
+        "displayValue": "0:00"
+      },
+      "scoringPlay": false,
+      "scoreValue": 0,
+      "wallclock": "2023-02-03T03:48:06Z",
+      "shootingPlay": false
     }
   ],
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "c2dd98cbacc72",
+    "keywords": [],
+    "description": "\u2014 Elina Arike scored 20 points, Jazion Jackson <a href=\"https://twitter.com/UTEPWBB?ref--src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\">buried a 3-pointer in the final second</a> and the UTEP women beat No. 21 Middle Tennessee 65-62 on Thursday...",
+    "source": "AP",
+    "video": [],
+    "type": "Recap",
+    "nowId": "1-35580214",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35580214"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401491768"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401491768",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35580214"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401491768&version=mobile"
+      }
+    },
+    "id": 35580214,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 5004,
+        "description": "UTEP Miners",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 2638,
+        "team": {
+          "id": 2638,
+          "description": "UTEP Miners",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2638"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/2638/utep-miners"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=2638"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:2638"
+      },
+      {
+        "id": 8387,
+        "description": "Middle Tennessee Lady Raiders",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 2393,
+        "team": {
+          "id": 2393,
+          "description": "Middle Tennessee Lady Raiders",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2393"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/2393/middle-tennessee-lady-raiders"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=2393"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:2393"
+      }
+    ],
+    "headline": "UTEP women end No. 21 Middle Tennessee's 16-game win streak",
+    "gameId": "401491768",
+    "images": [],
+    "linkText": "UTEP women end No. 21 Middle Tennessee's 16-game win streak",
+    "published": "2023-02-03T04:31:43Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T04:31:44Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">EL PASO, Texas -- \u2014 Elina Arike scored 20 points, Jazion Jackson <a href=\"https://twitter.com/UTEPWBB?ref--src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\">buried a 3-pointer in the final second</a> and the UTEP women beat No. 21 Middle Tennessee 65-62 on Thursday night, ending the Lady Raiders' 16-game win streak.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Miners (14-6, 7-4 Conference USA), who led most of the game, took a 51-45 lead into the fourth quarter. Jalynn Gregory scored 11 of her 20 points in the final period and Middle Tennessee (18-3, 11-1) tied the game at 62 when Kseniya Malashka made the second of two free throws with 59 seconds left in OT \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">UTEP turned the ball over on its next possession. Arike blocked a Gregory shot and Malashaka grabbed the offensive rebound, but Avery Crouse stole the ball to set up Jackson's game-winner.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Arike made 8 of 15 shots with a 3-pointer and grabbed eight rebounds for UTEP. Wilson had 13 points, while Jackson and Crouse both scored 10. Crouse added seven rebounds and six assists.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Gregory sank 6 of 12 shots with three 3-pointers and made all five of her free throws for the Lady Raiders. She added six rebounds. Courtney Whitson had 18 points on 6-of-11 shooting from beyond the arc. Malashka pitched in with 13 points, seven boards and four assists.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Arike's three-point play capped a 6-0 run to open the game for UTEP and her 3-pointer gave the Miners an 11-2 lead with 4:49 left in the quarter. Gregory answered with a 3-pointer and Whitson followed with two more to knot the score just 93 seconds later. Wilson's rebound basket in the final minute for tied the game at 16 at quarter's end.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Whitson scored nine points in the second quarter to send Middle Tennessee into halftime with a 34-32 lead. The Lady Raiders shot just 42% overall but made 8 of 17 from 3-point range (47%) in the first half. Wilson and Arike combined to score 21 before intermission.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Crouse scored eight in the third quarter and her three-point play in the final second gave UTEP a six-point lead heading into the final period.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Middle Tennessee entered the game with the third longest win streak going, behind only South Carolina (27) and LSU (21).\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://twitter.com/AP--Top25\n\n\r\n"
+  },
   "videos": [],
   "standings": {
     "fullViewLink": {
@@ -15192,8 +15459,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "18-2",
-                  "displayValue": "18-2"
+                  "summary": "18-3",
+                  "displayValue": "18-3"
                 },
                 {
                   "name": "gamesBehind",
@@ -15213,8 +15480,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "11-0",
-                  "displayValue": "11-0"
+                  "summary": "11-1",
+                  "displayValue": "11-1"
                 }
               ],
               "logo": [
@@ -15255,8 +15522,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 2.5,
-                  "displayValue": "2.5"
+                  "value": 2.0,
+                  "displayValue": "2"
                 },
                 {
                   "id": "9",
@@ -15298,8 +15565,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "13-6",
-                  "displayValue": "13-6"
+                  "summary": "14-6",
+                  "displayValue": "14-6"
                 },
                 {
                   "name": "gamesBehind",
@@ -15308,8 +15575,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.5,
-                  "displayValue": "4.5"
+                  "value": 3.5,
+                  "displayValue": "3.5"
                 },
                 {
                   "id": "9",
@@ -15319,8 +15586,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "6-4",
-                  "displayValue": "6-4"
+                  "summary": "7-4",
+                  "displayValue": "7-4"
                 }
               ],
               "logo": [
@@ -15361,8 +15628,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 4.5,
+                  "displayValue": "4.5"
                 },
                 {
                   "id": "9",
@@ -15414,8 +15681,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.5,
-                  "displayValue": "5.5"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
@@ -15467,8 +15734,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.0,
-                  "displayValue": "6"
+                  "value": 5.5,
+                  "displayValue": "5.5"
                 },
                 {
                   "id": "9",
@@ -15520,8 +15787,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.0,
-                  "displayValue": "6"
+                  "value": 5.5,
+                  "displayValue": "5.5"
                 },
                 {
                   "id": "9",
@@ -15573,8 +15840,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.5,
-                  "displayValue": "6.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -15626,8 +15893,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.5,
-                  "displayValue": "6.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -15679,8 +15946,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 8.5,
-                  "displayValue": "8.5"
+                  "value": 8.0,
+                  "displayValue": "8"
                 },
                 {
                   "id": "9",
@@ -15732,8 +15999,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 9.5,
-                  "displayValue": "9.5"
+                  "value": 9.0,
+                  "displayValue": "9"
                 },
                 {
                   "id": "9",

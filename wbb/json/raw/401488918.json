@@ -5614,7 +5614,7 @@
         "uid": "s:40~l:54~e:401488918~c:401488918",
         "date": "2023-01-29T19:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5828,7 +5828,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "2",
+          "name": "Atlantic Coast Conference",
+          "abbreviation": "acc",
+          "shortName": "ACC",
+          "midsizeName": "ACC"
+        }
       }
     ],
     "links": [
@@ -19240,31 +19247,29 @@
     "video": [
       {
         "source": "espn",
-        "id": 35552764,
-        "dataSourceIdentifier": "fcf4203c8932a",
-        "headline": "Duke's Celeste Taylor rejects Seminoles with huge block",
-        "caption": "Celeste Taylor hustles from behind and denies the Seminoles with a big block under the hoop.",
-        "description": "Celeste Taylor hustles from behind and denies the Seminoles with a big block under the hoop.",
+        "id": 35582808,
+        "dataSourceIdentifier": "49f3427cfb582",
+        "headline": "Kara Lawson: Using a men's ball 'embarrassing for our sport'",
+        "caption": "Duke coach Kara Lawson says using a men's ball in the first half vs. Florida State was \"a complete failure.\"",
+        "description": "Duke coach Kara Lawson says using a men's ball in the first half vs. Florida State was \"a complete failure.\"",
         "premium": false,
         "ad": {
           "sport": "ncw",
-          "bundle": "cbb_womens_tournament_highlights"
+          "bundle": "espn_w"
         },
         "tracking": {
           "sportName": "ncw",
           "leagueName": "No League",
-          "coverageType": "OnePlay",
-          "trackingName": "NCW_One-Play (Duke's Celeste Taylor rejects Seminoles with huge block) 2023/01/29 ESHEET",
-          "trackingId": "dm_20230129_NCW_celeste_taylor_throws_down_a_huge_block_vs_seminoles"
+          "coverageType": "PressConference",
+          "trackingName": "COM_NCW Presser (Kara Lawson: Using a men\u2019s ball \u2018embarrassing for our sport\u2019) 2023/02/03 ESHEET",
+          "trackingId": "dm_230203_Kara_Lawson"
         },
-        "cerebroId": "63d6d131ca84b70e7e8fece8",
-        "contributingPartner": "wsc",
-        "contributingSystem": "wsc",
-        "lastModified": "2023-01-29T22:48:21Z",
-        "originalPublishDate": "2023-01-29T20:03:59Z",
+        "cerebroId": "63dd4712be6ab31ff73cd120",
+        "lastModified": "2023-02-03T17:42:02Z",
+        "originalPublishDate": "2023-02-03T17:23:15Z",
         "timeRestrictions": {
-          "embargoDate": "2023-01-29T20:03:59Z",
-          "expirationDate": "2037-12-31T05:00:00Z"
+          "embargoDate": "2023-02-03T17:23:15Z",
+          "expirationDate": "2023-04-30T16:23:15Z"
         },
         "deviceRestrictions": {
           "type": "whitelist",
@@ -19277,36 +19282,14 @@
           ]
         },
         "syndicatable": true,
-        "duration": 18,
+        "duration": 26,
         "categories": [
           {
-            "id": 4728,
-            "description": "Duke Blue Devils",
-            "type": "team",
-            "sportId": 54,
-            "teamId": 150,
-            "team": {
-              "id": 150,
-              "description": "Duke Blue Devils",
-              "links": {
-                "api": {
-                  "teams": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/150"
-                  }
-                },
-                "web": {
-                  "teams": {
-                    "href": "https://www.espn.com/womens-basketball/team/_/id/150/duke-blue-devils"
-                  }
-                },
-                "mobile": {
-                  "teams": {
-                    "href": "http://m.espn.com/ncw/clubhouse?teamId=150"
-                  }
-                }
-              }
-            },
-            "uid": "s:40~l:54~t:150"
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
           },
           {
             "id": 9578,
@@ -19338,63 +19321,63 @@
             "uid": "s:40~l:54"
           },
           {
-            "id": 411197,
-            "description": "Celeste Taylor",
-            "type": "athlete",
+            "id": 145735,
+            "description": "espnw - sports",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 385
+          },
+          {
+            "id": 4728,
+            "description": "Duke Blue Devils",
+            "type": "team",
             "sportId": 54,
-            "athleteId": 4432864,
-            "athlete": {
-              "id": 4432864,
-              "description": "Celeste Taylor",
+            "teamId": 150,
+            "team": {
+              "id": 150,
+              "description": "Duke Blue Devils",
               "links": {
                 "api": {
-                  "athletes": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4432864"
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/150"
                   }
                 },
                 "web": {
-                  "athletes": {
-                    "href": "https://www.espn.com/womens-basketball/player/_/id/4432864/celeste-taylor"
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/150/duke-blue-devils"
                   }
                 },
                 "mobile": {
-                  "athletes": {
-                    "href": "http://m.espn.com/ncw/playercard?playerId=4432864"
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=150"
                   }
                 }
               }
             },
-            "uid": "s:40~l:54~a:4432864"
-          },
-          {
-            "id": 116550,
-            "description": "espnw",
-            "type": "topic",
-            "sportId": 0,
-            "topicId": 5
+            "uid": "s:40~l:54~t:150"
           }
         ],
         "keywords": [],
         "posterImages": {
           "default": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067_default.jpg",
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_default.jpg",
             "width": 576,
             "height": 324
           },
           "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.jpg"
           },
           "wide": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067_5x2.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_5x2.jpg"
           },
           "square": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067_1x1.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_1x1.jpg"
           }
         },
         "images": [
           {
             "name": "Poster Image",
-            "url": "https://media.video-cdn.espn.com/images/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067.jpg",
+            "url": "https://media.video-cdn.espn.com/images/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.jpg",
             "alt": "",
             "caption": "",
             "credit": "",
@@ -19402,66 +19385,66 @@
             "height": 324
           }
         ],
-        "thumbnail": "https://a.espncdn.com/media/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067.jpg",
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.jpg",
         "links": {
           "api": {
             "self": {
-              "href": "http://api-app.espn.com/v1/video/clips/35552764"
+              "href": "http://api-app.espn.com/v1/video/clips/35582808"
             },
             "artwork": {
-              "href": "https://artwork.api.espn.com/artwork/collections/media/2444b323-66c7-41e3-869d-e76e3d7b2221"
+              "href": "https://artwork.api.espn.com/artwork/collections/media/6f259854-9c39-4d5f-8fa1-14b850d5e9c5"
             }
           },
           "web": {
-            "href": "http://espn.com/video/clip?id=35552764",
+            "href": "http://espn.com/video/clip?id=35582808",
             "short": {
-              "href": "https://es.pn/3XND60m"
+              "href": "https://es.pn/40pvXVY"
             },
             "self": {
-              "href": "http://espn.com/video/clip?id=35552764"
+              "href": "http://espn.com/video/clip?id=35582808"
             }
           },
           "source": {
             "mezzanine": {
-              "href": "http://media.video-origin.espn.com/espnvideo/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.mp4"
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.mp4"
             },
             "flash": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.smil"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.smil"
             },
             "hds": {
-              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_rel.smil/manifest.f4m"
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_rel.smil/manifest.f4m"
             },
             "HLS": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427/playlist.m3u8",
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson/playlist.m3u8",
               "HD": {
-                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427/playlist.m3u8"
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson/playlist.m3u8"
               }
             },
             "HD": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_720p30_2896k.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_720p30_2896k.mp4"
             },
             "full": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_360p30_1464k.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_360p30_1464k.mp4"
             },
-            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_360p30_1464k.mp4"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson_360p30_1464k.mp4"
           },
           "mobile": {
             "alert": {
-              "href": "http://m.espn.com/general/video/videoAlert?vid=35552764"
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35582808"
             },
             "source": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.mp4"
             },
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764",
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6f259854-9c39-4d5f-8fa1-14b850d5e9c5/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35582808",
             "streaming": {
-              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764"
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6f259854-9c39-4d5f-8fa1-14b850d5e9c5/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35582808"
             },
             "progressiveDownload": {
-              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764"
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6f259854-9c39-4d5f-8fa1-14b850d5e9c5/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35582808"
             }
           }
         },
-        "title": "Duke's Celeste Taylor rejects Seminoles with huge block"
+        "title": "Kara Lawson: Using a men's ball 'embarrassing for our sport'"
       }
     ],
     "type": "Recap",
@@ -19585,11 +19568,11 @@
     "gameId": "401488918",
     "images": [
       {
-        "name": "Duke's Celeste Taylor rejects Seminoles with huge block",
+        "name": "Kara Lawson: Using a men's ball 'embarrassing for our sport'",
         "width": 576,
         "alt": "",
-        "caption": "Celeste Taylor hustles from behind and denies the Seminoles with a big block under the hoop.",
-        "url": "https://a.espncdn.com/media/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067.jpg",
+        "caption": "Duke coach Kara Lawson says using a men's ball in the first half vs. Florida State was \"a complete failure.\"",
+        "url": "https://a.espncdn.com/media/motion/2023/0203/dm_230203_Kara_Lawson/dm_230203_Kara_Lawson.jpg",
         "height": 324
       }
     ],
@@ -19999,6 +19982,99 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/efe7f15f-8a2a-4df0-8980-eff24401c6bf/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552731"
+          }
+        }
+      }
+    },
+    {
+      "source": "espn",
+      "id": 35552764,
+      "headline": "Duke's Celeste Taylor rejects Seminoles with huge block",
+      "description": "Celeste Taylor hustles from behind and denies the Seminoles with a big block under the hoop.",
+      "ad": {
+        "sport": "ncw",
+        "bundle": "cbb_womens_tournament_highlights"
+      },
+      "tracking": {
+        "sportName": "ncw",
+        "leagueName": "No League",
+        "coverageType": "OnePlay",
+        "trackingName": "NCW_One-Play (Duke's Celeste Taylor rejects Seminoles with huge block) 2023/01/29 ESHEET",
+        "trackingId": "dm_20230129_NCW_celeste_taylor_throws_down_a_huge_block_vs_seminoles"
+      },
+      "cerebroId": "63d6d131ca84b70e7e8fece8",
+      "lastModified": "2023-01-29T22:48:21Z",
+      "originalPublishDate": "2023-01-29T20:03:59Z",
+      "timeRestrictions": {
+        "embargoDate": "2023-01-29T20:03:59Z",
+        "expirationDate": "2037-12-31T05:00:00Z"
+      },
+      "deviceRestrictions": {
+        "type": "whitelist",
+        "devices": [
+          "desktop",
+          "settop",
+          "handset",
+          "tablet"
+        ]
+      },
+      "duration": 18,
+      "thumbnail": "https://a.espncdn.com/media/motion/2023/0129/ss_20230129_150403112_21734271067/ss_20230129_150403112_21734271067.jpg",
+      "links": {
+        "api": {
+          "self": {
+            "href": "http://api.espn.com/v1/video/clips/35552764"
+          },
+          "artwork": {
+            "href": "https://artwork.api.espn.com/artwork/collections/media/2444b323-66c7-41e3-869d-e76e3d7b2221"
+          }
+        },
+        "web": {
+          "href": "https://www.espn.com/video/clip?id=35552764&ex_cid=espnapi_internal",
+          "short": {
+            "href": "https://www.espn.com/video/clip?id=35552764"
+          },
+          "self": {
+            "href": "https://www.espn.com/video/clip?id=35552764&ex_cid=espnapi_internal"
+          }
+        },
+        "source": {
+          "mezzanine": {
+            "href": "https://media.video-origin.espn.com/espnvideo/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.mp4"
+          },
+          "flash": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.smil"
+          },
+          "hds": {
+            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_rel.smil/manifest.f4m"
+          },
+          "HLS": {
+            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427/playlist.m3u8",
+            "HD": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427/playlist.m3u8"
+            }
+          },
+          "HD": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_720p30_2896k.mp4"
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_360p30_1464k.mp4"
+          },
+          "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427_360p30_1464k.mp4"
+        },
+        "mobile": {
+          "alert": {
+            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35552764&ex_cid=espnapi_internal"
+          },
+          "source": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0129/ss_20230129_150403112_2173427/ss_20230129_150403112_2173427.mp4"
+          },
+          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764",
+          "streaming": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764"
+          },
+          "progressiveDownload": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2444b323-66c7-41e3-869d-e76e3d7b2221/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35552764"
           }
         }
       }

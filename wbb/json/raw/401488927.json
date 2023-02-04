@@ -5154,7 +5154,7 @@
         "uid": "s:40~l:54~e:401488927~c:401488927",
         "date": "2023-02-03T00:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5367,7 +5367,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "2",
+          "name": "Atlantic Coast Conference",
+          "abbreviation": "acc",
+          "shortName": "ACC",
+          "midsizeName": "ACC"
+        }
       }
     ],
     "links": [
@@ -5380,6 +5387,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401488927",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401488927",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -16405,7 +16424,404 @@
       "shootingPlay": false
     }
   ],
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "bbb35a42187ce",
+    "keywords": [],
+    "description": "\u2014 Elizabeth Kitley had 20 points, 11 rebounds and three blocks, Cayla King scored 19 points with five 3-pointers and No. 13 Virginia Tech beat Syracuse 78-64 on Thursday night.",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35579137,
+        "dataSourceIdentifier": "98cc2ea1cca15",
+        "headline": "Taylor Soule somehow gets the and-1 to fall",
+        "caption": "Taylor Soule somehow gets the and-1 to fall",
+        "description": "Taylor Soule somehow gets the and-1 to fall",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Taylor Soule somehow gets the and-1 to fall) 2023/02/03 ESHEET",
+          "trackingId": "dm_20230203_NCW_taylor_soule_somehow_gets_the_and1_to_fall"
+        },
+        "cerebroId": "63dc6698ca84b70e7e9e159f",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-03T01:58:14Z",
+        "originalPublishDate": "2023-02-03T01:42:46Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-03T01:42:46Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 23,
+        "categories": [
+          {
+            "id": 4754,
+            "description": "Virginia Tech Hokies",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 259,
+            "team": {
+              "id": 259,
+              "description": "Virginia Tech Hokies",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/259"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/259/virginia-tech-hokies"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=259"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:259"
+          },
+          {
+            "id": 276167,
+            "description": "Taylor Soule",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4398567,
+            "athlete": {
+              "id": 4398567,
+              "description": "Taylor Soule",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4398567"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4398567/taylor-soule"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4398567"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4398567"
+          },
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35579137"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/02d896a2-12d1-463a-b30f-54641322838b"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35579137",
+            "short": {
+              "href": "https://es.pn/3DChL1W"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35579137"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35579137"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137"
+            }
+          }
+        },
+        "title": "Taylor Soule somehow gets the and-1 to fall"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35579388",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35579388"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401488927"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401488927",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35579388"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401488927&version=mobile"
+      }
+    },
+    "id": 35579388,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4754,
+        "description": "Virginia Tech Hokies",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 259,
+        "team": {
+          "id": 259,
+          "description": "Virginia Tech Hokies",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/259"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/259/virginia-tech-hokies"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=259"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:259"
+      },
+      {
+        "id": 16041,
+        "description": "Syracuse Orange",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 183,
+        "team": {
+          "id": 183,
+          "description": "Syracuse Orange",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/183"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/183/syracuse-orange"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=183"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:183"
+      }
+    ],
+    "headline": "Kitley leads No. 13 Virginia Tech women past Syracuse 78-64",
+    "gameId": "401488927",
+    "images": [
+      {
+        "name": "Taylor Soule somehow gets the and-1 to fall",
+        "width": 576,
+        "alt": "",
+        "caption": "Taylor Soule somehow gets the and-1 to fall",
+        "url": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Kitley leads No. 13 Virginia Tech women past Syracuse 78-64",
+    "published": "2023-02-03T02:21:43Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T02:21:44Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">BLACKSBURG, Va. -- \u2014 Elizabeth Kitley had 20 points, 11 rebounds and three blocks, Cayla King scored 19 points with five 3-pointers and No. 13 Virginia Tech beat Syracuse 78-64 on Thursday night.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Kitley missed her first four shots and went scoreless in the first quarter before making all four shots in the second quarter to finish with eight points at the break. She made 4 of 5 shots in the third for nine points and recorded her 13th double-double of the season. King reached 200 career 3-pointers as she hit double figures for the first time since Jan. 1. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Virginia Tech opened the fourth quarter by scoring 14 unanswered points to pull away.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Georgia Amoore added 15 points and Taylor Soule scored 12 for Virginia Tech (18-4, 8-4 ACC). Kayana Traylor, coming off a 25-point performance in a win over Virginia on Sunday, was 0 for 5 from the field and finished with three points.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Dyaisha Fair, averaging 19.8 points per game, had 20 points, six rebound and five assists and Georgia Woolley scored 18 points for Syracuse (14-9, 5-7). Alaina Rice scored 13 points.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Virginia Tech plays at No. 15 North Carolina State on Monday in the Play4Kay game.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://twitter.com/AP--Top25\n\n\r\n"
+  },
   "videos": [
     {
       "source": "espn",
@@ -16775,99 +17191,6 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7280430e-3cf5-4be2-b7fe-86fcbb9e731b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579075"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 35579137,
-      "headline": "Taylor Soule somehow gets the and-1 to fall",
-      "description": "Taylor Soule somehow gets the and-1 to fall",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
-      "tracking": {
-        "sportName": "ncw",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "NCW_One-Play (Taylor Soule somehow gets the and-1 to fall) 2023/02/03 ESHEET",
-        "trackingId": "dm_20230203_NCW_taylor_soule_somehow_gets_the_and1_to_fall"
-      },
-      "cerebroId": "63dc6698ca84b70e7e9e159f",
-      "lastModified": "2023-02-03T01:58:14Z",
-      "originalPublishDate": "2023-02-03T01:42:46Z",
-      "timeRestrictions": {
-        "embargoDate": "2023-02-03T01:42:46Z",
-        "expirationDate": "2037-12-31T05:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "duration": 23,
-      "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/35579137"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/02d896a2-12d1-463a-b30f-54641322838b"
-          }
-        },
-        "web": {
-          "href": "https://www.espn.com/video/clip?id=35579137&ex_cid=espnapi_internal",
-          "short": {
-            "href": "https://www.espn.com/video/clip?id=35579137"
-          },
-          "self": {
-            "href": "https://www.espn.com/video/clip?id=35579137&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936/playlist.m3u8",
-            "HD": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936/playlist.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35579137&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_204250000_2176936/ss_20230202_204250000_2176936.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/02d896a2-12d1-463a-b30f-54641322838b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579137"
           }
         }
       }

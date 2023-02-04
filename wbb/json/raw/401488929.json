@@ -4861,7 +4861,7 @@
         "uid": "s:40~l:54~e:401488929~c:401488929",
         "date": "2023-02-03T01:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5074,7 +5074,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "2",
+          "name": "Atlantic Coast Conference",
+          "abbreviation": "acc",
+          "shortName": "ACC",
+          "midsizeName": "ACC"
+        }
       }
     ],
     "links": [
@@ -5087,6 +5094,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401488929",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401488929",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -14803,9 +14822,428 @@
       "scoreValue": 0,
       "wallclock": "2023-02-03T02:48:58Z",
       "shootingPlay": false
+    },
+    {
+      "id": "401488929104999902",
+      "sequenceNumber": "104999902",
+      "type": {
+        "id": "402",
+        "text": "End Game"
+      },
+      "text": "End of Game",
+      "awayScore": 62,
+      "homeScore": 68,
+      "period": {
+        "number": 4,
+        "displayValue": "4th Quarter"
+      },
+      "clock": {
+        "displayValue": "0:00"
+      },
+      "scoringPlay": false,
+      "scoreValue": 0,
+      "wallclock": "2023-02-03T02:48:58Z",
+      "shootingPlay": false
     }
   ],
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "94a83fb6d2ec7",
+    "keywords": [],
+    "description": "\u2014 <a href=\"https://twitter.com/GTWBB/status/1621329429430681600?cxt=HHwWgIDSkdShj4AtAAAA\">Tonie Morgan tied her career-high with 17 points</a> and contributed two of the six free throws Georgia Tech made in the last 30 seconds to secure a 68-62 win...",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35579377,
+        "dataSourceIdentifier": "3f757ec9ca526",
+        "headline": "Cameron Swartz is automatic from 3-point land",
+        "caption": "Cameron Swartz is automatic from 3-point land",
+        "description": "Cameron Swartz is automatic from 3-point land",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Cameron Swartz is automatic from 3-point land) 2023/02/03 ESHEET",
+          "trackingId": "dm_20230203_NCW_cameron_swartz_is_automatic_from_3point_land"
+        },
+        "cerebroId": "63dc6eb4ca84b70e7e9e2426",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-03T03:06:53Z",
+        "originalPublishDate": "2023-02-03T02:17:22Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-03T02:17:22Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 17,
+        "categories": [
+          {
+            "id": 276529,
+            "description": "Cameron Swartz",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4398758,
+            "athlete": {
+              "id": 4398758,
+              "description": "Cameron Swartz",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4398758"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4398758/cameron-swartz"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4398758"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4398758"
+          },
+          {
+            "id": 4726,
+            "description": "Georgia Tech Yellow Jackets",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 59,
+            "team": {
+              "id": 59,
+              "description": "Georgia Tech Yellow Jackets",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/59"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/59/georgia-tech-yellow-jackets"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=59"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:59"
+          },
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35579377"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/7dc793db-7a30-4bf2-9aa2-2d8248b00ada"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35579377",
+            "short": {
+              "href": "https://es.pn/3XY8XM0"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35579377"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35579377"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377"
+            }
+          }
+        },
+        "title": "Cameron Swartz is automatic from 3-point land"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35579867",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35579867"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401488929"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401488929",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35579867"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401488929&version=mobile"
+      }
+    },
+    "id": 35579867,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4726,
+        "description": "Georgia Tech Yellow Jackets",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 59,
+        "team": {
+          "id": 59,
+          "description": "Georgia Tech Yellow Jackets",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/59"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/59/georgia-tech-yellow-jackets"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=59"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:59"
+      },
+      {
+        "id": 4729,
+        "description": "NC State Wolfpack",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 152,
+        "team": {
+          "id": 152,
+          "description": "NC State Wolfpack",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/152"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/152/nc-state-wolfpack"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=152"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:152"
+      }
+    ],
+    "headline": "Morgan, Georgia Tech women upset No. 15 NC State 68-62",
+    "gameId": "401488929",
+    "images": [
+      {
+        "name": "Cameron Swartz is automatic from 3-point land",
+        "width": 576,
+        "alt": "",
+        "caption": "Cameron Swartz is automatic from 3-point land",
+        "url": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Morgan, Georgia Tech women upset No. 15 NC State 68-62",
+    "published": "2023-02-03T03:29:43Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T03:29:44Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">ATLANTA -- \u2014 <a href=\"https://twitter.com/GTWBB/status/1621329429430681600?cxt=HHwWgIDSkdShj4AtAAAA\">Tonie Morgan tied her career-high with 17 points</a> and contributed two of the six free throws Georgia Tech made in the last 30 seconds to secure a 68-62 win over No. 15 North Carolina State on Thursday night.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\"><a href=\"https://twitter.com/GTWBB/status/1621334909200760837?cxt=HHwWioDQzc--gkYAtAAAA\">The Yellow Jackets took a 56-53 lead on Kayla Blackshear's three-point play</a> with 5:03 to go and then Nerea Hermosa scored the next three Tech baskets on Morgan assists.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Wolfpack missed a tying 3-pointer with a minute to play and Hermosa turned an offensive rebound into two free throws for a 65-60 lead with 29.3 seconds to play. N.C. State had turnovers on its next two possessions, which led to three more free throws. Morgan made it 68-60 with 15.6 remaining.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Hermosa had 14 points and seven rebounds off the bench for the Yellow Jackets (12-10, 3-8 Atlantic Coast Conference). Cameron Swartz added 12 points and Morgan also had 10 assists.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Diamond Johnson scored 17 points for the Wolfpack (16-6, 6-5), who were coming off a win over No. 7 Notre Dame. Camille Hobby added 12 points and Jakia Brown-Turner 10. Madison Hayes had 10 rebounds.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Morgan scored five points in Georgia Tech's 15-2 run to close the first period that produced a 23-18 lead. The Yellow Jackets finished 11 of 19, hitting their last seven shots. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Hayes scored five points, with a 3-pointer capping the Wolfpack's 15-0 run to open the second quarter. Tech got 3-pointers from Swartz and Avyonce Carter to help level the game at 33 by halftime.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Both teams started the third quarter struggling to score but Tech had the last six points and took a 50-49 lead <a href=\"https://twitter.com/GTWBB/status/1621331772868014080?cxt=HHwWgMDRjYiqkIAtAAAA\">on a Swartz 3-pointer with two seconds left.</a>\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">N.C. State is home against No. 13 Virginia Tech on Monday night in the Play4Kay game. Georgia Tech is at Miami on Sunday.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">----\n\n\r\n"
+  },
   "videos": [
     {
       "source": "espn",
@@ -15082,99 +15520,6 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/79543dcc-a52f-4c63-a552-62fb9524a385/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579318"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 35579377,
-      "headline": "Cameron Swartz is automatic from 3-point land",
-      "description": "Cameron Swartz is automatic from 3-point land",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
-      "tracking": {
-        "sportName": "ncw",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "NCW_One-Play (Cameron Swartz is automatic from 3-point land) 2023/02/03 ESHEET",
-        "trackingId": "dm_20230203_NCW_cameron_swartz_is_automatic_from_3point_land"
-      },
-      "cerebroId": "63dc6eb4ca84b70e7e9e2426",
-      "lastModified": "2023-02-03T03:06:53Z",
-      "originalPublishDate": "2023-02-03T02:17:22Z",
-      "timeRestrictions": {
-        "embargoDate": "2023-02-03T02:17:22Z",
-        "expirationDate": "2037-12-31T05:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "duration": 17,
-      "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/35579377"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/7dc793db-7a30-4bf2-9aa2-2d8248b00ada"
-          }
-        },
-        "web": {
-          "href": "https://www.espn.com/video/clip?id=35579377&ex_cid=espnapi_internal",
-          "short": {
-            "href": "https://www.espn.com/video/clip?id=35579377"
-          },
-          "self": {
-            "href": "https://www.espn.com/video/clip?id=35579377&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008/playlist.m3u8",
-            "HD": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008/playlist.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35579377&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_211725792_2177008/ss_20230202_211725792_2177008.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/7dc793db-7a30-4bf2-9aa2-2d8248b00ada/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35579377"
           }
         }
       }

@@ -21694,7 +21694,7 @@
         "uid": "s:40~l:54~e:401488923~c:401488923",
         "date": "2023-02-02T23:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -21908,6 +21908,13 @@
             "region": "us"
           }
         ],
+        "groups": {
+          "id": "2",
+          "name": "Atlantic Coast Conference",
+          "abbreviation": "acc",
+          "shortName": "ACC",
+          "midsizeName": "ACC"
+        },
         "home": {
           "id": "150",
           "uid": "s:40~l:54~t:150",
@@ -22012,6 +22019,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401488923",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401488923",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -22300,99 +22319,6 @@
           },
           "progressiveDownload": {
             "href": "https://watch.auth.api.espn.com/video/auth/brightcove/528d14e0-6746-4a23-a754-5c46469c8b3b/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578343"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 35578363,
-      "headline": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
-      "description": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
-      "ad": {
-        "sport": "ncw",
-        "bundle": "espn_w"
-      },
-      "tracking": {
-        "sportName": "ncw",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "NCW_One-Play (Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers) 2023/02/02 ESHEET",
-        "trackingId": "dm_20230202_NCW_celeste_taylor_gets_the_layup_to_fall_vs_pittsburgh_panthers"
-      },
-      "cerebroId": "63dc4557ca84b70e7e9dfbda",
-      "lastModified": "2023-02-03T00:48:31Z",
-      "originalPublishDate": "2023-02-02T23:20:53Z",
-      "timeRestrictions": {
-        "embargoDate": "2023-02-02T23:20:53Z",
-        "expirationDate": "2037-12-31T05:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "duration": 22,
-      "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/35578363"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa"
-          }
-        },
-        "web": {
-          "href": "https://www.espn.com/video/clip?id=35578363&ex_cid=espnapi_internal",
-          "short": {
-            "href": "https://www.espn.com/video/clip?id=35578363"
-          },
-          "self": {
-            "href": "https://www.espn.com/video/clip?id=35578363&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687/playlist.m3u8",
-            "HD": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687/playlist.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35578363&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363"
           }
         }
       }
@@ -23954,7 +23880,433 @@
       }
     ]
   },
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "f71e2223757cd",
+    "keywords": [],
+    "description": "\u2014 Shayeann Day-Wilson and Celeste Taylor each scored 13 points and No. 16 Duke beat Pittsburgh 53-44 on Thursday night.",
+    "source": "AP",
+    "video": [
+      {
+        "source": "espn",
+        "id": 35578363,
+        "dataSourceIdentifier": "097a500121e38",
+        "headline": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
+        "caption": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
+        "description": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
+        "premium": false,
+        "ad": {
+          "sport": "ncw",
+          "bundle": "espn_w"
+        },
+        "tracking": {
+          "sportName": "ncw",
+          "leagueName": "No League",
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers) 2023/02/02 ESHEET",
+          "trackingId": "dm_20230202_NCW_celeste_taylor_gets_the_layup_to_fall_vs_pittsburgh_panthers"
+        },
+        "cerebroId": "63dc4557ca84b70e7e9dfbda",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-02-03T00:48:31Z",
+        "originalPublishDate": "2023-02-02T23:20:53Z",
+        "timeRestrictions": {
+          "embargoDate": "2023-02-02T23:20:53Z",
+          "expirationDate": "2037-12-31T05:00:00Z"
+        },
+        "deviceRestrictions": {
+          "type": "whitelist",
+          "devices": [
+            "desktop",
+            "ipad",
+            "settop",
+            "handset",
+            "tablet"
+          ]
+        },
+        "syndicatable": true,
+        "duration": 22,
+        "categories": [
+          {
+            "id": 4752,
+            "description": "Pittsburgh Panthers",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 221,
+            "team": {
+              "id": 221,
+              "description": "Pittsburgh Panthers",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/221"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/221/pittsburgh-panthers"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=221"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:221"
+          },
+          {
+            "id": 4728,
+            "description": "Duke Blue Devils",
+            "type": "team",
+            "sportId": 54,
+            "teamId": 150,
+            "team": {
+              "id": 150,
+              "description": "Duke Blue Devils",
+              "links": {
+                "api": {
+                  "teams": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/150"
+                  }
+                },
+                "web": {
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/150/duke-blue-devils"
+                  }
+                },
+                "mobile": {
+                  "teams": {
+                    "href": "http://m.espn.com/ncw/clubhouse?teamId=150"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~t:150"
+          },
+          {
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
+            "sportId": 54,
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
+              "links": {
+                "api": {
+                  "leagues": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  }
+                },
+                "web": {
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/"
+                  }
+                },
+                "mobile": {
+                  "leagues": {
+                    "href": "http://m.espn.com/ncw/"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54"
+          },
+          {
+            "id": 411197,
+            "description": "Celeste Taylor",
+            "type": "athlete",
+            "sportId": 54,
+            "athleteId": 4432864,
+            "athlete": {
+              "id": 4432864,
+              "description": "Celeste Taylor",
+              "links": {
+                "api": {
+                  "athletes": {
+                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4432864"
+                  }
+                },
+                "web": {
+                  "athletes": {
+                    "href": "https://www.espn.com/womens-basketball/player/_/id/4432864/celeste-taylor"
+                  }
+                },
+                "mobile": {
+                  "athletes": {
+                    "href": "http://m.espn.com/ncw/playercard?playerId=4432864"
+                  }
+                }
+              }
+            },
+            "uid": "s:40~l:54~a:4432864"
+          },
+          {
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
+          }
+        ],
+        "keywords": [],
+        "posterImages": {
+          "default": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_default.jpg",
+            "width": 576,
+            "height": 324
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.jpg"
+          },
+          "wide": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_5x2.jpg"
+          },
+          "square": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_1x1.jpg"
+          }
+        },
+        "images": [
+          {
+            "name": "Poster Image",
+            "url": "https://media.video-cdn.espn.com/images/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.jpg",
+            "alt": "",
+            "caption": "",
+            "credit": "",
+            "width": 576,
+            "height": 324
+          }
+        ],
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.jpg",
+        "links": {
+          "api": {
+            "self": {
+              "href": "http://api-app.espn.com/v1/video/clips/35578363"
+            },
+            "artwork": {
+              "href": "https://artwork.api.espn.com/artwork/collections/media/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa"
+            }
+          },
+          "web": {
+            "href": "http://espn.com/video/clip?id=35578363",
+            "short": {
+              "href": "https://es.pn/3Y5VGB9"
+            },
+            "self": {
+              "href": "http://espn.com/video/clip?id=35578363"
+            }
+          },
+          "source": {
+            "mezzanine": {
+              "href": "http://media.video-origin.espn.com/espnvideo/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.mp4"
+            },
+            "flash": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.smil"
+            },
+            "hds": {
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_rel.smil/manifest.f4m"
+            },
+            "HLS": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687/playlist.m3u8",
+              "HD": {
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687/playlist.m3u8"
+              }
+            },
+            "HD": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_720p30_2896k.mp4"
+            },
+            "full": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_360p30_1464k.mp4"
+            },
+            "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687_360p30_1464k.mp4"
+          },
+          "mobile": {
+            "alert": {
+              "href": "http://m.espn.com/general/video/videoAlert?vid=35578363"
+            },
+            "source": {
+              "href": "https://media.video-cdn.espn.com/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.mp4"
+            },
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363",
+            "streaming": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363"
+            },
+            "progressiveDownload": {
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/74e6c3d7-2b43-4bbd-9bc8-d0d1b27bbdaa/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35578363"
+            }
+          }
+        },
+        "title": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers"
+      }
+    ],
+    "type": "Recap",
+    "nowId": "1-35578963",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35578963"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401488923"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401488923",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35578963"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401488923&version=mobile"
+      }
+    },
+    "id": 35578963,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4728,
+        "description": "Duke Blue Devils",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 150,
+        "team": {
+          "id": 150,
+          "description": "Duke Blue Devils",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/150"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/150/duke-blue-devils"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=150"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:150"
+      },
+      {
+        "id": 4752,
+        "description": "Pittsburgh Panthers",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 221,
+        "team": {
+          "id": 221,
+          "description": "Pittsburgh Panthers",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/221"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/221/pittsburgh-panthers"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=221"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:221"
+      }
+    ],
+    "headline": "Day-Wilson, Taylor each score 13, No. 16 Duke women top Pitt",
+    "gameId": "401488923",
+    "images": [
+      {
+        "name": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
+        "width": 576,
+        "alt": "",
+        "caption": "Celeste Taylor gets the layup to fall vs. Pittsburgh Panthers",
+        "url": "https://a.espncdn.com/media/motion/2023/0202/ss_20230202_182057044_2176687/ss_20230202_182057044_2176687.jpg",
+        "height": 324
+      }
+    ],
+    "linkText": "Day-Wilson, Taylor each score 13, No. 16 Duke women top Pitt",
+    "published": "2023-02-03T01:12:50Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T01:59:46Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">DURHAM, N.C. -- \u2014 Shayeann Day-Wilson and Celeste Taylor each scored 13 points and No. 16 Duke beat Pittsburgh 53-44 on Thursday night.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Taylor scored nine of her points in the fourth quarter to help Duke pull away. Pittsburgh was within 35-32 with 1:47 left in the third quarter. But the Panthers missed their next 11 field goals attempts before a make with 3:26 remaining in the game. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\"><a href=\"https://twitter.com/DukeWBB/status/1621308486968819712\">Vanessa de Jesus finished an alley-oop layup, off an assist by Taylor,</a> to give Duke a 49-40 lead with 2:10 left.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Both teams shot below 39% from the field but Duke held a 45-28 advantage on the glass.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Elizabeth Balogun added nine points and Kennedy Brown grabbed nine rebounds for Duke (19-3, 9-2 ACC), which plays at No. 9 Notre Dame on Sunday.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Emy Hayford, averaging 1.8 points per game, scored 12 points for Pittsburgh (7-15, 0-11). Amber Brown and Liatu King, Pittsburgh's two players averaging double figures, were held to a combined nine points.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://twitter.com/AP--Top25\n\n\r\n"
+  },
   "leaders": [
     {
       "team": {
@@ -24546,7 +24898,7 @@
     "uid": "s:40~l:54~e:401488923~c:401488923",
     "date": "2023-02-02T23:00Z",
     "neutralSite": false,
-    "conferenceCompetition": false,
+    "conferenceCompetition": true,
     "boxscoreAvailable": true,
     "commentaryAvailable": false,
     "liveAvailable": false,
@@ -24760,6 +25112,13 @@
         "region": "us"
       }
     ],
+    "groups": {
+      "id": "2",
+      "name": "Atlantic Coast Conference",
+      "abbreviation": "acc",
+      "shortName": "ACC",
+      "midsizeName": "ACC"
+    },
     "home": {
       "id": "150",
       "uid": "s:40~l:54~t:150",

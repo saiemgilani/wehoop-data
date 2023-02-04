@@ -4967,7 +4967,7 @@
         "uid": "s:40~l:54~e:401474749~c:401474749",
         "date": "2023-02-03T02:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5164,7 +5164,14 @@
             "shortDetail": "Final"
           }
         },
-        "broadcasts": []
+        "broadcasts": [],
+        "groups": {
+          "id": "29",
+          "name": "West Coast Conference",
+          "abbreviation": "wcc",
+          "shortName": "WCC",
+          "midsizeName": "West Coast"
+        }
       }
     ],
     "links": [
@@ -5177,6 +5184,18 @@
         "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401474749",
         "text": "Gamecast",
         "shortText": "Summary",
+        "isExternal": false,
+        "isPremium": false
+      },
+      {
+        "rel": [
+          "recap",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/recap?gameId=401474749",
+        "text": "Recap",
+        "shortText": "Recap",
         "isExternal": false,
         "isPremium": false
       },
@@ -15149,9 +15168,193 @@
       "scoreValue": 0,
       "wallclock": "2023-02-03T03:58:33Z",
       "shootingPlay": false
+    },
+    {
+      "id": "401474749104999902",
+      "sequenceNumber": "104999902",
+      "type": {
+        "id": "402",
+        "text": "End Game"
+      },
+      "text": "End of Game",
+      "awayScore": 72,
+      "homeScore": 77,
+      "period": {
+        "number": 4,
+        "displayValue": "4th Quarter"
+      },
+      "clock": {
+        "displayValue": "0:00"
+      },
+      "scoringPlay": false,
+      "scoreValue": 0,
+      "wallclock": "2023-02-03T03:58:33Z",
+      "shootingPlay": false
     }
   ],
-  "article": [],
+  "article": {
+    "dataSourceIdentifier": "25ef0a758627c",
+    "keywords": [],
+    "description": "\u2014 Tess Heal scored 16 points, capped by two free throws with 1.8 seconds to play, and Santa Clara ended No. 17 Gonzaga's 14-game winning streak with a 77-72 victory on Thursday night.",
+    "source": "AP",
+    "video": [],
+    "type": "Recap",
+    "nowId": "1-35580221",
+    "premium": false,
+    "related": [],
+    "allowSearch": true,
+    "links": {
+      "api": {
+        "news": {
+          "href": "http://now.core.api.espn.com/v1/sports/news/35580221"
+        },
+        "events": {
+          "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/events/401474749"
+        }
+      },
+      "web": {
+        "href": "http://www.espn.com/ncw/recap?gameId=401474749",
+        "short": {}
+      },
+      "app": {
+        "sportscenter": {
+          "href": "sportscenter://x-callback-url/showStory?uid=35580221"
+        }
+      },
+      "mobile": {
+        "href": "http://scores.espn.com/ncw/gamecast?gameId=401474749&version=mobile"
+      }
+    },
+    "id": 35580221,
+    "categories": [
+      {
+        "id": 9578,
+        "description": "Women's College Basketball",
+        "type": "league",
+        "sportId": 54,
+        "leagueId": 54,
+        "league": {
+          "id": 54,
+          "description": "Women's College Basketball",
+          "links": {
+            "api": {
+              "leagues": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+              }
+            },
+            "web": {
+              "leagues": {
+                "href": "https://www.espn.com/womens-basketball/"
+              }
+            },
+            "mobile": {
+              "leagues": {
+                "href": "http://m.espn.com/ncw/"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54"
+      },
+      {
+        "id": 4993,
+        "description": "Santa Clara Broncos",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 2541,
+        "team": {
+          "id": 2541,
+          "description": "Santa Clara Broncos",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2541"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/2541/santa-clara-broncos"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=2541"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:2541"
+      },
+      {
+        "id": 4988,
+        "description": "Gonzaga Bulldogs",
+        "type": "team",
+        "sportId": 54,
+        "teamId": 2250,
+        "team": {
+          "id": 2250,
+          "description": "Gonzaga Bulldogs",
+          "links": {
+            "api": {
+              "teams": {
+                "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2250"
+              }
+            },
+            "web": {
+              "teams": {
+                "href": "https://www.espn.com/womens-basketball/team/_/id/2250/gonzaga-bulldogs"
+              }
+            },
+            "mobile": {
+              "teams": {
+                "href": "http://m.espn.com/ncw/clubhouse?teamId=2250"
+              }
+            }
+          }
+        },
+        "uid": "s:40~l:54~t:2250"
+      }
+    ],
+    "headline": "Heal, Santa Clara women stop No. 17 Gonzaga's streak 77-72",
+    "gameId": "401474749",
+    "images": [],
+    "linkText": "Heal, Santa Clara women stop No. 17 Gonzaga's streak 77-72",
+    "published": "2023-02-03T04:33:44Z",
+    "allowComments": true,
+    "lastModified": "2023-02-03T04:33:45Z",
+    "metrics": [
+      {
+        "count": 0,
+        "type": "views"
+      },
+      {
+        "count": 0,
+        "type": "fShares"
+      },
+      {
+        "count": 0,
+        "type": "tweets"
+      },
+      {
+        "count": 0,
+        "type": "comments"
+      },
+      {
+        "count": 0,
+        "type": "emails"
+      },
+      {
+        "count": 0,
+        "type": "votes"
+      },
+      {
+        "count": 0,
+        "type": "popularity"
+      }
+    ],
+    "inlines": [],
+    "story": "\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">SANTA CLARA, Calif. -- \u2014 Tess Heal scored 16 points, capped by two free throws with 1.8 seconds to play, and Santa Clara ended No. 17 Gonzaga's 14-game winning streak with a 77-72 victory on Thursday night.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">The Broncos, who lost the first match-up this season 78-61 for its 14th straight loss in the series, trailed by 12 points in the first quarter but <a href=\"https://twitter.com/Santaclarawbb/status/1621350538435768322?cxt=HHwWhMDRva7umIAtAAAA\">had a 64-50 lead on Heal's 3-pointer with 7:20 to play</a>. After Olivia Pollerd's 3-pointer had Santa Clara up 69-61 with 3:43 to go, the Broncos only got off one more shot and had three turnovers. \n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Kaylynne Truong's 3-pointer at 1:38 capped a 13-3 run that pulled Gonzaga within 69-66, but the Broncos made 8 of 10 free throws in the last 35 seconds.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Pollerd also had 16 points for the Broncos (14-10, 5-6 West Coast Conference), while Ashley Hiraki added 13 and Marya Hudgins 12.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Santa Clara, which came in shooting 32.6% from 3-point range, made 10 of 20 from behind the arc. The Broncos shot 53% overall and made 15 of 18 free throws. Gonzaga's defense came into the game holding opponents to 39.2% shooting.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Yvonne Ejim scored 26 points for Gonzaga (21-3, 11-1), which dropped into a first-place tie with Portland (a three-point winner in overtime at San Francisco). Truong scored 16 points and Brynna Maxwell 12 with both hitting four 3-pointers.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">Gonzaga, which travels to play San Francisco on Saturday, was 9 of 16 from distance but shot just 47% overall.\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">------\n\n\r\n              <p xmlns=\"http://iptc.org/std/NITF/2006-10-18/\">AP women\u2019s college basketball: https://apnews.com/hub/womens-college-basketball and https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://twitter.com/AP--Top25\n\n\r\n"
+  },
   "videos": [],
   "standings": {
     "fullViewLink": {
@@ -15176,8 +15379,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "21-2",
-                  "displayValue": "21-2"
+                  "summary": "21-3",
+                  "displayValue": "21-3"
                 },
                 {
                   "name": "gamesBehind",
@@ -15197,8 +15400,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "11-0",
-                  "displayValue": "11-0"
+                  "summary": "11-1",
+                  "displayValue": "11-1"
                 }
               ],
               "logo": [
@@ -15229,8 +15432,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "16-6",
-                  "displayValue": "16-6"
+                  "summary": "17-6",
+                  "displayValue": "17-6"
                 },
                 {
                   "name": "gamesBehind",
@@ -15239,8 +15442,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 1.0,
-                  "displayValue": "1"
+                  "value": 0.0,
+                  "displayValue": "-"
                 },
                 {
                   "id": "9",
@@ -15250,8 +15453,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "10-1",
-                  "displayValue": "10-1"
+                  "summary": "11-1",
+                  "displayValue": "11-1"
                 }
               ],
               "logo": [
@@ -15292,8 +15495,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.0,
-                  "displayValue": "4"
+                  "value": 3.5,
+                  "displayValue": "3.5"
                 },
                 {
                   "id": "9",
@@ -15345,8 +15548,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 4.5,
+                  "displayValue": "4.5"
                 },
                 {
                   "id": "9",
@@ -15388,8 +15591,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "15-7",
-                  "displayValue": "15-7"
+                  "summary": "15-8",
+                  "displayValue": "15-8"
                 },
                 {
                   "name": "gamesBehind",
@@ -15409,8 +15612,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-5",
-                  "displayValue": "5-5"
+                  "summary": "5-6",
+                  "displayValue": "5-6"
                 }
               ],
               "logo": [
@@ -15424,6 +15627,59 @@
                     "default"
                   ],
                   "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Santa Clara",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2541/santa-clara-broncos",
+              "id": "2541",
+              "uid": "s:40~l:54~t:2541",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "14-10",
+                  "displayValue": "14-10"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 5.5,
+                  "displayValue": "5.5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "5-6",
+                  "displayValue": "5-6"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2023-01-23T20:42Z"
                 }
               ]
             },
@@ -15451,8 +15707,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.5,
-                  "displayValue": "6.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -15481,59 +15737,6 @@
               ]
             },
             {
-              "team": "Santa Clara",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2541/santa-clara-broncos",
-              "id": "2541",
-              "uid": "s:40~l:54~t:2541",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "13-10",
-                  "displayValue": "13-10"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 6.5,
-                  "displayValue": "6.5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "4-6",
-                  "displayValue": "4-6"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2023-01-23T20:42Z"
-                }
-              ]
-            },
-            {
               "team": "Pacific",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/279/pacific-tigers",
               "id": "279",
@@ -15547,8 +15750,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "8-14",
-                  "displayValue": "8-14"
+                  "summary": "9-14",
+                  "displayValue": "9-14"
                 },
                 {
                   "name": "gamesBehind",
@@ -15557,8 +15760,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 8.0,
-                  "displayValue": "8"
+                  "value": 7.0,
+                  "displayValue": "7"
                 },
                 {
                   "id": "9",
@@ -15568,8 +15771,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-8",
-                  "displayValue": "3-8"
+                  "summary": "4-8",
+                  "displayValue": "4-8"
                 }
               ],
               "logo": [
@@ -15583,59 +15786,6 @@
                     "default"
                   ],
                   "lastUpdated": "2023-01-23T20:42Z"
-                }
-              ]
-            },
-            {
-              "team": "Loyola Marymount",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2351/loyola-marymount-lions",
-              "id": "2351",
-              "uid": "s:40~l:54~t:2351",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "5-17",
-                  "displayValue": "5-17"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 9.0,
-                  "displayValue": "9"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "2-9",
-                  "displayValue": "2-9"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2351.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2019-06-03T16:39Z"
                 }
               ]
             },
@@ -15663,8 +15813,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 9.5,
-                  "displayValue": "9.5"
+                  "value": 9.0,
+                  "displayValue": "9"
                 },
                 {
                   "id": "9",
@@ -15689,6 +15839,59 @@
                     "default"
                   ],
                   "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Loyola Marymount",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2351/loyola-marymount-lions",
+              "id": "2351",
+              "uid": "s:40~l:54~t:2351",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "5-18",
+                  "displayValue": "5-18"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 9.0,
+                  "displayValue": "9"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "2-10",
+                  "displayValue": "2-10"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2351.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2019-06-03T16:39Z"
                 }
               ]
             }
