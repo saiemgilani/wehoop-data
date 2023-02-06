@@ -5134,7 +5134,7 @@
         "uid": "s:40~l:54~e:401494174~c:401494174",
         "date": "2023-02-02T00:30Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -5347,7 +5347,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "8",
+          "name": "Big 12 Conference",
+          "abbreviation": "big12",
+          "shortName": "Big 12",
+          "midsizeName": "Big 12"
+        }
       }
     ],
     "links": [
@@ -15627,7 +15634,7 @@
         "trackingId": "dm_20230202_NCW_lexi_donarski_nails_the_3_vs_kansas_state_wildcats"
       },
       "cerebroId": "63db0b1fbe6ab31ff7377725",
-      "lastModified": "2023-02-04T14:40:53Z",
+      "lastModified": "2023-02-05T14:49:44Z",
       "originalPublishDate": "2023-02-02T01:00:13Z",
       "timeRestrictions": {
         "embargoDate": "2023-02-02T01:00:13Z",
@@ -15720,7 +15727,7 @@
         "trackingId": "dm_20230202_NCW_serena_sundell_makes_a_nice_move_for_the_layin"
       },
       "cerebroId": "63db0f09be6ab31ff73777de",
-      "lastModified": "2023-02-02T01:31:18Z",
+      "lastModified": "2023-02-05T14:51:59Z",
       "originalPublishDate": "2023-02-02T01:16:55Z",
       "timeRestrictions": {
         "embargoDate": "2023-02-02T01:16:55Z",
@@ -16311,6 +16318,59 @@
               ]
             },
             {
+              "team": "Texas Tech",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2641/texas-tech-lady-raiders",
+              "id": "2641",
+              "uid": "s:40~l:54~t:2641",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "16-7",
+                  "displayValue": "16-7"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 4.5,
+                  "displayValue": "4.5"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "4-6",
+                  "displayValue": "4-6"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
               "team": "Kansas",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2305/kansas-jayhawks",
               "id": "2305",
@@ -16364,59 +16424,6 @@
               ]
             },
             {
-              "team": "Texas Tech",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2641/texas-tech-lady-raiders",
-              "id": "2641",
-              "uid": "s:40~l:54~t:2641",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "15-7",
-                  "displayValue": "15-7"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "3-6",
-                  "displayValue": "3-6"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2018-06-05T12:08Z"
-                }
-              ]
-            },
-            {
               "team": "Kansas State",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2306/kansas-state-wildcats",
               "id": "2306",
@@ -16430,8 +16437,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "14-9",
-                  "displayValue": "14-9"
+                  "summary": "14-10",
+                  "displayValue": "14-10"
                 },
                 {
                   "name": "gamesBehind",
@@ -16440,8 +16447,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.5,
-                  "displayValue": "5.5"
+                  "value": 6.0,
+                  "displayValue": "6"
                 },
                 {
                   "id": "9",
@@ -16451,8 +16458,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-7",
-                  "displayValue": "3-7"
+                  "summary": "3-8",
+                  "displayValue": "3-8"
                 }
               ],
               "logo": [
