@@ -4752,7 +4752,7 @@
         "uid": "s:40~l:54~e:401473865~c:401473865",
         "date": "2023-01-14T19:00Z",
         "neutralSite": false,
-        "conferenceCompetition": false,
+        "conferenceCompetition": true,
         "boxscoreAvailable": true,
         "commentaryAvailable": false,
         "liveAvailable": false,
@@ -4963,7 +4963,14 @@
             "lang": "en",
             "region": "us"
           }
-        ]
+        ],
+        "groups": {
+          "id": "46",
+          "name": "ASUN Conference",
+          "abbreviation": "a-sun",
+          "shortName": "ASUN",
+          "midsizeName": "ASUN"
+        }
       }
     ],
     "links": [
@@ -15022,8 +15029,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "22-3",
-                  "displayValue": "22-3"
+                  "summary": "23-3",
+                  "displayValue": "23-3"
                 },
                 {
                   "name": "gamesBehind",
@@ -15043,8 +15050,8 @@
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "10-1",
-                  "displayValue": "10-1"
+                  "summary": "11-1",
+                  "displayValue": "11-1"
                 }
               ],
               "logo": [
@@ -15085,8 +15092,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 1.0,
-                  "displayValue": "1"
+                  "value": 1.5,
+                  "displayValue": "1.5"
                 },
                 {
                   "id": "9",
@@ -15138,8 +15145,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 1.0,
-                  "displayValue": "1"
+                  "value": 1.5,
+                  "displayValue": "1.5"
                 },
                 {
                   "id": "9",
@@ -15191,8 +15198,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 1.0,
-                  "displayValue": "1"
+                  "value": 1.5,
+                  "displayValue": "1.5"
                 },
                 {
                   "id": "9",
@@ -15244,8 +15251,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 4.0,
-                  "displayValue": "4"
+                  "value": 4.5,
+                  "displayValue": "4.5"
                 },
                 {
                   "id": "9",
@@ -15297,8 +15304,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 5.5,
+                  "displayValue": "5.5"
                 },
                 {
                   "id": "9",
@@ -15327,59 +15334,6 @@
               ]
             },
             {
-              "team": "Stetson",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/56/stetson-hatters",
-              "id": "56",
-              "uid": "s:40~l:54~t:56",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "overall",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "11-13",
-                  "displayValue": "11-13"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs. Conf.",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "5-6",
-                  "displayValue": "5-6"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/56.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2019-10-21T16:39Z"
-                }
-              ]
-            },
-            {
               "team": "Kennesaw State",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/338/kennesaw-state-owls",
               "id": "338",
@@ -15403,8 +15357,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 5.5,
+                  "displayValue": "5.5"
                 },
                 {
                   "id": "9",
@@ -15433,6 +15387,59 @@
               ]
             },
             {
+              "team": "Stetson",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/56/stetson-hatters",
+              "id": "56",
+              "uid": "s:40~l:54~t:56",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "11-14",
+                  "displayValue": "11-14"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 6.0,
+                  "displayValue": "6"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "5-7",
+                  "displayValue": "5-7"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/56.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2019-10-21T16:39Z"
+                }
+              ]
+            },
+            {
               "team": "North Alabama",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/2453/north-alabama-lions",
               "id": "2453",
@@ -15456,8 +15463,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 6.0,
-                  "displayValue": "6"
+                  "value": 6.5,
+                  "displayValue": "6.5"
                 },
                 {
                   "id": "9",
@@ -15509,8 +15516,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
@@ -15562,8 +15569,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
@@ -15615,8 +15622,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
@@ -15668,8 +15675,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
@@ -15721,8 +15728,8 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 7.0,
-                  "displayValue": "7"
+                  "value": 7.5,
+                  "displayValue": "7.5"
                 },
                 {
                   "id": "9",
