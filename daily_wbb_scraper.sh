@@ -8,8 +8,8 @@ do
     esac
 done
 git pull
-# python3 scrape_wbb_schedules.py -s $START_YEAR -e $END_YEAR
-# python3 scrape_wbb_json.py -s $START_YEAR -e $END_YEAR
+python3 scrape_wbb_schedules.py -s $START_YEAR -e $END_YEAR
+python3 scrape_wbb_json.py -s $START_YEAR -e $END_YEAR
 git pull
 git add .
 Rscript R/espn_wbb_01_pbp_creation.R -s $START_YEAR -e $END_YEAR

@@ -1,5 +1,5 @@
 {
-  "gameId": "290823003",
+  "gameId": 290823003,
   "plays": [
     {
       "id": 29082300300000,
@@ -24651,7 +24651,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/game/_/gameId/290823003",
+        "href": "https://www.espn.com/wnba/game/_/gameId/290823003",
         "text": "Gamecast",
         "shortText": "Summary",
         "isExternal": false,
@@ -24675,7 +24675,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/boxscore/_/gameId/290823003",
+        "href": "https://www.espn.com/wnba/boxscore/_/gameId/290823003",
         "text": "Box Score",
         "shortText": "Box Score",
         "isExternal": false,
@@ -24687,7 +24687,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/playbyplay/_/gameId/290823003",
+        "href": "https://www.espn.com/wnba/playbyplay/_/gameId/290823003",
         "text": "Play-by-Play",
         "shortText": "Play-by-Play",
         "isExternal": false,
@@ -24787,7 +24787,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/wnba/scoreboard",
+          "href": "https://www.espn.com/wnba/scoreboard",
           "text": "Scores"
         },
         {
@@ -24865,7 +24865,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "leaders": [
         {
@@ -25079,7 +25080,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "leaders": [
         {
@@ -25284,10 +25286,101 @@
       "type": "season",
       "title": "Regular Season Series",
       "description": "Regular Season Series",
-      "summary": "Series tied 1-1",
-      "completed": true,
+      "summary": "TUL leads series 1-0",
+      "completed": false,
       "totalCompetitions": 2,
       "events": [
+        {
+          "id": "290823003",
+          "uid": "s:40~l:59~e:290823003~c:290823003",
+          "date": "2009-08-23T22:00:00Z",
+          "timeValid": true,
+          "status": "post",
+          "statusType": {
+            "id": "3",
+            "name": "STATUS_FINAL",
+            "state": "post",
+            "completed": true,
+            "description": "Final",
+            "detail": "Final",
+            "shortDetail": "Final"
+          },
+          "competitors": [
+            {
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "3",
+                "uid": "s:40~l:59~t:3",
+                "displayName": "Detroit Shock",
+                "abbreviation": "TUL",
+                "links": [
+                  {
+                    "href": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
+                    "text": "Schedule"
+                  }
+                ],
+                "logos": []
+              },
+              "score": "99"
+            },
+            {
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "17",
+                "uid": "s:40~l:59~t:17",
+                "displayName": "San Antonio Silver Stars",
+                "abbreviation": "SAS",
+                "links": [
+                  {
+                    "href": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
+                    "text": "Schedule"
+                  }
+                ],
+                "logos": []
+              },
+              "score": "84"
+            }
+          ],
+          "links": [
+            {
+              "language": "en-US",
+              "rel": [
+                "summary",
+                "desktop",
+                "event"
+              ],
+              "href": "https://www.espn.com/wnba/game/_/gameId/290823003",
+              "text": "Gamecast",
+              "shortText": "Summary",
+              "isExternal": false,
+              "isPremium": false
+            },
+            {
+              "language": "en-US",
+              "rel": [
+                "summary",
+                "sportscenter",
+                "app",
+                "event"
+              ],
+              "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290823003",
+              "text": "Gamecast",
+              "shortText": "Summary",
+              "isExternal": false,
+              "isPremium": false
+            }
+          ]
+        },
         {
           "id": "290829017",
           "uid": "s:40~l:59~e:290829017~c:290829017",
@@ -25322,7 +25415,8 @@
                     "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
                     "text": "Schedule"
                   }
-                ]
+                ],
+                "logos": []
               },
               "score": "100"
             },
@@ -25343,7 +25437,8 @@
                     "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
                     "text": "Schedule"
                   }
-                ]
+                ],
+                "logos": []
               },
               "score": "88"
             }
@@ -25356,7 +25451,7 @@
                 "desktop",
                 "event"
               ],
-              "href": "http://www.espn.com/wnba/game/_/gameId/290829017",
+              "href": "https://www.espn.com/wnba/game/_/gameId/290829017",
               "text": "Gamecast",
               "shortText": "Summary",
               "isExternal": false,
@@ -25371,95 +25466,6 @@
                 "event"
               ],
               "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290829017",
-              "text": "Gamecast",
-              "shortText": "Summary",
-              "isExternal": false,
-              "isPremium": false
-            }
-          ]
-        },
-        {
-          "id": "290823003",
-          "uid": "s:40~l:59~e:290823003~c:290823003",
-          "date": "2009-08-23T22:00:00Z",
-          "timeValid": true,
-          "status": "post",
-          "statusType": {
-            "id": "3",
-            "name": "STATUS_FINAL",
-            "state": "post",
-            "completed": true,
-            "description": "Final",
-            "detail": "Final",
-            "shortDetail": "Final"
-          },
-          "competitors": [
-            {
-              "homeAway": "home",
-              "winner": true,
-              "team": {
-                "id": "3",
-                "uid": "s:40~l:59~t:3",
-                "displayName": "Detroit Shock",
-                "abbreviation": "TUL",
-                "links": [
-                  {
-                    "href": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-                    "text": "Clubhouse"
-                  },
-                  {
-                    "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
-                    "text": "Schedule"
-                  }
-                ]
-              },
-              "score": "99"
-            },
-            {
-              "homeAway": "away",
-              "winner": false,
-              "team": {
-                "id": "17",
-                "uid": "s:40~l:59~t:17",
-                "displayName": "San Antonio Silver Stars",
-                "abbreviation": "SAS",
-                "links": [
-                  {
-                    "href": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-                    "text": "Clubhouse"
-                  },
-                  {
-                    "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
-                    "text": "Schedule"
-                  }
-                ]
-              },
-              "score": "84"
-            }
-          ],
-          "links": [
-            {
-              "language": "en-US",
-              "rel": [
-                "summary",
-                "desktop",
-                "event"
-              ],
-              "href": "http://www.espn.com/wnba/game/_/gameId/290823003",
-              "text": "Gamecast",
-              "shortText": "Summary",
-              "isExternal": false,
-              "isPremium": false
-            },
-            {
-              "language": "en-US",
-              "rel": [
-                "summary",
-                "sportscenter",
-                "app",
-                "event"
-              ],
-              "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290823003",
               "text": "Gamecast",
               "shortText": "Summary",
               "isExternal": false,
@@ -25488,7 +25494,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "records": []
     },
@@ -25507,7 +25514,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "records": []
     }
@@ -25531,6 +25539,7 @@
     "attendance": 0,
     "officials": [
       {
+        "fullName": "Eric Brewton",
         "displayName": "Eric Brewton",
         "position": {
           "name": "Referee",
@@ -25540,6 +25549,7 @@
         "order": 1
       },
       {
+        "fullName": "Clarke Stevens",
         "displayName": "Clarke Stevens",
         "position": {
           "name": "Referee",
@@ -25549,6 +25559,7 @@
         "order": 2
       },
       {
+        "fullName": "Kurt Walker",
         "displayName": "Kurt Walker",
         "position": {
           "name": "Referee",

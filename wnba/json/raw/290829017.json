@@ -2468,6 +2468,7 @@
     "attendance": 0,
     "officials": [
       {
+        "fullName": "Roy Gulbeyan",
         "displayName": "Roy Gulbeyan",
         "position": {
           "name": "Referee",
@@ -2477,6 +2478,7 @@
         "order": 1
       },
       {
+        "fullName": "Jeff Smith",
         "displayName": "Jeff Smith",
         "position": {
           "name": "Referee",
@@ -2486,6 +2488,7 @@
         "order": 2
       },
       {
+        "fullName": "June Courteau",
         "displayName": "June Courteau",
         "position": {
           "name": "Referee",
@@ -2512,7 +2515,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "leaders": [
         {
@@ -2726,7 +2730,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "leaders": [
         {
@@ -2935,6 +2940,97 @@
       "totalCompetitions": 2,
       "events": [
         {
+          "id": "290823003",
+          "uid": "s:40~l:59~e:290823003~c:290823003",
+          "date": "2009-08-23T22:00:00Z",
+          "timeValid": true,
+          "status": "post",
+          "statusType": {
+            "id": "3",
+            "name": "STATUS_FINAL",
+            "state": "post",
+            "completed": true,
+            "description": "Final",
+            "detail": "Final",
+            "shortDetail": "Final"
+          },
+          "competitors": [
+            {
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "3",
+                "uid": "s:40~l:59~t:3",
+                "displayName": "Detroit Shock",
+                "abbreviation": "TUL",
+                "links": [
+                  {
+                    "href": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
+                    "text": "Schedule"
+                  }
+                ],
+                "logos": []
+              },
+              "score": "99"
+            },
+            {
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "17",
+                "uid": "s:40~l:59~t:17",
+                "displayName": "San Antonio Silver Stars",
+                "abbreviation": "SAS",
+                "links": [
+                  {
+                    "href": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+                    "text": "Clubhouse"
+                  },
+                  {
+                    "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
+                    "text": "Schedule"
+                  }
+                ],
+                "logos": []
+              },
+              "score": "84"
+            }
+          ],
+          "links": [
+            {
+              "language": "en-US",
+              "rel": [
+                "summary",
+                "desktop",
+                "event"
+              ],
+              "href": "https://www.espn.com/wnba/game/_/gameId/290823003",
+              "text": "Gamecast",
+              "shortText": "Summary",
+              "isExternal": false,
+              "isPremium": false
+            },
+            {
+              "language": "en-US",
+              "rel": [
+                "summary",
+                "sportscenter",
+                "app",
+                "event"
+              ],
+              "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290823003",
+              "text": "Gamecast",
+              "shortText": "Summary",
+              "isExternal": false,
+              "isPremium": false
+            }
+          ]
+        },
+        {
           "id": "290829017",
           "uid": "s:40~l:59~e:290829017~c:290829017",
           "date": "2009-08-29T19:00:00Z",
@@ -2968,7 +3064,8 @@
                     "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
                     "text": "Schedule"
                   }
-                ]
+                ],
+                "logos": []
               },
               "score": "100"
             },
@@ -2989,7 +3086,8 @@
                     "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
                     "text": "Schedule"
                   }
-                ]
+                ],
+                "logos": []
               },
               "score": "88"
             }
@@ -3002,7 +3100,7 @@
                 "desktop",
                 "event"
               ],
-              "href": "http://www.espn.com/wnba/game/_/gameId/290829017",
+              "href": "https://www.espn.com/wnba/game/_/gameId/290829017",
               "text": "Gamecast",
               "shortText": "Summary",
               "isExternal": false,
@@ -3017,95 +3115,6 @@
                 "event"
               ],
               "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290829017",
-              "text": "Gamecast",
-              "shortText": "Summary",
-              "isExternal": false,
-              "isPremium": false
-            }
-          ]
-        },
-        {
-          "id": "290823003",
-          "uid": "s:40~l:59~e:290823003~c:290823003",
-          "date": "2009-08-23T22:00:00Z",
-          "timeValid": true,
-          "status": "post",
-          "statusType": {
-            "id": "3",
-            "name": "STATUS_FINAL",
-            "state": "post",
-            "completed": true,
-            "description": "Final",
-            "detail": "Final",
-            "shortDetail": "Final"
-          },
-          "competitors": [
-            {
-              "homeAway": "home",
-              "winner": true,
-              "team": {
-                "id": "3",
-                "uid": "s:40~l:59~t:3",
-                "displayName": "Detroit Shock",
-                "abbreviation": "TUL",
-                "links": [
-                  {
-                    "href": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-                    "text": "Clubhouse"
-                  },
-                  {
-                    "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
-                    "text": "Schedule"
-                  }
-                ]
-              },
-              "score": "99"
-            },
-            {
-              "homeAway": "away",
-              "winner": false,
-              "team": {
-                "id": "17",
-                "uid": "s:40~l:59~t:17",
-                "displayName": "San Antonio Silver Stars",
-                "abbreviation": "SAS",
-                "links": [
-                  {
-                    "href": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-                    "text": "Clubhouse"
-                  },
-                  {
-                    "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
-                    "text": "Schedule"
-                  }
-                ]
-              },
-              "score": "84"
-            }
-          ],
-          "links": [
-            {
-              "language": "en-US",
-              "rel": [
-                "summary",
-                "desktop",
-                "event"
-              ],
-              "href": "http://www.espn.com/wnba/game/_/gameId/290823003",
-              "text": "Gamecast",
-              "shortText": "Summary",
-              "isExternal": false,
-              "isPremium": false
-            },
-            {
-              "language": "en-US",
-              "rel": [
-                "summary",
-                "sportscenter",
-                "app",
-                "event"
-              ],
-              "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=290823003",
               "text": "Gamecast",
               "shortText": "Summary",
               "isExternal": false,
@@ -3135,7 +3144,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "records": []
     },
@@ -3154,7 +3164,8 @@
             "href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
             "text": "Schedule"
           }
-        ]
+        ],
+        "logos": []
       },
       "records": []
     }
@@ -3384,7 +3395,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/game/_/gameId/290829017",
+        "href": "https://www.espn.com/wnba/game/_/gameId/290829017",
         "text": "Gamecast",
         "shortText": "Summary",
         "isExternal": false,
@@ -3408,7 +3419,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/boxscore/_/gameId/290829017",
+        "href": "https://www.espn.com/wnba/boxscore/_/gameId/290829017",
         "text": "Box Score",
         "shortText": "Box Score",
         "isExternal": false,
@@ -3420,7 +3431,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/playbyplay/_/gameId/290829017",
+        "href": "https://www.espn.com/wnba/playbyplay/_/gameId/290829017",
         "text": "Play-by-Play",
         "shortText": "Play-by-Play",
         "isExternal": false,
@@ -3520,7 +3531,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/wnba/scoreboard",
+          "href": "https://www.espn.com/wnba/scoreboard",
           "text": "Scores"
         },
         {
@@ -18223,7 +18234,7 @@
             },
             "web": {
               "teams": {
-                "href": "https://www.espn.com/womens-basketball/team/_/name/dal/dallas-wings"
+                "href": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings"
               }
             },
             "mobile": {
@@ -18252,7 +18263,7 @@
             },
             "web": {
               "teams": {
-                "href": "https://www.espn.com/womens-basketball/team/_/name/lv/las-vegas-aces"
+                "href": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces"
               }
             },
             "mobile": {
