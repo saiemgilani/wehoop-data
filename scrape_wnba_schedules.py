@@ -1,3 +1,8 @@
+
+from urllib.error import URLError, HTTPError, ContentTooShortError
+from datetime import datetime
+from itertools import chain, starmap
+from pathlib import Path
 import os, json
 import re
 import http
@@ -7,10 +12,7 @@ import pyreadr
 import pyarrow as pa
 import pandas as pd
 import sportsdataverse as sdv
-from urllib.error import URLError, HTTPError, ContentTooShortError
-from datetime import datetime
-from itertools import chain, starmap
-from pathlib import Path
+import argparse
 path_to_schedules = "wnba/schedules"
 final_file_name = "wnba_schedule_master.csv"
 
@@ -29,9 +31,17 @@ def download_schedule(season, path_to_schedules=None):
         ev.to_parquet(f"{path_to_schedules}/parquet/wnba_schedule_{season}.parquet", index = False)
         pyreadr.write_rds(f"{path_to_schedules}/rds/wnba_schedule_{season}.rds", ev, compress = "gzip")
     return ev
-def main():
 
-    years_arr = range(2022,2023)
+def main():
+    if args.start_year < 2002:
+        start_year = 2002
+    else:
+        start_year = args.start_year
+    if args.end_year is None:
+        end_year = start_year
+    else:
+        end_year = args.end_year
+    years_arr = range(start_year, end_year + 1)
     schedule_table = pd.DataFrame()
     for year in years_arr:
         print(year)
@@ -47,4 +57,9 @@ def main():
     glued_data.to_parquet(final_file_name.replace('.csv', '.parquet'), index=False)
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--start_year', '-s', type=int, required=True, help='Start year of WNBA Schedule period (YYYY)')
+    parser.add_argument('--end_year', '-e', type=int, help='End year of WNBA Schedule period (YYYY)')
+    args = parser.parse_args()
+
     main()
