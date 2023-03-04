@@ -44,7 +44,7 @@ def main():
     years_arr = range(start_year, end_year + 1)
     schedule_table = pd.DataFrame()
     for year in years_arr:
-        print(year)
+        print("Scraping WNBA schedules for year {}...".format(year))
         year_schedule = download_schedule(year, path_to_schedules)
         schedule_table = pd.concat([schedule_table, year_schedule], axis=0)
     csv_files = [pos_csv.replace('.csv', '') for pos_csv in os.listdir(path_to_schedules+'/csv') if pos_csv.endswith('.csv')]
