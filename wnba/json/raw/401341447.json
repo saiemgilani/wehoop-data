@@ -1826,7 +1826,6 @@
                     "href": "https://a.espncdn.com/i/headshots/wnba/players/full/2999101.png",
                     "alt": "Jonquel Jones"
                   },
-                  "jersey": "35",
                   "position": {
                     "name": "Forward",
                     "displayName": "Forward",
@@ -2498,7 +2497,6 @@
                     "href": "https://a.espncdn.com/i/headshots/wnba/players/full/2987891.png",
                     "alt": "Courtney Williams"
                   },
-                  "jersey": "10",
                   "position": {
                     "name": "Guard",
                     "displayName": "Guard",
@@ -2746,11 +2744,23 @@
       },
       "capacity": 12000,
       "grass": false,
-      "images": []
+      "images": [
+        {
+          "href": "https://a.espncdn.com/i/venues/wnba/day/4005.jpg",
+          "width": 2000,
+          "height": 1125,
+          "alt": "",
+          "rel": [
+            "full",
+            "day"
+          ]
+        }
+      ]
     },
     "attendance": 5175,
     "officials": [
       {
+        "fullName": "Jeff Smith",
         "displayName": "Jeff Smith",
         "position": {
           "name": "Referee",
@@ -2760,6 +2770,7 @@
         "order": 1
       },
       {
+        "fullName": "Kurt Walker",
         "displayName": "Kurt Walker",
         "position": {
           "name": "Referee",
@@ -2769,6 +2780,7 @@
         "order": 2
       },
       {
+        "fullName": "Angelica Suffren",
         "displayName": "Angelica Suffren",
         "position": {
           "name": "Referee",
@@ -2785,7 +2797,8 @@
         "id": "96",
         "uid": "s:40~l:59~t:96",
         "displayName": "Team WNBA",
-        "abbreviation": "ALL"
+        "abbreviation": "ALL",
+        "logos": []
       },
       "leaders": [
         {
@@ -2958,7 +2971,6 @@
                   "href": "https://a.espncdn.com/i/headshots/wnba/players/full/2999101.png",
                   "alt": "Jonquel Jones"
                 },
-                "jersey": "35",
                 "position": {
                   "abbreviation": "F"
                 }
@@ -3002,7 +3014,8 @@
         "id": "97",
         "uid": "s:40~l:59~t:97",
         "displayName": "Team Usa",
-        "abbreviation": "USA"
+        "abbreviation": "USA",
+        "logos": []
       },
       "leaders": [
         {
@@ -3247,7 +3260,8 @@
                 "id": "96",
                 "uid": "s:40~l:59~t:96",
                 "displayName": "Team WNBA",
-                "abbreviation": "ALL"
+                "abbreviation": "ALL",
+                "logos": []
               },
               "score": "93"
             },
@@ -3258,7 +3272,8 @@
                 "id": "97",
                 "uid": "s:40~l:59~t:97",
                 "displayName": "Team Usa",
-                "abbreviation": "USA"
+                "abbreviation": "USA",
+                "logos": []
               },
               "score": "85"
             }
@@ -3271,7 +3286,7 @@
                 "desktop",
                 "event"
               ],
-              "href": "http://www.espn.com/wnba/game/_/gameId/401341447",
+              "href": "https://www.espn.com/wnba/game/_/gameId/401341447",
               "text": "Gamecast",
               "shortText": "Summary",
               "isExternal": false,
@@ -3331,7 +3346,8 @@
         "id": "97",
         "uid": "s:40~l:59~t:97",
         "displayName": "Team Usa",
-        "abbreviation": "USA"
+        "abbreviation": "USA",
+        "logos": []
       },
       "records": []
     },
@@ -3340,7 +3356,8 @@
         "id": "96",
         "uid": "s:40~l:59~t:96",
         "displayName": "Team WNBA",
-        "abbreviation": "ALL"
+        "abbreviation": "ALL",
+        "logos": []
       },
       "records": []
     }
@@ -5226,7 +5243,7 @@
         "possessionArrowAvailable": false,
         "onWatchESPN": true,
         "recent": false,
-        "boxscoreSource": "basic",
+        "boxscoreSource": "full",
         "playByPlaySource": "full",
         "competitors": [
           {
@@ -5369,7 +5386,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/game/_/gameId/401341447",
+        "href": "https://www.espn.com/wnba/game/_/gameId/401341447",
         "text": "Gamecast",
         "shortText": "Summary",
         "isExternal": false,
@@ -5381,7 +5398,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/boxscore/_/gameId/401341447",
+        "href": "https://www.espn.com/wnba/boxscore/_/gameId/401341447",
         "text": "Box Score",
         "shortText": "Box Score",
         "isExternal": false,
@@ -5393,7 +5410,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/wnba/playbyplay/_/gameId/401341447",
+        "href": "https://www.espn.com/wnba/playbyplay/_/gameId/401341447",
         "text": "Play-by-Play",
         "shortText": "Play-by-Play",
         "isExternal": false,
@@ -5408,18 +5425,6 @@
         "href": "https://www.espn.com/wnba/matchup?gameId=401341447",
         "text": "Team Stats",
         "shortText": "Team Stats",
-        "isExternal": false,
-        "isPremium": false
-      },
-      {
-        "rel": [
-          "videos",
-          "desktop",
-          "event"
-        ],
-        "href": "https://www.espn.com/wnba/video?gameId=401341447",
-        "text": "Videos",
-        "shortText": "Videos",
         "isExternal": false,
         "isPremium": false
       }
@@ -5504,7 +5509,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/wnba/scoreboard",
+          "href": "https://www.espn.com/wnba/scoreboard",
           "text": "Scores"
         },
         {
@@ -5597,6 +5602,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:12:39Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -5632,6 +5638,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:12:46Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -5667,6 +5674,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:12:49Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -5707,6 +5715,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:12:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -5747,6 +5756,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:13:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -5782,6 +5792,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:13:29Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 44,
@@ -5810,6 +5821,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-14T23:13:31Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 44,
@@ -5850,6 +5862,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:13:50Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 28,
@@ -5890,6 +5903,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:04Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 23,
@@ -5930,6 +5944,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:09Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -5965,6 +5980,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:19Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -6000,6 +6016,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:22Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 2,
@@ -6040,6 +6057,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:29Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 17,
@@ -6080,6 +6098,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:14:55Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -6115,6 +6134,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:15:08Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 36,
@@ -6143,6 +6163,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-14T23:15:21Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -6178,6 +6199,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:18:57Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 47,
@@ -6213,6 +6235,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:01Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 47,
@@ -6253,6 +6276,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:02Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -6293,6 +6317,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:19Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -6328,6 +6353,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:29Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -6363,6 +6389,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:32Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 3,
@@ -6403,6 +6430,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:41Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 34,
@@ -6443,6 +6471,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:19:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -6478,6 +6507,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:20:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 49,
@@ -6518,6 +6548,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:20:42Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -6553,6 +6584,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:20:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -6588,6 +6620,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:21:01Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -6623,6 +6656,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:21:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -6663,6 +6697,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:21:37Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -6703,6 +6738,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:21:45Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 36,
@@ -6743,6 +6779,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:22:02Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 34,
@@ -6783,6 +6820,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:22:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -6818,6 +6856,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:22:29Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -6853,6 +6892,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:04Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -6893,6 +6933,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -6933,6 +6974,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -6973,6 +7015,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7013,6 +7056,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7053,6 +7097,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7093,6 +7138,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7128,6 +7174,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:29Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -7168,6 +7215,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:23:42Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7203,6 +7251,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 31,
@@ -7238,6 +7287,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:08Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 31,
@@ -7273,6 +7323,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 22,
@@ -7308,6 +7359,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:19Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 22,
@@ -7343,6 +7395,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:30Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 34,
@@ -7378,6 +7431,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -7406,6 +7460,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-14T23:24:48Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7446,6 +7501,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:49Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7481,6 +7537,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -7516,6 +7573,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:24:51Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -7551,6 +7609,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:25:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 11,
@@ -7586,6 +7645,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:25:34Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 11,
@@ -7621,6 +7681,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:25:42Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -7656,6 +7717,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:01Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 28,
@@ -7691,6 +7753,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:03Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 28,
@@ -7726,6 +7789,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:09Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 13,
@@ -7761,6 +7825,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:13Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 13,
@@ -7801,6 +7866,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 28,
@@ -7841,6 +7907,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:35Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -7876,6 +7943,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:38Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 27,
@@ -7911,6 +7979,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:47Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 41,
@@ -7946,6 +8015,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:26:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 22,
@@ -7981,6 +8051,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:27:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 4,
@@ -8021,6 +8092,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:27:18Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -8061,6 +8133,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:27:18Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -8101,6 +8174,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:27:47Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -8136,6 +8210,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:28:24Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -8171,6 +8246,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:28:35Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -8206,6 +8282,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:28:39Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 21,
@@ -8241,6 +8318,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:28:41Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 49,
@@ -8269,6 +8347,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-14T23:28:44Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 49,
@@ -8309,6 +8388,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:29:04Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -8344,6 +8424,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:29:26Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -8379,6 +8460,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:29:28Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -8414,6 +8496,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:29:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -8442,6 +8525,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-14T23:29:30Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 21,
@@ -8467,6 +8551,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2021-07-14T23:29:37Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -8507,6 +8592,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:29:42Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -8542,6 +8628,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:33:12Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -8577,6 +8664,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:33:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -8612,6 +8700,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:33:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 11,
@@ -8647,6 +8736,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:34:04Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -8675,6 +8765,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-14T23:34:04Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -8710,6 +8801,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:34:13Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -8750,6 +8842,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:34:27Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -8785,6 +8878,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:34:30Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -8820,6 +8914,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:34:50Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -8860,6 +8955,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:35:06Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 23,
@@ -8895,6 +8991,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:35:08Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 23,
@@ -8930,6 +9027,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:35:24Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -8965,6 +9063,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:35:26Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -9000,6 +9099,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:35:40Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -9035,6 +9135,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:07Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -9075,6 +9176,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:07Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -9115,6 +9217,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:07Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -9155,6 +9258,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:07Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -9195,6 +9299,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:07Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -9230,6 +9335,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:26Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -9265,6 +9371,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:43Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 14,
@@ -9300,6 +9407,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:47Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 14,
@@ -9335,6 +9443,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:52Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -9370,6 +9479,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:58Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 2,
@@ -9410,6 +9520,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:36:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -9445,6 +9556,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:00Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -9485,6 +9597,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:01Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -9520,6 +9633,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:13Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 32,
@@ -9555,6 +9669,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:16Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 32,
@@ -9590,6 +9705,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -9625,6 +9741,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:33Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -9660,6 +9777,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:38Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 38,
@@ -9695,6 +9813,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:41Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 38,
@@ -9730,6 +9849,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:46Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 23,
@@ -9765,6 +9885,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:37:54Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -9800,6 +9921,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:10Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 16,
@@ -9835,6 +9957,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:16Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 16,
@@ -9870,6 +9993,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:27Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 16,
@@ -9905,6 +10029,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:30Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 16,
@@ -9940,6 +10065,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:35Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -9975,6 +10101,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:39Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -10010,6 +10137,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:43Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -10045,6 +10173,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:47Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 2,
@@ -10085,6 +10214,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:48Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -10125,6 +10255,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:38:54Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 1,
@@ -10160,6 +10291,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:17Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 23,
@@ -10200,6 +10332,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 13,
@@ -10235,6 +10368,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:44Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -10270,6 +10404,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -10310,6 +10445,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:47Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 17,
@@ -10345,6 +10481,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:47Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 17,
@@ -10385,6 +10522,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:39:54Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -10420,6 +10558,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -10448,6 +10587,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-14T23:40:17Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -10483,6 +10623,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:30Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 16,
@@ -10511,6 +10652,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-14T23:40:47Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -10551,6 +10693,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -10591,6 +10734,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -10631,6 +10775,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -10671,6 +10816,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:40:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -10706,6 +10852,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:43:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 2,
@@ -10746,6 +10893,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:14Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -10781,6 +10929,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:18Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 27,
@@ -10821,6 +10970,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:21Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 36,
@@ -10861,6 +11011,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:26Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 41,
@@ -10896,6 +11047,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 1,
@@ -10931,6 +11083,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:33Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 1,
@@ -10971,6 +11124,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:34Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -11006,6 +11160,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:37Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -11041,6 +11196,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:40Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 44,
@@ -11076,6 +11232,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:45Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 44,
@@ -11111,6 +11268,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -11146,6 +11304,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:44:51Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -11181,6 +11340,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 42,
@@ -11216,6 +11376,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:08Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 42,
@@ -11251,6 +11412,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:17Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -11286,6 +11448,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:22Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 21,
@@ -11321,6 +11484,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:42Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -11356,6 +11520,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:44Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -11396,6 +11561,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:45:50Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -11431,6 +11597,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:00Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -11466,6 +11633,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:00Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -11501,6 +11669,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:09Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -11536,6 +11705,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:12Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 3,
@@ -11571,6 +11741,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 18,
@@ -11606,6 +11777,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:31Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -11646,6 +11818,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:34Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 19,
@@ -11681,6 +11854,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:38Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 13,
@@ -11716,6 +11890,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:38Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 13,
@@ -11751,6 +11926,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:46:42Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 22,
@@ -11779,6 +11955,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-14T23:47:08Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -11819,6 +11996,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -11859,6 +12037,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -11899,6 +12078,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -11939,6 +12119,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -11979,6 +12160,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12019,6 +12201,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:47:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12059,6 +12242,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:49:57Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 28,
@@ -12094,6 +12278,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:08Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -12129,6 +12314,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -12164,6 +12350,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -12199,6 +12386,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:21Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -12234,6 +12422,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:24Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -12269,6 +12458,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:33Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -12304,6 +12494,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:50:35Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 21,
@@ -12339,6 +12530,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:51:18Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 34,
@@ -12374,6 +12566,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:51:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 34,
@@ -12414,6 +12607,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:51:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 37,
@@ -12449,6 +12643,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:51:49Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 14,
@@ -12484,6 +12679,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-14T23:51:49Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 14,
@@ -12509,6 +12705,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2021-07-14T23:51:57Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12549,6 +12746,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:16:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12589,6 +12787,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:16:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12629,6 +12828,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:16:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12669,6 +12869,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:16:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12709,6 +12910,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:16:20Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -12744,6 +12946,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:19Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 47,
@@ -12779,6 +12982,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:21Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 47,
@@ -12819,6 +13023,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:24Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -12854,6 +13059,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:36Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 11,
@@ -12889,6 +13095,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -12924,6 +13131,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:50Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 2,
@@ -12959,6 +13167,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:58Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 4,
@@ -12994,6 +13203,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:24:58Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 4,
@@ -13034,6 +13244,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:06Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -13062,6 +13273,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T00:25:06Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -13097,6 +13309,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:21Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 11,
@@ -13132,6 +13345,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:25Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 11,
@@ -13167,6 +13381,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:33Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 39,
@@ -13202,6 +13417,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:37Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 39,
@@ -13242,6 +13458,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:25:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 28,
@@ -13282,6 +13499,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:26:00Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -13317,6 +13535,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:26:13Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 20,
@@ -13352,6 +13571,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:26:39Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -13380,6 +13600,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T00:26:39Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -13415,6 +13636,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:26:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -13450,6 +13672,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:01Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 14,
@@ -13485,6 +13708,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:04Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 14,
@@ -13525,6 +13749,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 18,
@@ -13565,6 +13790,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -13605,6 +13831,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:48Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -13640,6 +13867,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:52Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 4,
@@ -13675,6 +13903,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:27:55Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 4,
@@ -13710,6 +13939,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:08Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 18,
@@ -13745,6 +13975,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:12Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -13785,6 +14016,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:23Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 31,
@@ -13820,6 +14052,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:27Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 31,
@@ -13855,6 +14088,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:27Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -13895,6 +14129,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:36Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 38,
@@ -13930,6 +14165,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:28:40Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 20,
@@ -13965,6 +14201,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:29:05Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -14005,6 +14242,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:29:21Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14045,6 +14283,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:29:21Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14085,6 +14324,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:29:40Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 8,
@@ -14125,6 +14365,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:29:56Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -14165,6 +14406,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:30:00Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -14200,6 +14442,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:30:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -14240,6 +14483,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:30:24Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14280,6 +14524,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:30:44Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 44,
@@ -14315,6 +14560,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:30:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -14350,6 +14596,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:31:02Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -14385,6 +14632,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:31:10Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -14420,6 +14668,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:31:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -14455,6 +14704,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:31:19Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 40,
@@ -14483,6 +14733,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T00:31:23Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 40,
@@ -14511,6 +14762,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T00:31:39Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14551,6 +14803,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:33:25Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14591,6 +14844,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:35:15Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -14626,6 +14880,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:35:31Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -14661,6 +14916,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:35:59Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 5,
@@ -14696,6 +14952,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:00Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 5,
@@ -14736,6 +14993,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 43,
@@ -14771,6 +15029,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:27Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 16,
@@ -14811,6 +15070,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:38Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 19,
@@ -14851,6 +15111,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14891,6 +15152,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14931,6 +15193,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -14971,6 +15234,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:36:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -15006,6 +15270,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:22Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 14,
@@ -15041,6 +15306,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:25Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 14,
@@ -15076,6 +15342,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:27Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -15111,6 +15378,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:43Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 17,
@@ -15146,6 +15414,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 17,
@@ -15186,6 +15455,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:37:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -15221,6 +15491,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:00Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 22,
@@ -15256,6 +15527,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:06Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 22,
@@ -15291,6 +15563,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:06Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -15326,6 +15599,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:06Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -15366,6 +15640,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:17Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -15406,6 +15681,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:17Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -15441,6 +15717,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:38:42Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -15481,6 +15758,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:39:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -15516,6 +15794,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:39:27Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -15551,6 +15830,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:39:53Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -15579,6 +15859,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T00:39:53Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -15619,6 +15900,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:39:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -15654,6 +15936,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:06Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -15689,6 +15972,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:28Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 34,
@@ -15724,6 +16008,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:53Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 31,
@@ -15759,6 +16044,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:56Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 31,
@@ -15794,6 +16080,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:56Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -15829,6 +16116,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:40:57Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 25,
@@ -15864,6 +16152,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:41:12Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -15904,6 +16193,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:41:22Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -15939,6 +16229,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:41:49Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -15964,6 +16255,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2021-07-15T00:41:57Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -16004,6 +16296,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:44:13Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -16039,6 +16332,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:45:44Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 18,
@@ -16074,6 +16368,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:46:07Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -16109,6 +16404,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:46:15Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -16149,6 +16445,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:46:18Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 45,
@@ -16184,6 +16481,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:46:25Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 34,
@@ -16219,6 +16517,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:46:49Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -16254,6 +16553,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:47:00Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -16289,6 +16589,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:47:15Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 35,
@@ -16324,6 +16625,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:47:42Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 37,
@@ -16359,6 +16661,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 45,
@@ -16394,6 +16697,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:08Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 45,
@@ -16429,6 +16733,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:18Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -16464,6 +16769,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:22Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -16499,6 +16805,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:32Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 10,
@@ -16534,6 +16841,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:35Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 10,
@@ -16569,6 +16877,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:39Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -16604,6 +16913,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:41Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 24,
@@ -16639,6 +16949,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:48:44Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -16679,6 +16990,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:06Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 30,
@@ -16714,6 +17026,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:09Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 30,
@@ -16754,6 +17067,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:11Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -16794,6 +17108,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 40,
@@ -16829,6 +17144,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -16864,6 +17180,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:51Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 21,
@@ -16904,6 +17221,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:49:57Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 21,
@@ -16944,6 +17262,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 44,
@@ -16984,6 +17303,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:22Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 31,
@@ -17019,6 +17339,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:43Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 26,
@@ -17059,6 +17380,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17099,6 +17421,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17139,6 +17462,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17179,6 +17503,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17219,6 +17544,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:50:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17254,6 +17580,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:51:25Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 31,
@@ -17294,6 +17621,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:51:33Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17334,6 +17662,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:51:33Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17369,6 +17698,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:51:52Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 33,
@@ -17404,6 +17734,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:51:55Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 33,
@@ -17444,6 +17775,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:52:03Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -17479,6 +17811,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:52:16Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 3,
@@ -17514,6 +17847,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:52:22Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 4,
@@ -17542,6 +17876,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-15T00:52:35Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -17577,6 +17912,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:55:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": -214748340,
@@ -17612,6 +17948,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:56:03Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -17647,6 +17984,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:56:29Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 20,
@@ -17682,6 +18020,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:56:29Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 20,
@@ -17710,6 +18049,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-15T00:56:34Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 16,
@@ -17750,6 +18090,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:56:53Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 17,
@@ -17790,6 +18131,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:56:57Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 18,
@@ -17830,6 +18172,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:57:03Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 15,
@@ -17870,6 +18213,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:57:11Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 19,
@@ -17910,6 +18254,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:57:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 2,
@@ -17950,6 +18295,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:57:55Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 6,
@@ -17985,6 +18331,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:10Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 35,
@@ -18020,6 +18367,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:12Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 35,
@@ -18055,6 +18403,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:24Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -18090,6 +18439,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:26Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -18125,6 +18475,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:28Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 49,
@@ -18160,6 +18511,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:33Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 49,
@@ -18200,6 +18552,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:58:39Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -18228,6 +18581,7 @@
       "team": {
         "id": "96"
       },
+      "wallclock": "2021-07-15T00:59:12Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -18268,6 +18622,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:59:13Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -18308,6 +18663,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T00:59:13Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -18348,6 +18704,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:02:15Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -18388,6 +18745,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:02:30Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 27,
@@ -18423,6 +18781,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:02:52Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 26,
@@ -18463,6 +18822,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:05Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 25,
@@ -18498,6 +18858,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:33Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 29,
@@ -18533,6 +18894,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:36Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 29,
@@ -18573,6 +18935,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:42Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 23,
@@ -18608,6 +18971,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:46Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 23,
@@ -18643,6 +19007,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:48Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 20,
@@ -18678,6 +19043,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:03:52Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 20,
@@ -18713,6 +19079,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:04:00Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 7,
@@ -18753,6 +19120,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:04:39Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 24,
@@ -18781,6 +19149,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T01:05:01Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -18816,6 +19185,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:06:41Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 1,
@@ -18844,6 +19214,7 @@
       "team": {
         "id": "97"
       },
+      "wallclock": "2021-07-15T01:06:42Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 1,
@@ -18889,6 +19260,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:07:41Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -18924,6 +19296,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:07:51Z",
       "shootingPlay": true,
       "coordinate": {
         "x": 22,
@@ -18959,6 +19332,7 @@
           }
         }
       ],
+      "wallclock": "2021-07-15T01:07:54Z",
       "shootingPlay": false,
       "coordinate": {
         "x": 22,
@@ -18984,6 +19358,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2021-07-15T01:08:14Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -19009,6 +19384,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2021-07-15T01:08:17Z",
       "shootingPlay": false,
       "coordinate": {
         "x": -214748340,
@@ -19017,1429 +19393,7 @@
     }
   ],
   "article": {},
-  "videos": [
-    {
-      "source": "espn",
-      "id": 31818324,
-      "headline": "Sylvia Fowles glides through lane for and-1 vs. All-Stars",
-      "description": "Sylvia Fowles gets downhill and finishes through contact for Team USA vs. the WNBA All-Stars.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Highlight",
-        "trackingName": "WNBA One-Play () 2021/7/14 ESHEET",
-        "trackingId": "evc_20210714_usa_@_all_54f9f5b5-7fb0-4cfa-975e-2e97d343b598_11821"
-      },
-      "cerebroId": "60ef7527be6ab3193710af14",
-      "lastModified": "2021-07-14T23:47:35Z",
-      "originalPublishDate": "2021-07-14T23:32:06Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-14T23:32:06Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "AO",
-          "RE",
-          "GA",
-          "GD",
-          "GU",
-          "KY",
-          "MU",
-          "KE",
-          "GY",
-          "MF",
-          "UG",
-          "SX",
-          "BI",
-          "VE",
-          "EC",
-          "PA",
-          "PY",
-          "ST",
-          "US",
-          "AS",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "NA",
-          "BS",
-          "MZ",
-          "FM",
-          "UY",
-          "GB",
-          "UK",
-          "AU",
-          "TT",
-          "NI",
-          "TZ",
-          "BR",
-          "DO",
-          "HN",
-          "LR",
-          "SV",
-          "GM",
-          "CD",
-          "AG",
-          "JM",
-          "BJ",
-          "SL",
-          "GN",
-          "ZM",
-          "MG",
-          "NZ",
-          "GW",
-          "ZW",
-          "PW",
-          "TC",
-          "BQ",
-          "SC",
-          "AW",
-          "NE",
-          "CR",
-          "SR",
-          "SN",
-          "GQ",
-          "MS",
-          "ET",
-          "AI",
-          "CU",
-          "ZA",
-          "ML",
-          "BB",
-          "LC",
-          "LS",
-          "NG",
-          "GT",
-          "VC",
-          "TG",
-          "MX",
-          "SS",
-          "ER",
-          "RW",
-          "CL",
-          "BZ",
-          "AM",
-          "CG",
-          "HT",
-          "BM",
-          "BO",
-          "MQ",
-          "BF",
-          "CF",
-          "MH",
-          "PE",
-          "FJ",
-          "CI",
-          "MW",
-          "CO",
-          "GH",
-          "KM",
-          "GP",
-          "GF",
-          "VG",
-          "CV",
-          "BW",
-          "CM",
-          "SZ"
-        ]
-      },
-      "duration": 25,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818324"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/78d5a1bb-f551-49de-904b-fc0b0605fa30"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818324&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818324"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818324&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818324&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821/evc__20210714_usa__all_3ebc2917_1fca_4418_a564_f0b4ab64ec5a_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/78d5a1bb-f551-49de-904b-fc0b0605fa30/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818324",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/78d5a1bb-f551-49de-904b-fc0b0605fa30/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818324"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/78d5a1bb-f551-49de-904b-fc0b0605fa30/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818324"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31818593,
-      "headline": "Allie Quigley wins third 3-point shooting contest",
-      "description": "Allie Quigley scores a 26 in the final round to win her third 3-point contest at the WNBA All-Star game.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Highlight",
-        "trackingName": "WNBA One-Play (Allie Quigley wins third 3-point shooting contest) 2021/7/14 ESHEET",
-        "trackingId": "evc_20210714_usa_@_all_07a8e4a1-ff78-4e28-b540-4144175ecdcc_11821"
-      },
-      "cerebroId": "60ef7edbbe6ab3193710b4f1",
-      "lastModified": "2021-07-15T00:23:36Z",
-      "originalPublishDate": "2021-07-15T00:13:31Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T00:13:31Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "AO",
-          "RE",
-          "GA",
-          "GD",
-          "GU",
-          "KY",
-          "MU",
-          "KE",
-          "GY",
-          "MF",
-          "UG",
-          "SX",
-          "BI",
-          "VE",
-          "EC",
-          "PA",
-          "PY",
-          "ST",
-          "US",
-          "AS",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "NA",
-          "BS",
-          "MZ",
-          "FM",
-          "UY",
-          "GB",
-          "UK",
-          "AU",
-          "TT",
-          "NI",
-          "TZ",
-          "BR",
-          "DO",
-          "HN",
-          "LR",
-          "SV",
-          "GM",
-          "CD",
-          "AG",
-          "JM",
-          "BJ",
-          "SL",
-          "GN",
-          "ZM",
-          "MG",
-          "NZ",
-          "GW",
-          "ZW",
-          "PW",
-          "TC",
-          "BQ",
-          "SC",
-          "AW",
-          "NE",
-          "CR",
-          "SR",
-          "SN",
-          "GQ",
-          "MS",
-          "ET",
-          "AI",
-          "CU",
-          "ZA",
-          "ML",
-          "BB",
-          "LC",
-          "LS",
-          "NG",
-          "GT",
-          "VC",
-          "TG",
-          "MX",
-          "SS",
-          "ER",
-          "RW",
-          "CL",
-          "BZ",
-          "AM",
-          "CG",
-          "HT",
-          "BM",
-          "BO",
-          "MQ",
-          "BF",
-          "CF",
-          "MH",
-          "PE",
-          "FJ",
-          "CI",
-          "MW",
-          "CO",
-          "GH",
-          "KM",
-          "GP",
-          "GF",
-          "VG",
-          "CV",
-          "BW",
-          "CM",
-          "SZ"
-        ]
-      },
-      "duration": 110,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818593"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/5443a00e-38f9-4c62-a698-e953c68d4306"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818593&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818593"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818593&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818593&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821/evc__20210714_usa__all_4d051a7b_fd97_4d60_86e9_8e696c4a3335_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/5443a00e-38f9-4c62-a698-e953c68d4306/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818593",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/5443a00e-38f9-4c62-a698-e953c68d4306/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818593"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/5443a00e-38f9-4c62-a698-e953c68d4306/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818593"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31818745,
-      "headline": "Chelsea Gray shows off moves with layup to beat buzzer",
-      "description": "Chelsea Gray drives inside and finishes high off the glass as the third quarter comes to an end.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Highlight",
-        "trackingName": "WNBA One-Play (Chelsea Gray shows off moves with layup to beat buzzer) 2021/7/14 ESHEET",
-        "trackingId": "evc_20210714_usa_@_all_ddf0ea40-0267-4413-b68a-81a97fd5b79c_11821"
-      },
-      "cerebroId": "60ef8562be6ab3193710c2c2",
-      "lastModified": "2021-07-15T01:25:24Z",
-      "originalPublishDate": "2021-07-15T00:41:21Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T00:41:21Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "AO",
-          "RE",
-          "GA",
-          "GD",
-          "GU",
-          "KY",
-          "MU",
-          "KE",
-          "GY",
-          "MF",
-          "UG",
-          "SX",
-          "BI",
-          "VE",
-          "EC",
-          "PA",
-          "PY",
-          "ST",
-          "US",
-          "AS",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "NA",
-          "BS",
-          "MZ",
-          "FM",
-          "UY",
-          "GB",
-          "UK",
-          "AU",
-          "TT",
-          "NI",
-          "TZ",
-          "BR",
-          "DO",
-          "HN",
-          "LR",
-          "SV",
-          "GM",
-          "CD",
-          "AG",
-          "JM",
-          "BJ",
-          "SL",
-          "GN",
-          "ZM",
-          "MG",
-          "NZ",
-          "GW",
-          "ZW",
-          "PW",
-          "TC",
-          "BQ",
-          "SC",
-          "AW",
-          "NE",
-          "CR",
-          "SR",
-          "SN",
-          "GQ",
-          "MS",
-          "ET",
-          "AI",
-          "CU",
-          "ZA",
-          "ML",
-          "BB",
-          "LC",
-          "LS",
-          "NG",
-          "GT",
-          "VC",
-          "TG",
-          "MX",
-          "SS",
-          "ER",
-          "RW",
-          "CL",
-          "BZ",
-          "AM",
-          "CG",
-          "HT",
-          "BM",
-          "BO",
-          "MQ",
-          "BF",
-          "CF",
-          "MH",
-          "PE",
-          "FJ",
-          "CI",
-          "MW",
-          "CO",
-          "GH",
-          "KM",
-          "GP",
-          "GF",
-          "VG",
-          "CV",
-          "BW",
-          "CM",
-          "SZ"
-        ]
-      },
-      "duration": 33,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818745"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/6dee2408-d260-4f7d-a316-bee58e2cc1d4"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818745&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818745"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818745&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818745&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821/evc__20210714_usa__all_bae92f46_5d9e_43e4_85b3_c56effe3691e_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6dee2408-d260-4f7d-a316-bee58e2cc1d4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818745",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6dee2408-d260-4f7d-a316-bee58e2cc1d4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818745"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/6dee2408-d260-4f7d-a316-bee58e2cc1d4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818745"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31818816,
-      "headline": "Ogunbowale steps back for and-1 3 in win vs. Team USA",
-      "description": "Arike Ogunbowale makes a step-back 3-pointer in the WNBA All-Stars' 93-85 win vs. Team USA.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "WNBA One-Play (Ogunbowale steps back for and-1 3 in win vs. Team USA) 2021/7/14 ESHEET",
-        "trackingId": "evc_20210714_usa_@_all_1aa5a3df-855d-459a-b95d-f69caab042ca_11821"
-      },
-      "cerebroId": "60ef8af7be6ab3193710c539",
-      "lastModified": "2021-07-15T01:26:34Z",
-      "originalPublishDate": "2021-07-15T01:05:11Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T01:05:11Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "AO",
-          "RE",
-          "GA",
-          "GD",
-          "GU",
-          "KY",
-          "MU",
-          "KE",
-          "GY",
-          "MF",
-          "UG",
-          "SX",
-          "BI",
-          "VE",
-          "EC",
-          "PA",
-          "PY",
-          "ST",
-          "US",
-          "AS",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "NA",
-          "BS",
-          "MZ",
-          "FM",
-          "UY",
-          "GB",
-          "UK",
-          "AU",
-          "TT",
-          "NI",
-          "TZ",
-          "BR",
-          "DO",
-          "HN",
-          "LR",
-          "SV",
-          "GM",
-          "CD",
-          "AG",
-          "JM",
-          "BJ",
-          "SL",
-          "GN",
-          "ZM",
-          "MG",
-          "NZ",
-          "GW",
-          "ZW",
-          "PW",
-          "TC",
-          "BQ",
-          "SC",
-          "AW",
-          "NE",
-          "CR",
-          "SR",
-          "SN",
-          "GQ",
-          "MS",
-          "ET",
-          "AI",
-          "CU",
-          "ZA",
-          "ML",
-          "BB",
-          "LC",
-          "LS",
-          "NG",
-          "GT",
-          "VC",
-          "TG",
-          "MX",
-          "SS",
-          "ER",
-          "RW",
-          "CL",
-          "BZ",
-          "AM",
-          "CG",
-          "HT",
-          "BM",
-          "BO",
-          "MQ",
-          "BF",
-          "CF",
-          "MH",
-          "PE",
-          "FJ",
-          "CI",
-          "MW",
-          "CO",
-          "GH",
-          "KM",
-          "GP",
-          "GF",
-          "VG",
-          "CV",
-          "BW",
-          "CM",
-          "SZ"
-        ]
-      },
-      "duration": 15,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818816"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/27cf7248-7232-4812-ab7a-9c8e22af3bb1"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818816&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818816"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818816&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818816&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821/evc__20210714_usa__all_8e4390c7_0589_4ef0_a9e8_8002dea85f14_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27cf7248-7232-4812-ab7a-9c8e22af3bb1/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818816",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27cf7248-7232-4812-ab7a-9c8e22af3bb1/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818816"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/27cf7248-7232-4812-ab7a-9c8e22af3bb1/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818816"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31818863,
-      "headline": "Bryant family spotted at Team USA vs. WNBA All-Star game",
-      "description": "Vanessa Bryant and her family check out Team USA vs. the WNBA All-Stars.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Highlight",
-        "trackingName": "evc_20210714_usa_@_all_76f71c83-8c7a-46ca-9637-5035f680dc0b_11821",
-        "trackingId": "evc_20210714_usa_@_all_76f71c83-8c7a-46ca-9637-5035f680dc0b_11821"
-      },
-      "cerebroId": "60ef8c41be6ab3193710c55b",
-      "lastModified": "2021-07-15T01:17:09Z",
-      "originalPublishDate": "2021-07-15T01:10:41Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T01:10:41Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "AO",
-          "RE",
-          "GA",
-          "GD",
-          "GU",
-          "KY",
-          "MU",
-          "KE",
-          "GY",
-          "MF",
-          "UG",
-          "SX",
-          "BI",
-          "VE",
-          "EC",
-          "PA",
-          "PY",
-          "ST",
-          "US",
-          "AS",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "NA",
-          "BS",
-          "MZ",
-          "FM",
-          "UY",
-          "GB",
-          "UK",
-          "AU",
-          "TT",
-          "NI",
-          "TZ",
-          "BR",
-          "DO",
-          "HN",
-          "LR",
-          "SV",
-          "GM",
-          "CD",
-          "AG",
-          "JM",
-          "BJ",
-          "SL",
-          "GN",
-          "ZM",
-          "MG",
-          "NZ",
-          "GW",
-          "ZW",
-          "PW",
-          "TC",
-          "BQ",
-          "SC",
-          "AW",
-          "NE",
-          "CR",
-          "SR",
-          "SN",
-          "GQ",
-          "MS",
-          "ET",
-          "AI",
-          "CU",
-          "ZA",
-          "ML",
-          "BB",
-          "LC",
-          "LS",
-          "NG",
-          "GT",
-          "VC",
-          "TG",
-          "MX",
-          "SS",
-          "ER",
-          "RW",
-          "CL",
-          "BZ",
-          "AM",
-          "CG",
-          "HT",
-          "BM",
-          "BO",
-          "MQ",
-          "BF",
-          "CF",
-          "MH",
-          "PE",
-          "FJ",
-          "CI",
-          "MW",
-          "CO",
-          "GH",
-          "KM",
-          "GP",
-          "GF",
-          "VG",
-          "CV",
-          "BW",
-          "CM",
-          "SZ"
-        ]
-      },
-      "duration": 19,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818863"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/f57e48e2-54f7-450f-ab89-ac4b99ddedc6"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818863&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818863"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818863&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818863&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821/evc__20210714_usa__all_863b5388_8ecf_437b_bd3f_24e52408467c_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f57e48e2-54f7-450f-ab89-ac4b99ddedc6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818863",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f57e48e2-54f7-450f-ab89-ac4b99ddedc6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818863"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f57e48e2-54f7-450f-ab89-ac4b99ddedc6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818863"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31818901,
-      "headline": "Arike Ogunbowale wins MVP of the WNBA All-Star game",
-      "description": "Arike Ogunbowale wins the 2021 WNBA All-Star Game MVP award as she scores 26 in the victory for team WNBA.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Highlight",
-        "trackingName": "COM_WNBA Interview (Arike Ogunbowale wins MVP of the WNBA All-Star game) 2021/7/14",
-        "trackingId": "evc_20210714_usa_@_all_a50d7b64-66c7-4b92-924b-3d0c622d54a7_11821"
-      },
-      "cerebroId": "60ef8d9bbe6ab3193710c5a7",
-      "lastModified": "2021-07-15T01:28:42Z",
-      "originalPublishDate": "2021-07-15T01:16:27Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T01:16:27Z",
-        "expirationDate": "2022-11-30T02:00:00Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "KN",
-          "GW",
-          "BW",
-          "VE",
-          "NA",
-          "HN",
-          "SV",
-          "US",
-          "AS",
-          "GU",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "JM",
-          "RE",
-          "TC",
-          "CI",
-          "CL",
-          "LC",
-          "CD",
-          "ZA",
-          "GM",
-          "UG",
-          "BO",
-          "DO",
-          "BQ",
-          "GN",
-          "CM",
-          "UY",
-          "HT",
-          "KM",
-          "ET",
-          "MH",
-          "SZ",
-          "CU",
-          "CR",
-          "NE",
-          "TG",
-          "PE",
-          "KY",
-          "EC",
-          "CF",
-          "SR",
-          "GP",
-          "GH",
-          "CO",
-          "FJ",
-          "AO",
-          "TZ",
-          "MS",
-          "ER",
-          "PW",
-          "SX",
-          "BM",
-          "AU",
-          "CG",
-          "AI",
-          "SC",
-          "NI",
-          "VC",
-          "MU",
-          "GY",
-          "TT",
-          "MF",
-          "BZ",
-          "BJ",
-          "RW",
-          "ML",
-          "ZW",
-          "MZ",
-          "AW",
-          "NG",
-          "MX",
-          "BB",
-          "MG",
-          "GD",
-          "SN",
-          "SS",
-          "KE",
-          "GQ",
-          "GF",
-          "FM",
-          "VG",
-          "BI",
-          "BR",
-          "BS",
-          "LS",
-          "SL",
-          "MQ",
-          "MW",
-          "AG",
-          "PA",
-          "BF",
-          "GB",
-          "UK",
-          "CV",
-          "GT",
-          "ZM",
-          "PY",
-          "NZ",
-          "AM",
-          "ST",
-          "LR",
-          "GA"
-        ]
-      },
-      "duration": 52,
-      "thumbnail": "https://a.espncdn.com/media/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31818901"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/f754f6cc-1cc1-494d-bc37-2e63e687db3d"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31818901&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31818901"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31818901&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31818901&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/fastclipper/2021/0714/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821/evc__20210714_usa__all_b4ee28cd_a7e5_47b6_a298_94cdfead855e_11821.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f754f6cc-1cc1-494d-bc37-2e63e687db3d/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818901",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f754f6cc-1cc1-494d-bc37-2e63e687db3d/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818901"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/f754f6cc-1cc1-494d-bc37-2e63e687db3d/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31818901"
-          }
-        }
-      }
-    },
-    {
-      "source": "espn",
-      "id": 31819852,
-      "headline": "Ogunbowale earns MVP honors as the WNBA All-Stars beat Team USA",
-      "description": "The WNBA All-Stars beat Team USA 93-85 as Arike Ogunbowale wins the MVP award for her 26-point performance.",
-      "ad": {
-        "sport": "wnba",
-        "bundle": "wnba_one_plays"
-      },
-      "tracking": {
-        "sportName": "wnba",
-        "leagueName": "No League",
-        "coverageType": "Final Game Highlight",
-        "trackingName": "WNBA_One-Play (Ogunbowale earns MVP honors as the WNBA All-Stars beat Team USA) 2020/7/14 ESHEET",
-        "trackingId": "dm_210714_WNBA_wnba"
-      },
-      "cerebroId": "60efb0ecbe6ab3193710df31",
-      "lastModified": "2021-07-15T04:07:08Z",
-      "originalPublishDate": "2021-07-15T03:50:09Z",
-      "timeRestrictions": {
-        "embargoDate": "2021-07-15T03:50:09Z",
-        "expirationDate": "2022-11-30T04:50:09Z"
-      },
-      "deviceRestrictions": {
-        "type": "whitelist",
-        "devices": [
-          "desktop",
-          "settop",
-          "handset",
-          "tablet"
-        ]
-      },
-      "geoRestrictions": {
-        "type": "whitelist",
-        "countries": [
-          "GW",
-          "KN",
-          "BW",
-          "VE",
-          "NA",
-          "HN",
-          "SV",
-          "US",
-          "AS",
-          "GU",
-          "MP",
-          "PR",
-          "VI",
-          "UM",
-          "JM",
-          "RE",
-          "TC",
-          "CI",
-          "CL",
-          "LC",
-          "CD",
-          "ZA",
-          "GM",
-          "UG",
-          "BO",
-          "DO",
-          "BQ",
-          "GN",
-          "CM",
-          "UY",
-          "KM",
-          "ET",
-          "HT",
-          "SZ",
-          "MH",
-          "CU",
-          "CR",
-          "NE",
-          "TG",
-          "PE",
-          "KY",
-          "EC",
-          "CF",
-          "SR",
-          "GH",
-          "GP",
-          "CO",
-          "FJ",
-          "AO",
-          "TZ",
-          "MS",
-          "ER",
-          "PW",
-          "SX",
-          "BM",
-          "AU",
-          "CG",
-          "AI",
-          "SC",
-          "NI",
-          "VC",
-          "MU",
-          "GY",
-          "TT",
-          "MF",
-          "BZ",
-          "BJ",
-          "RW",
-          "ML",
-          "ZW",
-          "MZ",
-          "AW",
-          "NG",
-          "MX",
-          "BB",
-          "MG",
-          "SN",
-          "GD",
-          "SS",
-          "KE",
-          "GQ",
-          "GF",
-          "FM",
-          "VG",
-          "BI",
-          "BR",
-          "BS",
-          "LS",
-          "SL",
-          "MQ",
-          "MW",
-          "AG",
-          "PA",
-          "BF",
-          "GB",
-          "UK",
-          "CV",
-          "GT",
-          "ZM",
-          "PY",
-          "NZ",
-          "AM",
-          "ST",
-          "LR",
-          "GA"
-        ]
-      },
-      "duration": 106,
-      "thumbnail": "https://a.espncdn.com/media/motion/2021/0715/dm_210714_WNBA_wnba5/dm_210714_WNBA_wnba5.jpg",
-      "links": {
-        "api": {
-          "self": {
-            "href": "http://api.espn.com/v1/video/clips/31819852"
-          },
-          "artwork": {
-            "href": "https://artwork.api.espn.com/artwork/collections/media/609d5a63-cc95-403e-9201-49a8e9442ff4"
-          }
-        },
-        "web": {
-          "href": "http://www.espn.com/video/clip?id=31819852&ex_cid=espnapi_internal",
-          "short": {
-            "href": "http://www.espn.com/video/clip?id=31819852"
-          },
-          "self": {
-            "href": "http://www.espn.com/video/clip?id=31819852&ex_cid=espnapi_internal"
-          }
-        },
-        "source": {
-          "mezzanine": {
-            "href": "https://media.video-origin.espn.com/espnvideo/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba.mp4"
-          },
-          "flash": {
-            "href": "https://media.video-cdn.espn.com/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba.smil"
-          },
-          "hds": {
-            "href": "https://hds.video-cdn.espn.com/z/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba_rel.smil/manifest.f4m"
-          },
-          "HLS": {
-            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba.smil/master.m3u8",
-            "HD": {
-              "href": "https://espnpackaging-vh.akamaihd.net/i/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba.smil/master.m3u8"
-            }
-          },
-          "HD": {
-            "href": "https://media.video-cdn.espn.com/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba_720p30_2896k.mp4"
-          },
-          "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba_360p30_1464k.mp4"
-          },
-          "href": "https://media.video-cdn.espn.com/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba_360p30_1464k.mp4"
-        },
-        "mobile": {
-          "alert": {
-            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31819852&ex_cid=espnapi_internal"
-          },
-          "source": {
-            "href": "https://media.video-cdn.espn.com/motion/2021/0714/dm_210714_WNBA_wnba/dm_210714_WNBA_wnba.mp4"
-          },
-          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/609d5a63-cc95-403e-9201-49a8e9442ff4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31819852",
-          "streaming": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/609d5a63-cc95-403e-9201-49a8e9442ff4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31819852"
-          },
-          "progressiveDownload": {
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/609d5a63-cc95-403e-9201-49a8e9442ff4/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31819852"
-          }
-        }
-      }
-    }
-  ],
+  "videos": [],
   "standings": {
     "fullViewLink": {
       "text": "Full Standings",
