@@ -1,8 +1,3 @@
-
-from urllib.error import URLError, HTTPError, ContentTooShortError
-from datetime import datetime
-from itertools import chain, starmap
-from pathlib import Path
 import os, json
 import re
 import http
@@ -13,6 +8,12 @@ import pyarrow as pa
 import pandas as pd
 import sportsdataverse as sdv
 import argparse
+from urllib.error import URLError, HTTPError, ContentTooShortError
+from datetime import datetime
+from itertools import chain, starmap
+from pathlib import Path
+from tqdm import tqdm
+
 path_to_schedules = "wbb/schedules"
 final_file_name = "wbb_schedule_master.csv"
 
@@ -20,7 +21,7 @@ def download_schedule(season, path_to_schedules=None):
     df = sdv.wbb.espn_wbb_calendar(season, ondays=True)
     calendar = df['dateURL'].tolist()
     ev = pd.DataFrame()
-    for d in calendar:
+    for d in tqdm(calendar):
         date_schedule = sdv.wbb.espn_wbb_schedule(dates=d, groups=50)
         ev = pd.concat([ev,date_schedule],axis=0, ignore_index=True)
     ev = ev[ev['season_type'].isin([2,3])]

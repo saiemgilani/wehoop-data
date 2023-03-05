@@ -1,8 +1,3 @@
-from tqdm import tqdm
-from urllib.error import URLError, HTTPError, ContentTooShortError
-from datetime import datetime
-from itertools import chain, starmap
-from pathlib import Path
 import os, json
 import re
 import http
@@ -16,6 +11,12 @@ import multiprocessing
 import time
 import urllib.request
 import argparse
+from tqdm import tqdm
+from urllib.error import URLError, HTTPError, ContentTooShortError
+from datetime import datetime
+from itertools import chain, starmap
+from pathlib import Path
+
 path_to_raw = "wbb/json/raw"
 path_to_final = "wbb/json/final"
 path_to_errors = "wbb/errors"
