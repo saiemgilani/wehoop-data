@@ -47,7 +47,7 @@ wbb_team_box_games <- function(y) {
     teams_box_score_df <- data.frame()
     gameId <- as.integer(game_json[["gameId"]])
     box_score_available <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
-
+    
     tryCatch(
       expr = {
         if (box_score_available == TRUE) {
@@ -192,7 +192,6 @@ wbb_team_box_games <- function(y) {
                   "fouls",
                   "freeThrowsMade",
                   "freeThrowsAttempted",
-                  "largestLead",
                   "offensiveRebounds",
                   "steals",
                   "teamTurnovers",
