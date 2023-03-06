@@ -201,12 +201,12 @@ wbb_team_box_games <- function(y) {
                   "totalRebounds",
                   "totalTechnicalFouls",
                   "totalTurnovers",
-                  "turnovers",
+                  "turnovers"
                 )), ~as.integer(.x)))
             )
             team_box_score <- complete_statistics_df %>%
               janitor::clean_names() %>%
-              dplyr::select(
+              dplyr::select(dplyr::any_of(
                 "game_id",
                 "season",
                 "season_type",
@@ -224,7 +224,7 @@ wbb_team_box_games <- function(y) {
                 "team_logo",
                 "team_home_away",
                 "team_score",
-                "team_winner",
+                "team_winner"),
                 tidyr::everything()) %>%
               wehoop:::make_wehoop_data("ESPN WBB Team Box Information from ESPN.com", Sys.time())
           }
