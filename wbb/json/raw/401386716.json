@@ -68,12 +68,6 @@
             "label": "Defensive Rebounds"
           },
           {
-            "name": "teamRebounds",
-            "displayValue": "0",
-            "abbreviation": "TREB",
-            "label": "Team Rebounds"
-          },
-          {
             "name": "assists",
             "displayValue": "11",
             "abbreviation": "AST",
@@ -145,11 +139,11 @@
         "team": {
           "id": "2463",
           "uid": "s:40~l:54~t:2463",
-          "slug": "csu-northridge-matadors",
-          "location": "CSU Northridge",
+          "slug": "cal-state-northridge-matadors",
+          "location": "Cal State Northridge",
           "name": "Matadors",
           "abbreviation": "CSUN",
-          "displayName": "CSU Northridge Matadors",
+          "displayName": "Cal State Northridge Matadors",
           "shortDisplayName": "CSU Northridge",
           "color": "b50000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png"
@@ -205,12 +199,6 @@
             "displayValue": "22",
             "abbreviation": "DR",
             "label": "Defensive Rebounds"
-          },
-          {
-            "name": "teamRebounds",
-            "displayValue": "0",
-            "abbreviation": "TREB",
-            "label": "Team Rebounds"
           },
           {
             "name": "assists",
@@ -617,9 +605,9 @@
                   },
                   "jersey": "5",
                   "position": {
-                    "name": "Point Guard",
-                    "displayName": "Point Guard",
-                    "abbreviation": "PG"
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
                   }
                 },
                 "starter": true,
@@ -639,100 +627,6 @@
                   "1",
                   "0",
                   "9"
-                ]
-              },
-              {
-                "active": false,
-                "athlete": {
-                  "id": "4400018",
-                  "uid": "s:40~l:54~a:4400018",
-                  "guid": "4ecda674dac94f773d9072d8971a5eda",
-                  "displayName": "Maddie Vick",
-                  "shortName": "M. Vick",
-                  "links": [
-                    {
-                      "rel": [
-                        "playercard",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4400018/maddie-vick",
-                      "text": "Player Card"
-                    },
-                    {
-                      "rel": [
-                        "stats",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4400018/maddie-vick",
-                      "text": "Stats"
-                    },
-                    {
-                      "rel": [
-                        "gamelog",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4400018/maddie-vick",
-                      "text": "Game Log"
-                    },
-                    {
-                      "rel": [
-                        "news",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4400018/maddie-vick",
-                      "text": "News"
-                    },
-                    {
-                      "rel": [
-                        "bio",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4400018/maddie-vick",
-                      "text": "Bio"
-                    },
-                    {
-                      "rel": [
-                        "overview",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4400018/maddie-vick",
-                      "text": "Overview"
-                    }
-                  ],
-                  "headshot": {
-                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4400018.png",
-                    "alt": "Maddie Vick"
-                  },
-                  "jersey": "13",
-                  "position": {
-                    "name": "Point Guard",
-                    "displayName": "Point Guard",
-                    "abbreviation": "PG"
-                  }
-                },
-                "starter": true,
-                "didNotPlay": false,
-                "ejected": false,
-                "stats": [
-                  "40",
-                  "5-13",
-                  "1-4",
-                  "4-4",
-                  "0",
-                  "3",
-                  "3",
-                  "5",
-                  "2",
-                  "0",
-                  "6",
-                  "2",
-                  "15"
                 ]
               },
               {
@@ -832,6 +726,100 @@
               {
                 "active": false,
                 "athlete": {
+                  "id": "4400018",
+                  "uid": "s:40~l:54~a:4400018",
+                  "guid": "4ecda674dac94f773d9072d8971a5eda",
+                  "displayName": "Maddie Vick",
+                  "shortName": "M. Vick",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4400018/maddie-vick",
+                      "text": "Player Card"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4400018/maddie-vick",
+                      "text": "Stats"
+                    },
+                    {
+                      "rel": [
+                        "gamelog",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4400018/maddie-vick",
+                      "text": "Game Log"
+                    },
+                    {
+                      "rel": [
+                        "news",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4400018/maddie-vick",
+                      "text": "News"
+                    },
+                    {
+                      "rel": [
+                        "bio",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4400018/maddie-vick",
+                      "text": "Bio"
+                    },
+                    {
+                      "rel": [
+                        "overview",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4400018/maddie-vick",
+                      "text": "Overview"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4400018.png",
+                    "alt": "Maddie Vick"
+                  },
+                  "jersey": "13",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "ejected": false,
+                "stats": [
+                  "40",
+                  "5-13",
+                  "1-4",
+                  "4-4",
+                  "0",
+                  "3",
+                  "3",
+                  "5",
+                  "2",
+                  "0",
+                  "6",
+                  "2",
+                  "15"
+                ]
+              },
+              {
+                "active": false,
+                "athlete": {
                   "id": "4400510",
                   "uid": "s:40~l:54~a:4400510",
                   "guid": "dd1b77a4aed5fa7e7085fbee6c7955d1",
@@ -921,194 +909,6 @@
                   "2",
                   "1",
                   "7"
-                ]
-              },
-              {
-                "active": false,
-                "athlete": {
-                  "id": "4899654",
-                  "uid": "s:40~l:54~a:4899654",
-                  "guid": "d3985d91-0dbd-3a1c-9619-eefd6921ddff",
-                  "displayName": "Sydney Bourland",
-                  "shortName": "S. Bourland",
-                  "links": [
-                    {
-                      "rel": [
-                        "playercard",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899654/sydney-bourland",
-                      "text": "Player Card"
-                    },
-                    {
-                      "rel": [
-                        "stats",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899654/sydney-bourland",
-                      "text": "Stats"
-                    },
-                    {
-                      "rel": [
-                        "gamelog",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899654/sydney-bourland",
-                      "text": "Game Log"
-                    },
-                    {
-                      "rel": [
-                        "news",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899654/sydney-bourland",
-                      "text": "News"
-                    },
-                    {
-                      "rel": [
-                        "bio",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899654/sydney-bourland",
-                      "text": "Bio"
-                    },
-                    {
-                      "rel": [
-                        "overview",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899654/sydney-bourland",
-                      "text": "Overview"
-                    }
-                  ],
-                  "headshot": {
-                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899654.png",
-                    "alt": "Sydney Bourland"
-                  },
-                  "jersey": "15",
-                  "position": {
-                    "name": "Shooting Guard",
-                    "displayName": "Shooting Guard",
-                    "abbreviation": "SG"
-                  }
-                },
-                "starter": false,
-                "didNotPlay": false,
-                "ejected": false,
-                "stats": [
-                  "13",
-                  "1-2",
-                  "0-0",
-                  "2-2",
-                  "0",
-                  "1",
-                  "1",
-                  "2",
-                  "0",
-                  "0",
-                  "1",
-                  "3",
-                  "4"
-                ]
-              },
-              {
-                "active": false,
-                "athlete": {
-                  "id": "4899652",
-                  "uid": "s:40~l:54~a:4899652",
-                  "guid": "e7c1d1c4-89cb-3582-9e81-d4652a5f79d1",
-                  "displayName": "Annika Shah",
-                  "shortName": "A. Shah",
-                  "links": [
-                    {
-                      "rel": [
-                        "playercard",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899652/annika-shah",
-                      "text": "Player Card"
-                    },
-                    {
-                      "rel": [
-                        "stats",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899652/annika-shah",
-                      "text": "Stats"
-                    },
-                    {
-                      "rel": [
-                        "gamelog",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899652/annika-shah",
-                      "text": "Game Log"
-                    },
-                    {
-                      "rel": [
-                        "news",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899652/annika-shah",
-                      "text": "News"
-                    },
-                    {
-                      "rel": [
-                        "bio",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899652/annika-shah",
-                      "text": "Bio"
-                    },
-                    {
-                      "rel": [
-                        "overview",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899652/annika-shah",
-                      "text": "Overview"
-                    }
-                  ],
-                  "headshot": {
-                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899652.png",
-                    "alt": "Annika Shah"
-                  },
-                  "jersey": "2",
-                  "position": {
-                    "name": "Point Guard",
-                    "displayName": "Point Guard",
-                    "abbreviation": "PG"
-                  }
-                },
-                "starter": false,
-                "didNotPlay": false,
-                "ejected": false,
-                "stats": [
-                  "14",
-                  "4-6",
-                  "1-3",
-                  "0-0",
-                  "0",
-                  "1",
-                  "1",
-                  "0",
-                  "1",
-                  "0",
-                  "0",
-                  "1",
-                  "9"
                 ]
               },
               {
@@ -1297,6 +1097,194 @@
                   "3",
                   "4",
                   "2"
+                ]
+              },
+              {
+                "active": false,
+                "athlete": {
+                  "id": "4899652",
+                  "uid": "s:40~l:54~a:4899652",
+                  "guid": "e7c1d1c4-89cb-3582-9e81-d4652a5f79d1",
+                  "displayName": "Annika Shah",
+                  "shortName": "A. Shah",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899652/annika-shah",
+                      "text": "Player Card"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899652/annika-shah",
+                      "text": "Stats"
+                    },
+                    {
+                      "rel": [
+                        "gamelog",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899652/annika-shah",
+                      "text": "Game Log"
+                    },
+                    {
+                      "rel": [
+                        "news",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899652/annika-shah",
+                      "text": "News"
+                    },
+                    {
+                      "rel": [
+                        "bio",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899652/annika-shah",
+                      "text": "Bio"
+                    },
+                    {
+                      "rel": [
+                        "overview",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899652/annika-shah",
+                      "text": "Overview"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899652.png",
+                    "alt": "Annika Shah"
+                  },
+                  "jersey": "2",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": false,
+                "didNotPlay": false,
+                "ejected": false,
+                "stats": [
+                  "14",
+                  "4-6",
+                  "1-3",
+                  "0-0",
+                  "0",
+                  "1",
+                  "1",
+                  "0",
+                  "1",
+                  "0",
+                  "0",
+                  "1",
+                  "9"
+                ]
+              },
+              {
+                "active": false,
+                "athlete": {
+                  "id": "4899654",
+                  "uid": "s:40~l:54~a:4899654",
+                  "guid": "d3985d91-0dbd-3a1c-9619-eefd6921ddff",
+                  "displayName": "Sydney Bourland",
+                  "shortName": "S. Bourland",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899654/sydney-bourland",
+                      "text": "Player Card"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899654/sydney-bourland",
+                      "text": "Stats"
+                    },
+                    {
+                      "rel": [
+                        "gamelog",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899654/sydney-bourland",
+                      "text": "Game Log"
+                    },
+                    {
+                      "rel": [
+                        "news",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899654/sydney-bourland",
+                      "text": "News"
+                    },
+                    {
+                      "rel": [
+                        "bio",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899654/sydney-bourland",
+                      "text": "Bio"
+                    },
+                    {
+                      "rel": [
+                        "overview",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899654/sydney-bourland",
+                      "text": "Overview"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899654.png",
+                    "alt": "Sydney Bourland"
+                  },
+                  "jersey": "15",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": false,
+                "didNotPlay": false,
+                "ejected": false,
+                "stats": [
+                  "13",
+                  "1-2",
+                  "0-0",
+                  "2-2",
+                  "0",
+                  "1",
+                  "1",
+                  "2",
+                  "0",
+                  "0",
+                  "1",
+                  "3",
+                  "4"
                 ]
               },
               {
@@ -1622,86 +1610,6 @@
               {
                 "active": false,
                 "athlete": {
-                  "id": "4899655",
-                  "uid": "s:40~l:54~a:4899655",
-                  "guid": "471d59e5-4a5c-3b2e-a641-4edbebaeaa00",
-                  "displayName": "Shannon Karlin",
-                  "shortName": "S. Karlin",
-                  "links": [
-                    {
-                      "rel": [
-                        "playercard",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899655/shannon-karlin",
-                      "text": "Player Card"
-                    },
-                    {
-                      "rel": [
-                        "stats",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899655/shannon-karlin",
-                      "text": "Stats"
-                    },
-                    {
-                      "rel": [
-                        "gamelog",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899655/shannon-karlin",
-                      "text": "Game Log"
-                    },
-                    {
-                      "rel": [
-                        "news",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899655/shannon-karlin",
-                      "text": "News"
-                    },
-                    {
-                      "rel": [
-                        "bio",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899655/shannon-karlin",
-                      "text": "Bio"
-                    },
-                    {
-                      "rel": [
-                        "overview",
-                        "desktop",
-                        "athlete"
-                      ],
-                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899655/shannon-karlin",
-                      "text": "Overview"
-                    }
-                  ],
-                  "headshot": {
-                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899655.png",
-                    "alt": "Shannon Karlin"
-                  },
-                  "jersey": "20",
-                  "position": {
-                    "name": "Shooting Guard",
-                    "displayName": "Shooting Guard",
-                    "abbreviation": "SG"
-                  }
-                },
-                "starter": false,
-                "didNotPlay": true,
-                "ejected": false,
-                "stats": []
-              },
-              {
-                "active": false,
-                "athlete": {
                   "id": "4595185",
                   "uid": "s:40~l:54~a:4595185",
                   "guid": "2743cf35-44a1-3a6d-b36f-2f54efa9645a",
@@ -1778,6 +1686,86 @@
                 "didNotPlay": true,
                 "ejected": false,
                 "stats": []
+              },
+              {
+                "active": false,
+                "athlete": {
+                  "id": "4899655",
+                  "uid": "s:40~l:54~a:4899655",
+                  "guid": "471d59e5-4a5c-3b2e-a641-4edbebaeaa00",
+                  "displayName": "Shannon Karlin",
+                  "shortName": "S. Karlin",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/womens-college-basketball/player/_/id/4899655/shannon-karlin",
+                      "text": "Player Card"
+                    },
+                    {
+                      "rel": [
+                        "stats",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/stats/_/id/4899655/shannon-karlin",
+                      "text": "Stats"
+                    },
+                    {
+                      "rel": [
+                        "gamelog",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/gamelog/_/id/4899655/shannon-karlin",
+                      "text": "Game Log"
+                    },
+                    {
+                      "rel": [
+                        "news",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/news/_/id/4899655/shannon-karlin",
+                      "text": "News"
+                    },
+                    {
+                      "rel": [
+                        "bio",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/bio/_/id/4899655/shannon-karlin",
+                      "text": "Bio"
+                    },
+                    {
+                      "rel": [
+                        "overview",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "http://www.espn.com/womens-college-basketball/player/_/id/4899655/shannon-karlin",
+                      "text": "Overview"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899655.png",
+                    "alt": "Shannon Karlin"
+                  },
+                  "jersey": "20",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": false,
+                "didNotPlay": true,
+                "ejected": false,
+                "stats": []
               }
             ],
             "totals": [
@@ -1802,11 +1790,11 @@
         "team": {
           "id": "2463",
           "uid": "s:40~l:54~t:2463",
-          "slug": "csu-northridge-matadors",
-          "location": "CSU Northridge",
+          "slug": "cal-state-northridge-matadors",
+          "location": "Cal State Northridge",
           "name": "Matadors",
           "abbreviation": "CSUN",
-          "displayName": "CSU Northridge Matadors",
+          "displayName": "Cal State Northridge Matadors",
           "shortDisplayName": "CSU Northridge",
           "color": "b50000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png"
@@ -2694,7 +2682,7 @@
                     "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899646.png",
                     "alt": "Sydney Woodley"
                   },
-                  "jersey": "2",
+                  "jersey": "22",
                   "position": {
                     "name": "Guard",
                     "displayName": "Guard",
@@ -3249,7 +3237,7 @@
   "gameInfo": {
     "venue": {
       "id": "586",
-      "fullName": "Matadome",
+      "fullName": "Premier America Credit Union Arena",
       "address": {
         "city": "Northridge",
         "state": "CA"
@@ -3297,11 +3285,11 @@
       "team": {
         "id": "2463",
         "uid": "s:40~l:54~t:2463",
-        "displayName": "CSU Northridge Matadors",
+        "displayName": "Cal State Northridge Matadors",
         "abbreviation": "CSUN",
         "links": [
           {
-            "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/csu-northridge-matadors",
+            "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/cal-state-northridge-matadors",
             "text": "Clubhouse"
           },
           {
@@ -3309,7 +3297,31 @@
             "text": "Schedule"
           }
         ],
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png"
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-08-22T22:28Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2463.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-08-22T22:19Z"
+          }
+        ]
       },
       "leaders": [
         {
@@ -3407,7 +3419,7 @@
                   "href": "https://a.espncdn.com/i/headshots/womens-college-basketball/players/full/4899646.png",
                   "alt": "Sydney Woodley"
                 },
-                "jersey": "2",
+                "jersey": "22",
                 "position": {
                   "abbreviation": "G"
                 }
@@ -3537,7 +3549,31 @@
             "text": "Schedule"
           }
         ],
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png"
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2018-06-05T12:08Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/13.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2018-06-05T12:08Z"
+          }
+        ]
       },
       "leaders": [
         {
@@ -3571,7 +3607,7 @@
                 },
                 "jersey": "13",
                 "position": {
-                  "abbreviation": "PG"
+                  "abbreviation": "G"
                 }
               },
               "statistics": [
@@ -3637,7 +3673,7 @@
                 },
                 "jersey": "13",
                 "position": {
-                  "abbreviation": "PG"
+                  "abbreviation": "G"
                 }
               },
               "statistics": [
@@ -3791,7 +3827,31 @@
             "text": "Schedule"
           }
         ],
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png"
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2018-06-05T12:08Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/13.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2018-06-05T12:08Z"
+          }
+        ]
       },
       "records": []
     },
@@ -3799,11 +3859,11 @@
       "team": {
         "id": "2463",
         "uid": "s:40~l:54~t:2463",
-        "displayName": "CSU Northridge Matadors",
+        "displayName": "Cal State Northridge Matadors",
         "abbreviation": "CSUN",
         "links": [
           {
-            "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/csu-northridge-matadors",
+            "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/cal-state-northridge-matadors",
             "text": "Clubhouse"
           },
           {
@@ -3811,7 +3871,31 @@
             "text": "Schedule"
           }
         ],
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png"
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-08-22T22:28Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2463.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-08-22T22:19Z"
+          }
+        ]
       },
       "records": []
     }
@@ -5369,11 +5453,11 @@
             "team": {
               "id": "2463",
               "uid": "s:40~l:54~t:2463",
-              "location": "CSU Northridge",
+              "location": "Cal State Northridge",
               "name": "Matadors",
               "nickname": "CSU Northridge",
               "abbreviation": "CSUN",
-              "displayName": "CSU Northridge Matadors",
+              "displayName": "Cal State Northridge Matadors",
               "color": "b50000",
               "logos": [
                 {
@@ -5406,7 +5490,7 @@
                     "desktop",
                     "team"
                   ],
-                  "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/csu-northridge-matadors",
+                  "href": "http://www.espn.com/womens-college-basketball/team/_/id/2463/cal-state-northridge-matadors",
                   "text": "Clubhouse"
                 }
               ]
@@ -5576,7 +5660,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/womens-college-basketball/game/_/gameId/401386716",
+        "href": "https://www.espn.com/womens-college-basketball/game/_/gameId/401386716",
         "text": "Gamecast",
         "shortText": "Summary",
         "isExternal": false,
@@ -5588,7 +5672,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/womens-college-basketball/boxscore/_/gameId/401386716",
+        "href": "https://www.espn.com/womens-college-basketball/boxscore/_/gameId/401386716",
         "text": "Box Score",
         "shortText": "Box Score",
         "isExternal": false,
@@ -5600,7 +5684,7 @@
           "desktop",
           "event"
         ],
-        "href": "http://www.espn.com/womens-college-basketball/playbyplay/_/gameId/401386716",
+        "href": "https://www.espn.com/womens-college-basketball/playbyplay/_/gameId/401386716",
         "text": "Play-by-Play",
         "shortText": "Play-by-Play",
         "isExternal": false,
@@ -5701,7 +5785,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/womens-college-basketball/scoreboard",
+          "href": "https://www.espn.com/womens-college-basketball/scoreboard",
           "text": "Scores"
         },
         {
@@ -5720,7 +5804,7 @@
             "desktop",
             "league"
           ],
-          "href": "http://www.espn.com/womens-college-basketball/statistics",
+          "href": "https://www.espn.com/womens-college-basketball/stats",
           "text": "Stats"
         },
         {
@@ -5783,6 +5867,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -5814,6 +5899,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -5845,6 +5931,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -5876,6 +5963,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -5907,6 +5995,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -5938,6 +6027,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -5969,6 +6059,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -6000,6 +6091,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -6031,6 +6123,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -6062,6 +6155,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -6093,6 +6187,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": true
     },
     {
@@ -6124,6 +6219,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:02:10Z",
       "shootingPlay": false
     },
     {
@@ -6155,6 +6251,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:13Z",
       "shootingPlay": false
     },
     {
@@ -6186,6 +6283,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:13Z",
       "shootingPlay": true
     },
     {
@@ -6217,6 +6315,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:13Z",
       "shootingPlay": true
     },
     {
@@ -6248,6 +6347,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:13Z",
       "shootingPlay": false
     },
     {
@@ -6279,6 +6379,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:33Z",
       "shootingPlay": true
     },
     {
@@ -6310,6 +6411,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:33Z",
       "shootingPlay": false
     },
     {
@@ -6346,6 +6448,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:03:33Z",
       "shootingPlay": true
     },
     {
@@ -6382,6 +6485,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": true
     },
     {
@@ -6413,6 +6517,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": true
     },
     {
@@ -6444,6 +6549,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6475,6 +6581,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": true
     },
     {
@@ -6506,6 +6613,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6537,6 +6645,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6568,6 +6677,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6599,6 +6709,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6630,6 +6741,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6661,6 +6773,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": true
     },
     {
@@ -6692,6 +6805,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6723,6 +6837,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": true
     },
     {
@@ -6754,6 +6869,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:15Z",
       "shootingPlay": false
     },
     {
@@ -6785,6 +6901,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:05:37Z",
       "shootingPlay": true
     },
     {
@@ -6809,6 +6926,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T01:05:37Z",
       "shootingPlay": false
     },
     {
@@ -6840,6 +6958,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:06:03Z",
       "shootingPlay": true
     },
     {
@@ -6871,6 +6990,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:06:03Z",
       "shootingPlay": false
     },
     {
@@ -6902,6 +7022,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:07:12Z",
       "shootingPlay": false
     },
     {
@@ -6933,6 +7054,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:07:12Z",
       "shootingPlay": false
     },
     {
@@ -6964,6 +7086,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:07:12Z",
       "shootingPlay": true
     },
     {
@@ -6995,6 +7118,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:07:12Z",
       "shootingPlay": false
     },
     {
@@ -7026,6 +7150,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:08:05Z",
       "shootingPlay": true
     },
     {
@@ -7057,6 +7182,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:08:05Z",
       "shootingPlay": false
     },
     {
@@ -7088,6 +7214,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:08:05Z",
       "shootingPlay": true
     },
     {
@@ -7119,6 +7246,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:08:05Z",
       "shootingPlay": false
     },
     {
@@ -7140,6 +7268,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T01:08:05Z",
       "shootingPlay": false
     },
     {
@@ -7176,6 +7305,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:11:35Z",
       "shootingPlay": true
     },
     {
@@ -7207,6 +7337,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:11:35Z",
       "shootingPlay": true
     },
     {
@@ -7238,6 +7369,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:11:35Z",
       "shootingPlay": false
     },
     {
@@ -7269,6 +7401,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:11:35Z",
       "shootingPlay": false
     },
     {
@@ -7300,6 +7433,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7331,6 +7465,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7362,6 +7497,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7393,6 +7529,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7424,6 +7561,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7455,6 +7593,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7486,6 +7625,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": true
     },
     {
@@ -7517,6 +7657,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:14Z",
       "shootingPlay": false
     },
     {
@@ -7548,6 +7689,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:58Z",
       "shootingPlay": false
     },
     {
@@ -7579,6 +7721,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:13:58Z",
       "shootingPlay": false
     },
     {
@@ -7610,6 +7753,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": false
     },
     {
@@ -7641,6 +7785,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": false
     },
     {
@@ -7677,6 +7822,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": true
     },
     {
@@ -7708,6 +7854,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": true
     },
     {
@@ -7739,6 +7886,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": false
     },
     {
@@ -7775,6 +7923,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:16Z",
       "shootingPlay": true
     },
     {
@@ -7806,6 +7955,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:39Z",
       "shootingPlay": false
     },
     {
@@ -7837,6 +7987,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:15:39Z",
       "shootingPlay": false
     },
     {
@@ -7868,6 +8019,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:16:03Z",
       "shootingPlay": false
     },
     {
@@ -7899,6 +8051,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:16:03Z",
       "shootingPlay": true
     },
     {
@@ -7923,6 +8076,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T01:16:03Z",
       "shootingPlay": false
     },
     {
@@ -7954,6 +8108,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:16:03Z",
       "shootingPlay": true
     },
     {
@@ -7985,6 +8140,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:17:16Z",
       "shootingPlay": false
     },
     {
@@ -8016,6 +8172,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:17:16Z",
       "shootingPlay": false
     },
     {
@@ -8047,6 +8204,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:17:37Z",
       "shootingPlay": false
     },
     {
@@ -8078,6 +8236,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": true
     },
     {
@@ -8109,6 +8268,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": true
     },
     {
@@ -8140,6 +8300,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": true
     },
     {
@@ -8171,6 +8332,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8202,6 +8364,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8233,6 +8396,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8264,6 +8428,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": true
     },
     {
@@ -8295,6 +8460,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8326,6 +8492,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8347,6 +8514,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T01:18:03Z",
       "shootingPlay": false
     },
     {
@@ -8378,6 +8546,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:21:37Z",
       "shootingPlay": true
     },
     {
@@ -8409,6 +8578,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:21:37Z",
       "shootingPlay": false
     },
     {
@@ -8445,6 +8615,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:22:00Z",
       "shootingPlay": true
     },
     {
@@ -8476,6 +8647,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": true
     },
     {
@@ -8507,6 +8679,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": false
     },
     {
@@ -8538,6 +8711,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": true
     },
     {
@@ -8569,6 +8743,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": false
     },
     {
@@ -8600,6 +8775,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": false
     },
     {
@@ -8631,6 +8807,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": true
     },
     {
@@ -8662,6 +8839,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:23:12Z",
       "shootingPlay": true
     },
     {
@@ -8693,6 +8871,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:24:00Z",
       "shootingPlay": false
     },
     {
@@ -8724,6 +8903,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:24:00Z",
       "shootingPlay": false
     },
     {
@@ -8755,6 +8935,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:14Z",
       "shootingPlay": true
     },
     {
@@ -8786,6 +8967,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:14Z",
       "shootingPlay": false
     },
     {
@@ -8822,6 +9004,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:14Z",
       "shootingPlay": true
     },
     {
@@ -8858,6 +9041,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:14Z",
       "shootingPlay": true
     },
     {
@@ -8889,6 +9073,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:36Z",
       "shootingPlay": true
     },
     {
@@ -8920,6 +9105,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:36Z",
       "shootingPlay": false
     },
     {
@@ -8951,6 +9137,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:36Z",
       "shootingPlay": false
     },
     {
@@ -8982,6 +9169,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:25:36Z",
       "shootingPlay": false
     },
     {
@@ -9013,6 +9201,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:26:03Z",
       "shootingPlay": true
     },
     {
@@ -9044,6 +9233,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": true
     },
     {
@@ -9075,6 +9265,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": false
     },
     {
@@ -9106,6 +9297,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": false
     },
     {
@@ -9137,6 +9329,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": true
     },
     {
@@ -9168,6 +9361,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": true
     },
     {
@@ -9199,6 +9393,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": true
     },
     {
@@ -9230,6 +9425,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": false
     },
     {
@@ -9261,6 +9457,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:15Z",
       "shootingPlay": false
     },
     {
@@ -9292,6 +9489,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": true
     },
     {
@@ -9323,6 +9521,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": false
     },
     {
@@ -9354,6 +9553,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": false
     },
     {
@@ -9385,6 +9585,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": true
     },
     {
@@ -9409,6 +9610,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": false
     },
     {
@@ -9440,6 +9642,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": true
     },
     {
@@ -9471,6 +9674,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:27:57Z",
       "shootingPlay": false
     },
     {
@@ -9502,6 +9706,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:29:13Z",
       "shootingPlay": true
     },
     {
@@ -9533,6 +9738,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:29:13Z",
       "shootingPlay": false
     },
     {
@@ -9564,6 +9770,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:29:13Z",
       "shootingPlay": false
     },
     {
@@ -9595,6 +9802,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:29:13Z",
       "shootingPlay": true
     },
     {
@@ -9626,6 +9834,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:29:13Z",
       "shootingPlay": true
     },
     {
@@ -9657,6 +9866,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": true
     },
     {
@@ -9681,6 +9891,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": false
     },
     {
@@ -9717,6 +9928,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": true
     },
     {
@@ -9748,6 +9960,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": true
     },
     {
@@ -9779,6 +9992,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": false
     },
     {
@@ -9810,6 +10024,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:31:12Z",
       "shootingPlay": true
     },
     {
@@ -9841,6 +10056,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:34:02Z",
       "shootingPlay": false
     },
     {
@@ -9872,6 +10088,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:34:02Z",
       "shootingPlay": false
     },
     {
@@ -9903,6 +10120,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": false
     },
     {
@@ -9934,6 +10152,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": false
     },
     {
@@ -9965,6 +10184,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": true
     },
     {
@@ -9996,6 +10216,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": false
     },
     {
@@ -10027,6 +10248,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": false
     },
     {
@@ -10058,6 +10280,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": true
     },
     {
@@ -10089,6 +10312,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:35:13Z",
       "shootingPlay": true
     },
     {
@@ -10120,6 +10344,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": false
     },
     {
@@ -10151,6 +10376,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": false
     },
     {
@@ -10182,6 +10408,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": true
     },
     {
@@ -10213,6 +10440,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": false
     },
     {
@@ -10244,6 +10472,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": true
     },
     {
@@ -10275,6 +10504,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:12Z",
       "shootingPlay": false
     },
     {
@@ -10306,6 +10536,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:37:41Z",
       "shootingPlay": false
     },
     {
@@ -10337,6 +10568,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": true
     },
     {
@@ -10368,6 +10600,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": false
     },
     {
@@ -10399,6 +10632,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": false
     },
     {
@@ -10430,6 +10664,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": true
     },
     {
@@ -10461,6 +10696,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": false
     },
     {
@@ -10492,6 +10728,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": true
     },
     {
@@ -10516,6 +10753,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T01:39:13Z",
       "shootingPlay": false
     },
     {
@@ -10552,6 +10790,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": true
     },
     {
@@ -10583,6 +10822,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": true
     },
     {
@@ -10614,6 +10854,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": false
     },
     {
@@ -10645,6 +10886,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": true
     },
     {
@@ -10676,6 +10918,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": false
     },
     {
@@ -10700,6 +10943,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": false
     },
     {
@@ -10721,6 +10965,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T01:39:33Z",
       "shootingPlay": false
     },
     {
@@ -10819,6 +11064,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": true
     },
     {
@@ -10850,6 +11096,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": true
     },
     {
@@ -10881,6 +11128,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": false
     },
     {
@@ -10912,6 +11160,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": true
     },
     {
@@ -10943,6 +11192,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": false
     },
     {
@@ -10974,6 +11224,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": true
     },
     {
@@ -11005,6 +11256,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:14Z",
       "shootingPlay": false
     },
     {
@@ -11036,6 +11288,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:47Z",
       "shootingPlay": true
     },
     {
@@ -11067,6 +11320,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:47Z",
       "shootingPlay": false
     },
     {
@@ -11098,6 +11352,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:47Z",
       "shootingPlay": true
     },
     {
@@ -11129,6 +11384,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:57:47Z",
       "shootingPlay": false
     },
     {
@@ -11160,6 +11416,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": false
     },
     {
@@ -11191,6 +11448,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": true
     },
     {
@@ -11222,6 +11480,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": true
     },
     {
@@ -11253,6 +11512,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": false
     },
     {
@@ -11284,6 +11544,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": true
     },
     {
@@ -11315,6 +11576,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": false
     },
     {
@@ -11346,6 +11608,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:14Z",
       "shootingPlay": true
     },
     {
@@ -11382,6 +11645,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:31Z",
       "shootingPlay": true
     },
     {
@@ -11413,6 +11677,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T01:59:50Z",
       "shootingPlay": true
     },
     {
@@ -11444,6 +11709,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:00:10Z",
       "shootingPlay": false
     },
     {
@@ -11475,6 +11741,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": true
     },
     {
@@ -11506,6 +11773,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": false
     },
     {
@@ -11537,6 +11805,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": true
     },
     {
@@ -11568,6 +11837,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": false
     },
     {
@@ -11599,6 +11869,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": true
     },
     {
@@ -11630,6 +11901,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:15Z",
       "shootingPlay": false
     },
     {
@@ -11661,6 +11933,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:01:32Z",
       "shootingPlay": true
     },
     {
@@ -11685,6 +11958,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T02:01:32Z",
       "shootingPlay": false
     },
     {
@@ -11706,6 +11980,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T02:01:32Z",
       "shootingPlay": false
     },
     {
@@ -11737,6 +12012,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": false
     },
     {
@@ -11768,6 +12044,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": false
     },
     {
@@ -11799,6 +12076,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": true
     },
     {
@@ -11830,6 +12108,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": false
     },
     {
@@ -11861,6 +12140,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": true
     },
     {
@@ -11897,6 +12177,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": true
     },
     {
@@ -11933,6 +12214,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:12Z",
       "shootingPlay": true
     },
     {
@@ -11964,6 +12246,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:33Z",
       "shootingPlay": true
     },
     {
@@ -11995,6 +12278,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:57Z",
       "shootingPlay": false
     },
     {
@@ -12026,6 +12310,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:05:57Z",
       "shootingPlay": false
     },
     {
@@ -12057,6 +12342,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:07:13Z",
       "shootingPlay": false
     },
     {
@@ -12088,6 +12374,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:07:13Z",
       "shootingPlay": false
     },
     {
@@ -12119,6 +12406,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:07:34Z",
       "shootingPlay": false
     },
     {
@@ -12150,6 +12438,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:07:54Z",
       "shootingPlay": false
     },
     {
@@ -12181,6 +12470,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:07:54Z",
       "shootingPlay": false
     },
     {
@@ -12212,6 +12502,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:12Z",
       "shootingPlay": true
     },
     {
@@ -12243,6 +12534,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:12Z",
       "shootingPlay": false
     },
     {
@@ -12279,6 +12571,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:12Z",
       "shootingPlay": true
     },
     {
@@ -12310,6 +12603,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:12Z",
       "shootingPlay": false
     },
     {
@@ -12341,6 +12635,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:12Z",
       "shootingPlay": true
     },
     {
@@ -12372,6 +12667,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:09:54Z",
       "shootingPlay": true
     },
     {
@@ -12403,6 +12699,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:15Z",
       "shootingPlay": false
     },
     {
@@ -12434,6 +12731,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:15Z",
       "shootingPlay": true
     },
     {
@@ -12465,6 +12763,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:15Z",
       "shootingPlay": true
     },
     {
@@ -12496,6 +12795,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:34Z",
       "shootingPlay": false
     },
     {
@@ -12527,6 +12827,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:34Z",
       "shootingPlay": true
     },
     {
@@ -12551,6 +12852,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T02:11:34Z",
       "shootingPlay": false
     },
     {
@@ -12582,6 +12884,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:11:34Z",
       "shootingPlay": true
     },
     {
@@ -12613,6 +12916,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:13:13Z",
       "shootingPlay": true
     },
     {
@@ -12644,6 +12948,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:13:13Z",
       "shootingPlay": true
     },
     {
@@ -12668,6 +12973,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T02:13:13Z",
       "shootingPlay": false
     },
     {
@@ -12704,6 +13010,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:13:13Z",
       "shootingPlay": true
     },
     {
@@ -12725,6 +13032,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T02:13:13Z",
       "shootingPlay": false
     },
     {
@@ -12756,6 +13064,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:15:56Z",
       "shootingPlay": false
     },
     {
@@ -12792,6 +13101,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:17:16Z",
       "shootingPlay": true
     },
     {
@@ -12823,6 +13133,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:17:16Z",
       "shootingPlay": true
     },
     {
@@ -12854,6 +13165,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:17:16Z",
       "shootingPlay": true
     },
     {
@@ -12885,6 +13197,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:17:16Z",
       "shootingPlay": false
     },
     {
@@ -12916,6 +13229,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:17:16Z",
       "shootingPlay": false
     },
     {
@@ -12947,6 +13261,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:18:09Z",
       "shootingPlay": true
     },
     {
@@ -12978,6 +13293,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:18:09Z",
       "shootingPlay": false
     },
     {
@@ -13009,6 +13325,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:18:09Z",
       "shootingPlay": true
     },
     {
@@ -13040,6 +13357,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:18:09Z",
       "shootingPlay": false
     },
     {
@@ -13076,6 +13394,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:18:09Z",
       "shootingPlay": true
     },
     {
@@ -13107,6 +13426,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13138,6 +13458,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13169,6 +13490,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": true
     },
     {
@@ -13200,6 +13522,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13231,6 +13554,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13262,6 +13586,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13293,6 +13618,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13324,6 +13650,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": true
     },
     {
@@ -13348,6 +13675,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": false
     },
     {
@@ -13379,6 +13707,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:21:14Z",
       "shootingPlay": true
     },
     {
@@ -13410,6 +13739,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:16Z",
       "shootingPlay": false
     },
     {
@@ -13441,6 +13771,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:16Z",
       "shootingPlay": false
     },
     {
@@ -13472,6 +13803,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:16Z",
       "shootingPlay": true
     },
     {
@@ -13503,6 +13835,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:16Z",
       "shootingPlay": false
     },
     {
@@ -13534,6 +13867,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:16Z",
       "shootingPlay": false
     },
     {
@@ -13570,6 +13904,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:54Z",
       "shootingPlay": true
     },
     {
@@ -13601,6 +13936,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:54Z",
       "shootingPlay": false
     },
     {
@@ -13632,6 +13968,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:54Z",
       "shootingPlay": true
     },
     {
@@ -13663,6 +14000,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:23:54Z",
       "shootingPlay": false
     },
     {
@@ -13694,6 +14032,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:14Z",
       "shootingPlay": true
     },
     {
@@ -13730,6 +14069,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:33Z",
       "shootingPlay": true
     },
     {
@@ -13761,6 +14101,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:55Z",
       "shootingPlay": true
     },
     {
@@ -13792,6 +14133,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:55Z",
       "shootingPlay": false
     },
     {
@@ -13823,6 +14165,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:55Z",
       "shootingPlay": false
     },
     {
@@ -13854,6 +14197,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:57Z",
       "shootingPlay": true
     },
     {
@@ -13885,6 +14229,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:25:57Z",
       "shootingPlay": true
     },
     {
@@ -13906,6 +14251,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T02:27:15Z",
       "shootingPlay": false
     },
     {
@@ -13937,6 +14283,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:13Z",
       "shootingPlay": true
     },
     {
@@ -13968,6 +14315,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:13Z",
       "shootingPlay": false
     },
     {
@@ -13999,6 +14347,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:13Z",
       "shootingPlay": true
     },
     {
@@ -14030,6 +14379,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:13Z",
       "shootingPlay": false
     },
     {
@@ -14061,6 +14411,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:36Z",
       "shootingPlay": false
     },
     {
@@ -14092,6 +14443,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:36Z",
       "shootingPlay": true
     },
     {
@@ -14123,6 +14475,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:33:36Z",
       "shootingPlay": true
     },
     {
@@ -14154,6 +14507,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:34:14Z",
       "shootingPlay": false
     },
     {
@@ -14185,6 +14539,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:35:15Z",
       "shootingPlay": false
     },
     {
@@ -14216,6 +14571,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:35:15Z",
       "shootingPlay": true
     },
     {
@@ -14247,6 +14603,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:35:15Z",
       "shootingPlay": true
     },
     {
@@ -14283,6 +14640,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:35:52Z",
       "shootingPlay": true
     },
     {
@@ -14314,6 +14672,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:12Z",
       "shootingPlay": true
     },
     {
@@ -14338,6 +14697,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T02:37:12Z",
       "shootingPlay": false
     },
     {
@@ -14369,6 +14729,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:12Z",
       "shootingPlay": false
     },
     {
@@ -14400,6 +14761,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:12Z",
       "shootingPlay": false
     },
     {
@@ -14431,6 +14793,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:33Z",
       "shootingPlay": true
     },
     {
@@ -14462,6 +14825,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:33Z",
       "shootingPlay": false
     },
     {
@@ -14493,6 +14857,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:37:55Z",
       "shootingPlay": true
     },
     {
@@ -14524,6 +14889,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:38:12Z",
       "shootingPlay": true
     },
     {
@@ -14555,6 +14921,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:38:12Z",
       "shootingPlay": false
     },
     {
@@ -14579,6 +14946,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T02:38:12Z",
       "shootingPlay": false
     },
     {
@@ -14610,6 +14978,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:39:33Z",
       "shootingPlay": true
     },
     {
@@ -14641,6 +15010,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:39:33Z",
       "shootingPlay": false
     },
     {
@@ -14672,6 +15042,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:39:33Z",
       "shootingPlay": true
     },
     {
@@ -14703,6 +15074,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:39:33Z",
       "shootingPlay": false
     },
     {
@@ -14734,6 +15106,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:39:33Z",
       "shootingPlay": true
     },
     {
@@ -14765,6 +15138,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:43:15Z",
       "shootingPlay": false
     },
     {
@@ -14796,6 +15170,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:43:15Z",
       "shootingPlay": true
     },
     {
@@ -14827,6 +15202,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:43:15Z",
       "shootingPlay": false
     },
     {
@@ -14858,6 +15234,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:43:35Z",
       "shootingPlay": true
     },
     {
@@ -14882,6 +15259,7 @@
       "team": {
         "id": "2463"
       },
+      "wallclock": "2022-02-11T02:43:35Z",
       "shootingPlay": false
     },
     {
@@ -14913,6 +15291,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:45:30Z",
       "shootingPlay": false
     },
     {
@@ -14937,6 +15316,7 @@
       "team": {
         "id": "13"
       },
+      "wallclock": "2022-02-11T02:45:30Z",
       "shootingPlay": false
     },
     {
@@ -14973,6 +15353,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:45:47Z",
       "shootingPlay": true
     },
     {
@@ -15004,6 +15385,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:47:30Z",
       "shootingPlay": true
     },
     {
@@ -15035,6 +15417,7 @@
           }
         }
       ],
+      "wallclock": "2022-02-11T02:47:30Z",
       "shootingPlay": false
     },
     {
@@ -15056,6 +15439,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T02:47:30Z",
       "shootingPlay": false
     },
     {
@@ -15077,6 +15461,7 @@
       },
       "scoringPlay": false,
       "scoreValue": 0,
+      "wallclock": "2022-02-11T02:47:30Z",
       "shootingPlay": false
     }
   ],
@@ -15092,59 +15477,6 @@
         "standings": {
           "entries": [
             {
-              "team": "Hawai'i",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/62/hawaii-rainbow-wahine",
-              "id": "62",
-              "uid": "s:40~l:54~t:62",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "Season",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "20-10",
-                  "displayValue": "20-10"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 0.0,
-                  "displayValue": "-"
-                },
-                {
-                  "id": "9",
-                  "name": "vs Conference",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "13-3",
-                  "displayValue": "13-3"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2018-06-05T12:08Z"
-                }
-              ]
-            },
-            {
               "team": "UC Irvine",
               "link": "http://www.espn.com/womens-college-basketball/team/_/id/300/uc-irvine-anteaters",
               "id": "300",
@@ -15152,14 +15484,14 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "21-12",
-                  "displayValue": "21-12"
+                  "summary": "24-5",
+                  "displayValue": "24-5"
                 },
                 {
                   "name": "gamesBehind",
@@ -15173,14 +15505,14 @@
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "14-4",
-                  "displayValue": "14-4"
+                  "summary": "16-2",
+                  "displayValue": "16-2"
                 }
               ],
               "logo": [
@@ -15205,14 +15537,14 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "19-9",
-                  "displayValue": "19-9"
+                  "summary": "22-8",
+                  "displayValue": "22-8"
                 },
                 {
                   "name": "gamesBehind",
@@ -15221,19 +15553,19 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 2.0,
-                  "displayValue": "2"
+                  "value": 0.0,
+                  "displayValue": "-"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "12-6",
-                  "displayValue": "12-6"
+                  "summary": "17-3",
+                  "displayValue": "17-3"
                 }
               ],
               "logo": [
@@ -15251,74 +15583,21 @@
               ]
             },
             {
-              "team": "UC Riverside",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/27/uc-riverside-highlanders",
-              "id": "27",
-              "uid": "s:40~l:54~t:27",
+              "team": "Hawai'i",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/62/hawaii-rainbow-wahine",
+              "id": "62",
+              "uid": "s:40~l:54~t:62",
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "14-11",
-                  "displayValue": "14-11"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 3.0,
-                  "displayValue": "3"
-                },
-                {
-                  "id": "9",
-                  "name": "vs Conference",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "10-6",
-                  "displayValue": "10-6"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/27.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2020-08-25T14:37Z"
-                }
-              ]
-            },
-            {
-              "team": "UC San Diego",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/28/uc-san-diego-tritons",
-              "id": "28",
-              "uid": "s:40~l:54~t:28",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "Season",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "13-14",
-                  "displayValue": "13-14"
+                  "summary": "15-14",
+                  "displayValue": "15-14"
                 },
                 {
                   "name": "gamesBehind",
@@ -15332,72 +15611,19 @@
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "10-8",
-                  "displayValue": "10-8"
+                  "summary": "13-7",
+                  "displayValue": "13-7"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/28.png",
-                  "width": 500,
-                  "height": 500,
-                  "alt": "",
-                  "rel": [
-                    "full",
-                    "default"
-                  ],
-                  "lastUpdated": "2019-09-13T15:43Z"
-                }
-              ]
-            },
-            {
-              "team": "UC Santa Barbara",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2540/uc-santa-barbara-gauchos",
-              "id": "2540",
-              "uid": "s:40~l:54~t:2540",
-              "stats": [
-                {
-                  "id": "0",
-                  "name": "Season",
-                  "abbreviation": "Season",
-                  "displayName": "Team Season Record",
-                  "shortDisplayName": "Season",
-                  "description": "Overall Record",
-                  "type": "total",
-                  "summary": "15-12",
-                  "displayValue": "15-12"
-                },
-                {
-                  "name": "gamesBehind",
-                  "displayName": "Games Back",
-                  "shortDisplayName": "GB",
-                  "description": "Games Back",
-                  "abbreviation": "GB",
-                  "type": "vsconf_gamesbehind",
-                  "value": 4.5,
-                  "displayValue": "4.5"
-                },
-                {
-                  "id": "9",
-                  "name": "vs Conference",
-                  "abbreviation": "VS CONF",
-                  "displayName": "CONF",
-                  "shortDisplayName": "CONF",
-                  "description": "Conference Record",
-                  "type": "vsconf",
-                  "summary": "9-8",
-                  "displayValue": "9-8"
-                }
-              ],
-              "logo": [
-                {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2540.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -15417,14 +15643,14 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "15-13",
-                  "displayValue": "15-13"
+                  "summary": "16-13",
+                  "displayValue": "16-13"
                 },
                 {
                   "name": "gamesBehind",
@@ -15433,19 +15659,19 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 5.0,
-                  "displayValue": "5"
+                  "value": 4.5,
+                  "displayValue": "4.5"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "8-8",
-                  "displayValue": "8-8"
+                  "summary": "12-7",
+                  "displayValue": "12-7"
                 }
               ],
               "logo": [
@@ -15463,21 +15689,21 @@
               ]
             },
             {
-              "team": "Cal State Fullerton",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2239/cal-state-fullerton-titans",
-              "id": "2239",
-              "uid": "s:40~l:54~t:2239",
+              "team": "UC Santa Barbara",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2540/uc-santa-barbara-gauchos",
+              "id": "2540",
+              "uid": "s:40~l:54~t:2540",
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "11-18",
-                  "displayValue": "11-18"
+                  "summary": "19-11",
+                  "displayValue": "19-11"
                 },
                 {
                   "name": "gamesBehind",
@@ -15486,19 +15712,125 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 8.5,
-                  "displayValue": "8.5"
+                  "value": 5.0,
+                  "displayValue": "5"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-12",
-                  "displayValue": "5-12"
+                  "summary": "12-8",
+                  "displayValue": "12-8"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2540.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "UC San Diego",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/28/uc-san-diego-tritons",
+              "id": "28",
+              "uid": "s:40~l:54~t:28",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "13-17",
+                  "displayValue": "13-17"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 7.0,
+                  "displayValue": "7"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "10-10",
+                  "displayValue": "10-10"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/28.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2019-09-13T15:43Z"
+                }
+              ]
+            },
+            {
+              "team": "Cal State Fullerton",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2239/cal-state-fullerton-titans",
+              "id": "2239",
+              "uid": "s:40~l:54~t:2239",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "14-15",
+                  "displayValue": "14-15"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 8.0,
+                  "displayValue": "8"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "9-11",
+                  "displayValue": "9-11"
                 }
               ],
               "logo": [
@@ -15516,21 +15848,21 @@
               ]
             },
             {
-              "team": "CSU Northridge",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2463/csu-northridge-matadors",
-              "id": "2463",
-              "uid": "s:40~l:54~t:2463",
+              "team": "Cal Poly",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/13/cal-poly-mustangs",
+              "id": "13",
+              "uid": "s:40~l:54~t:13",
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "9-19",
-                  "displayValue": "9-19"
+                  "summary": "10-17",
+                  "displayValue": "10-17"
                 },
                 {
                   "name": "gamesBehind",
@@ -15539,19 +15871,72 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 8.5,
-                  "displayValue": "8.5"
+                  "value": 9.5,
+                  "displayValue": "9.5"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "5-12",
-                  "displayValue": "5-12"
+                  "summary": "7-12",
+                  "displayValue": "7-12"
+                }
+              ],
+              "logo": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2018-06-05T12:08Z"
+                }
+              ]
+            },
+            {
+              "team": "Cal State Northridge",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/2463/cal-state-northridge-matadors",
+              "id": "2463",
+              "uid": "s:40~l:54~t:2463",
+              "stats": [
+                {
+                  "id": "0",
+                  "name": "overall",
+                  "abbreviation": "Season",
+                  "displayName": "Team Season Record",
+                  "shortDisplayName": "Season",
+                  "description": "Overall Record",
+                  "type": "total",
+                  "summary": "7-23",
+                  "displayValue": "7-23"
+                },
+                {
+                  "name": "gamesBehind",
+                  "displayName": "Games Back",
+                  "shortDisplayName": "GB",
+                  "description": "Games Back",
+                  "abbreviation": "GB",
+                  "type": "vsconf_gamesbehind",
+                  "value": 11.0,
+                  "displayValue": "11"
+                },
+                {
+                  "id": "9",
+                  "name": "vs. Conf.",
+                  "abbreviation": "VS CONF",
+                  "displayName": "CONF",
+                  "shortDisplayName": "CONF",
+                  "description": "Conference Record",
+                  "type": "vsconf",
+                  "summary": "6-14",
+                  "displayValue": "6-14"
                 }
               ],
               "logo": [
@@ -15576,14 +15961,14 @@
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "5-20",
-                  "displayValue": "5-20"
+                  "summary": "6-22",
+                  "displayValue": "6-22"
                 },
                 {
                   "name": "gamesBehind",
@@ -15592,19 +15977,19 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 9.0,
-                  "displayValue": "9"
+                  "value": 14.0,
+                  "displayValue": "14"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "3-11",
-                  "displayValue": "3-11"
+                  "summary": "3-17",
+                  "displayValue": "3-17"
                 }
               ],
               "logo": [
@@ -15622,21 +16007,21 @@
               ]
             },
             {
-              "team": "Cal Poly",
-              "link": "http://www.espn.com/womens-college-basketball/team/_/id/13/cal-poly-mustangs",
-              "id": "13",
-              "uid": "s:40~l:54~t:13",
+              "team": "UC Riverside",
+              "link": "http://www.espn.com/womens-college-basketball/team/_/id/27/uc-riverside-highlanders",
+              "id": "27",
+              "uid": "s:40~l:54~t:27",
               "stats": [
                 {
                   "id": "0",
-                  "name": "Season",
+                  "name": "overall",
                   "abbreviation": "Season",
                   "displayName": "Team Season Record",
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "3-22",
-                  "displayValue": "3-22"
+                  "summary": "5-25",
+                  "displayValue": "5-25"
                 },
                 {
                   "name": "gamesBehind",
@@ -15645,24 +16030,24 @@
                   "description": "Games Back",
                   "abbreviation": "GB",
                   "type": "vsconf_gamesbehind",
-                  "value": 10.5,
-                  "displayValue": "10.5"
+                  "value": 14.0,
+                  "displayValue": "14"
                 },
                 {
                   "id": "9",
-                  "name": "vs Conference",
+                  "name": "vs. Conf.",
                   "abbreviation": "VS CONF",
                   "displayName": "CONF",
                   "shortDisplayName": "CONF",
                   "description": "Conference Record",
                   "type": "vsconf",
-                  "summary": "2-13",
-                  "displayValue": "2-13"
+                  "summary": "3-17",
+                  "displayValue": "3-17"
                 }
               ],
               "logo": [
                 {
-                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
+                  "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/27.png",
                   "width": 500,
                   "height": 500,
                   "alt": "",
@@ -15670,13 +16055,13 @@
                     "full",
                     "default"
                   ],
-                  "lastUpdated": "2018-06-05T12:08Z"
+                  "lastUpdated": "2020-08-25T14:37Z"
                 }
               ]
             }
           ]
         },
-        "header": "2021-22 Big West Conference Standings",
+        "header": "2022-23 Big West Conference Standings",
         "href": "https://www.espn.com/womens-college-basketball/standings/_/group/9"
       }
     ]
