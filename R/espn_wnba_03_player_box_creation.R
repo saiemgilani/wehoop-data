@@ -3,91 +3,96 @@ gc()
 
 lib_path <- Sys.getenv("R_LIBS")
 
-if (!requireNamespace('pacman', quietly = TRUE)){
-  install.packages('pacman',lib=lib_path, repos='http://cran.us.r-project.org')
+if (!requireNamespace("pacman", quietly = TRUE)) {
+  install.packages("pacman", lib = lib_path, repos = "http://cran.us.r-project.org")
 }
 
-suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(data.table, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(qs, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc=lib_path)))
-suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc=lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(purrr, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(progressr, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(data.table, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(qs, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc = lib_path)))
+suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc = lib_path)))
 
-option_list = list(
-  make_option(c("-s", "--start_year"), action="store", default=wehoop:::most_recent_wnba_season(), type='integer', help="Start year of the seasons to process"),
-  make_option(c("-e", "--end_year"), action="store", default=wehoop:::most_recent_wnba_season(), type='integer', help="End year of the seasons to process")
+option_list <- list(
+  make_option(c("-s", "--start_year"), action = "store", default = wehoop:::most_recent_wnba_season(),
+    type = "integer", help = "Start year of the seasons to process"),
+  make_option(c("-e", "--end_year"), action = "store", default = wehoop:::most_recent_wnba_season(),
+    type = "integer", help = "End year of the seasons to process")
 )
-opt = parse_args(OptionParser(option_list=option_list))
+opt <- parse_args(OptionParser(option_list = option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
 years_vec <- opt$s:opt$e
 # --- compile into player_box_{year}.parquet ---------
 
-wnba_player_box_games <- function(y){
+wnba_player_box_games <- function(y) {
   player_box_g <- data.frame()
-  player_box_list <- list.files(path = glue::glue('wnba/json/final/'))
-  sched <- data.table::fread(paste0('wnba/schedules/csv/wnba_schedule_',y,'.csv'))
-  player_box_game_ids <- as.integer(gsub('.json','',player_box_list))
+  player_box_list <- list.files(path = glue::glue("wnba/json/final/"))
+  sched <- data.table::fread(paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
+  player_box_game_ids <- as.integer(gsub(".json", "", player_box_list))
   player_box_list <- sched %>%
     dplyr::filter(.data$game_id %in% player_box_game_ids) %>%
     dplyr::pull("game_id")
   cli::cli_process_start("Starting wnba player_box parse for {y}!")
 
-  player_box_g <- purrr::map_dfr(player_box_list, function(x){
-    game_json <- jsonlite::fromJSON(glue::glue('wnba/json/final/{x}.json'))
+  future::plan("multisession")
+  player_box_g <- furrr::future_map_dfr(player_box_list, function(x){
+    game_json <- jsonlite::fromJSON(glue::glue("wnba/json/final/{x}.json"))
 
     player_box_score <- data.frame()
     players_box_score_df <- data.frame()
-    players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[['boxscore']][['players']]), flatten=TRUE))
+    players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten = TRUE))
     gameId <- as.integer(game_json[["gameId"]])
-    season <- game_json[['header']][['season']][['year']]
-    season_type <- game_json[['header']][['season']][['type']]
-    boxScoreAvailable = game_json[['header']][['competitions']][["boxscoreAvailable"]]
+    season <- game_json[["header"]][["season"]][["year"]]
+    season_type <- game_json[["header"]][["season"]][["type"]]
+    boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
 
-    boxScoreSource = game_json[['header']][['competitions']][["boxscoreSource"]]
-    homeAwayTeam1 = toupper(game_json[['header']][['competitions']][['competitors']][[1]][['homeAway']][1])
-    homeAwayTeam2 = toupper(game_json[['header']][['competitions']][['competitors']][[1]][['homeAway']][2])
-    homeTeamId = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['id']][1]
-    awayTeamId = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['id']][2]
-    homeTeamMascot = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['name']][1]
-    awayTeamMascot = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['name']][2]
-    homeTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][1]
-    awayTeamName = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['location']][2]
+    boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
+    homeAwayTeam1 <- toupper(game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][1])
+    homeAwayTeam2 <- toupper(game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][2])
+    homeTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][1]
+    awayTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][2]
+    homeTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][1]
+    awayTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][2]
+    homeTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][1]
+    awayTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][2]
 
-    homeTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][1]
-    awayTeamAbbrev = game_json[['header']][['competitions']][['competitors']][[1]][['team']][['abbreviation']][2]
-    game_date = as.Date(substr(game_json[['header']][['competitions']][['date']],0,10))
+    homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
+    awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
+    game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
 
     tryCatch(
       expr = {
-        if(length(players_box_score_df[["statistics"]])>0){
-          if(length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]])>0){
-            players_df <- players_box_score_df %>%
-              tidyr::unnest("statistics") %>%
-              tidyr::unnest("athletes")
+        if (boxScoreAvailable == TRUE &&
+            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]]) > 1) {
+          players_df <- players_box_score_df %>%
+            tidyr::unnest("statistics") %>%
+            tidyr::unnest("athletes")
+          if (length(players_box_score_df[["statistics"]]) > 1 &&
+              length(players_df$stats[[1]] > 0)) {
             stat_cols <- players_df$names[[1]]
             stats <- players_df$stats
 
-            stats_df <- as.data.frame(do.call(rbind,stats))
+            stats_df <- as.data.frame(do.call(rbind, stats))
             colnames(stats_df) <- stat_cols
-            cols <- c('starter','ejected', 'didNotPlay','active',
-                      'athlete.displayName','athlete.jersey',
-                      'athlete.id','athlete.shortName',
-                      'athlete.headshot.href','athlete.position.name',
-                      'athlete.position.abbreviation', 'team.shortDisplayName',
-                      'team.name', 'team.logo', 'team.id', 'team.abbreviation',
-                      'team.color')
+            cols <- c("starter", "ejected", "didNotPlay", "active",
+                      "athlete.displayName", "athlete.jersey",
+                      "athlete.id", "athlete.shortName",
+                      "athlete.headshot.href", "athlete.position.name",
+                      "athlete.position.abbreviation", "team.shortDisplayName",
+                      "team.name", "team.logo", "team.id", "team.abbreviation",
+                      "team.color")
 
             players_df <- players_df %>%
               dplyr::filter(!.data$didNotPlay) %>%
               dplyr::select(tidyselect::any_of(cols))
-            if(length(stats_df)>0){
-              players_df <- dplyr::bind_cols(stats_df,players_df) %>%
+            if (length(stats_df) > 0) {
+              players_df <- dplyr::bind_cols(stats_df, players_df) %>%
                 dplyr::select(
                   "athlete.displayName",
                   "team.shortDisplayName",
@@ -121,13 +126,13 @@ wnba_player_box_games <- function(y){
     )
 
     drop <- c("statistics")
-    player_box_score = player_box_score[,!(names(player_box_score) %in% drop)]
+    player_box_score <- player_box_score[, !(names(player_box_score) %in% drop)]
 
     return(player_box_score)
-  })
+  }, .options = furrr::furrr_options(seed = TRUE))
 
 
-  if(nrow(player_box_g)>1){
+  if (nrow(player_box_g) > 1) {
     player_box_g <- player_box_g %>%
       wehoop:::make_wehoop_data("ESPN WNBA Player Boxscore Information from wehoop data repository",Sys.time())
 
@@ -150,21 +155,21 @@ wnba_player_box_games <- function(y){
       game_id = as.integer(.data$id),
       status_display_clock = as.character(.data$status_display_clock)
     )
-  if(nrow(player_box_g)>0){
+  if (nrow(player_box_g) > 0) {
     sched <- sched %>%
       dplyr::mutate(
-        player_box = ifelse(.data$game_id %in% unique(player_box_g$game_id), TRUE,FALSE)
+        player_box = ifelse(.data$game_id %in% unique(player_box_g$game_id), TRUE, FALSE)
       )
   } else {
     sched$player_box <- FALSE
   }
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
   final_sched <- final_sched %>%
-    wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository",Sys.time())
-  data.table::fwrite(final_sched,paste0("wnba/schedules/csv/wnba_schedule_",y,".csv"))
-  qs::qsave(final_sched,glue::glue('wnba/schedules/qs/wnba_schedule_{y}.qs'))
-  saveRDS(final_sched, glue::glue('wnba/schedules/rds/wnba_schedule_{y}.rds'))
-  arrow::write_parquet(final_sched, glue::glue('wnba/schedules/parquet/wnba_schedule_{y}.parquet'))
+    wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository", Sys.time())
+  data.table::fwrite(final_sched,paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
+  qs::qsave(final_sched, glue::glue("wnba/schedules/qs/wnba_schedule_{y}.qs"))
+  saveRDS(final_sched, glue::glue("wnba/schedules/rds/wnba_schedule_{y}.rds"))
+  arrow::write_parquet(final_sched, glue::glue("wnba/schedules/parquet/wnba_schedule_{y}.parquet"))
   rm(sched)
   rm(final_sched)
 
@@ -175,13 +180,13 @@ wnba_player_box_games <- function(y){
   return(NULL)
 }
 
-all_games <- purrr::map(years_vec, function(y){
+all_games <- purrr::map(years_vec, function(y) {
   wnba_player_box_games(y)
 })
 
-sched_list <- list.files(path = glue::glue('wnba/schedules/csv/'))
+sched_list <- list.files(path = glue::glue("wnba/schedules/csv/"))
 sched_g <-  purrr::map_dfr(sched_list, function(x){
-  sched <- data.table::fread(paste0('wnba/schedules/csv/',x)) %>%
+  sched <- data.table::fread(paste0("wnba/schedules/csv/", x)) %>%
     dplyr::mutate(
       status_display_clock = as.character(.data$status_display_clock)
     )
@@ -190,14 +195,14 @@ sched_g <-  purrr::map_dfr(sched_list, function(x){
 
 
 sched_g <- sched_g %>%
-  wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository",Sys.time())
+  wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository", Sys.time())
 
-data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), 'wnba_schedule_master.csv')
-data.table::fwrite(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), 'wnba/wnba_games_in_data_repo.csv')
-qs::qsave(sched_g %>% dplyr::arrange(desc(.data$date)), 'wnba_schedule_master.qs')
-qs::qsave(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), 'wnba/wnba_games_in_data_repo.qs')
-arrow::write_parquet(sched_g %>% dplyr::arrange(desc(.data$date)),glue::glue('wnba_schedule_master.parquet'))
-arrow::write_parquet(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), 'wnba/wnba_games_in_data_repo.parquet')
+data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), "wnba_schedule_master.csv")
+data.table::fwrite(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.csv")
+qs::qsave(sched_g %>% dplyr::arrange(desc(.data$date)), "wnba_schedule_master.qs")
+qs::qsave(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.qs")
+arrow::write_parquet(sched_g %>% dplyr::arrange(desc(.data$date)), glue::glue("wnba_schedule_master.parquet"))
+arrow::write_parquet(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.parquet")
 
 rm(all_games)
 rm(sched_g)
