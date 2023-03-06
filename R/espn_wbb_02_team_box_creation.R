@@ -45,6 +45,7 @@ wbb_team_box_games <- function(y) {
 
     team_box_score <- data.frame()
     teams_box_score_df <- data.frame()
+    gameId <- as.integer(game_json[["gameId"]])
     box_score_available <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
 
     tryCatch(
@@ -231,7 +232,7 @@ wbb_team_box_games <- function(y) {
         }
       },
       error = function(e) {
-        message(glue::glue("{Sys.time()}: Invalid arguments or no team box data available {game_id}!"))
+        message(glue::glue("{Sys.time()}: Invalid arguments or no team box data available {x}!"))
       },
       warning = function(w) {
       },

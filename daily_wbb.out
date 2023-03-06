@@ -52,3 +52,128 @@ Download error: http://site.api.espn.com/apis/site/v2/sports/basketball/womens-c
 Download error: http://site.api.espn.com/apis/site/v2/sports/basketball/womens-college-basketball/summary?event=401493573
 Finished Scraping year 2023...
 Already up to date.
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 273710 14.7     660900 35.3   451920 24.2
+Vcells 459112  3.6    8388608 64.0  1800272 13.8
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 273710 14.7     660900 35.3   451920 24.2
+Vcells 459112  3.6    8388608 64.0  1800272 13.8
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 273710 14.7     660900 35.3   451920 24.2
+Vcells 459112  3.6    8388608 64.0  1800272 13.8
+          used (Mb) gc trigger  (Mb) max used  (Mb)
+Ncells 1227746 65.6    2365122 126.4  2365122 126.4
+Vcells 2509965 19.2   22762352 173.7 28452119 217.1
+Already up to date.
+Already up to date.
+[main 5dd2a7b9583] WBB Play-by-Play and Schedules update (Start: 2023 End: 2023)
+ 6666 files changed, 1228421 insertions(+), 268236 deletions(-)
+ rewrite R/espn_wbb_03_player_box_creation.R (61%)
+ rewrite daily_wbb.out (85%)
+ create mode 100644 wbb/json/final/401513346.json
+ create mode 100644 wbb/json/final/401513401.json
+ create mode 100644 wbb/json/final/401513402.json
+ create mode 100644 wbb/json/final/401513403.json
+ create mode 100644 wbb/json/final/401513404.json
+ create mode 100644 wbb/json/final/401513421.json
+ create mode 100644 wbb/json/final/401513490.json
+ create mode 100644 wbb/json/final/401513491.json
+ create mode 100644 wbb/json/final/401513501.json
+ create mode 100644 wbb/json/final/401513681.json
+ create mode 100644 wbb/json/final/401513694.json
+ create mode 100644 wbb/json/final/401513701.json
+ create mode 100644 wbb/json/final/401513706.json
+ create mode 100644 wbb/json/final/401513707.json
+ create mode 100644 wbb/json/final/401513721.json
+ create mode 100644 wbb/json/final/401513722.json
+ create mode 100644 wbb/json/final/401516450.json
+ create mode 100644 wbb/json/final/401516455.json
+ create mode 100644 wbb/json/final/401516456.json
+ create mode 100644 wbb/json/final/401516457.json
+ create mode 100644 wbb/json/final/401523983.json
+ create mode 100644 wbb/json/final/401523984.json
+ create mode 100644 wbb/json/final/401524086.json
+ create mode 100644 wbb/json/final/401524087.json
+ create mode 100644 wbb/json/raw/401513346.json
+ create mode 100644 wbb/json/raw/401513401.json
+ create mode 100644 wbb/json/raw/401513402.json
+ create mode 100644 wbb/json/raw/401513403.json
+ create mode 100644 wbb/json/raw/401513404.json
+ create mode 100644 wbb/json/raw/401513421.json
+ create mode 100644 wbb/json/raw/401513490.json
+ create mode 100644 wbb/json/raw/401513491.json
+ create mode 100644 wbb/json/raw/401513501.json
+ create mode 100644 wbb/json/raw/401513681.json
+ create mode 100644 wbb/json/raw/401513694.json
+ create mode 100644 wbb/json/raw/401513701.json
+ create mode 100644 wbb/json/raw/401513706.json
+ create mode 100644 wbb/json/raw/401513707.json
+ create mode 100644 wbb/json/raw/401513721.json
+ create mode 100644 wbb/json/raw/401513722.json
+ create mode 100644 wbb/json/raw/401516450.json
+ create mode 100644 wbb/json/raw/401516455.json
+ create mode 100644 wbb/json/raw/401516456.json
+ create mode 100644 wbb/json/raw/401516457.json
+ create mode 100644 wbb/json/raw/401523983.json
+ create mode 100644 wbb/json/raw/401523984.json
+ create mode 100644 wbb/json/raw/401524086.json
+ create mode 100644 wbb/json/raw/401524087.json
+ rewrite wbb/pbp/csv/play_by_play_2004.csv.gz (93%)
+ rewrite wbb/pbp/csv/play_by_play_2005.csv.gz (88%)
+ rewrite wbb/pbp/csv/play_by_play_2006.csv.gz (77%)
+ rewrite wbb/pbp/csv/play_by_play_2007.csv.gz (66%)
+ rewrite wbb/pbp/parquet/play_by_play_2004.parquet (82%)
+ rewrite wbb/pbp/parquet/play_by_play_2005.parquet (79%)
+ rewrite wbb/pbp/parquet/play_by_play_2006.parquet (72%)
+ rewrite wbb/pbp/parquet/play_by_play_2007.parquet (66%)
+ rewrite wbb/pbp/parquet/play_by_play_2023.parquet (100%)
+ rewrite wbb/pbp/qs/play_by_play_2004.qs (94%)
+ rewrite wbb/pbp/qs/play_by_play_2005.qs (91%)
+ rewrite wbb/pbp/qs/play_by_play_2006.qs (83%)
+ rewrite wbb/pbp/qs/play_by_play_2007.qs (74%)
+ rewrite wbb/pbp/rds/play_by_play_2004.rds (93%)
+ rewrite wbb/pbp/rds/play_by_play_2005.rds (90%)
+ rewrite wbb/pbp/rds/play_by_play_2006.rds (80%)
+ rewrite wbb/pbp/rds/play_by_play_2007.rds (71%)
+ rewrite wbb/player_box/csv/player_box_2018.csv.gz (63%)
+ rewrite wbb/player_box/csv/player_box_2019.csv.gz (61%)
+ rewrite wbb/player_box/csv/player_box_2020.csv.gz (61%)
+ rewrite wbb/player_box/csv/player_box_2021.csv.gz (68%)
+ rewrite wbb/player_box/csv/player_box_2022.csv.gz (60%)
+ rewrite wbb/player_box/csv/player_box_2023.csv.gz (60%)
+ rewrite wbb/player_box/parquet/player_box_2018.parquet (72%)
+ rewrite wbb/player_box/parquet/player_box_2019.parquet (72%)
+ rewrite wbb/player_box/parquet/player_box_2020.parquet (67%)
+ rewrite wbb/player_box/parquet/player_box_2021.parquet (78%)
+ rewrite wbb/player_box/parquet/player_box_2022.parquet (69%)
+ rewrite wbb/player_box/parquet/player_box_2023.parquet (75%)
+ rewrite wbb/player_box/qs/player_box_2013.qs (64%)
+ rewrite wbb/player_box/qs/player_box_2018.qs (77%)
+ rewrite wbb/player_box/qs/player_box_2019.qs (76%)
+ rewrite wbb/player_box/qs/player_box_2020.qs (75%)
+ rewrite wbb/player_box/qs/player_box_2021.qs (81%)
+ rewrite wbb/player_box/qs/player_box_2022.qs (74%)
+ rewrite wbb/player_box/qs/player_box_2023.qs (75%)
+ rewrite wbb/player_box/rds/player_box_2004.rds (99%)
+ rewrite wbb/player_box/rds/player_box_2006.rds (98%)
+ rewrite wbb/player_box/rds/player_box_2007.rds (99%)
+ rewrite wbb/player_box/rds/player_box_2009.rds (84%)
+ rewrite wbb/player_box/rds/player_box_2010.rds (100%)
+ rewrite wbb/player_box/rds/player_box_2011.rds (95%)
+ rewrite wbb/player_box/rds/player_box_2012.rds (100%)
+ rewrite wbb/player_box/rds/player_box_2013.rds (65%)
+ rewrite wbb/player_box/rds/player_box_2018.rds (67%)
+ rewrite wbb/player_box/rds/player_box_2019.rds (66%)
+ rewrite wbb/player_box/rds/player_box_2020.rds (65%)
+ rewrite wbb/player_box/rds/player_box_2021.rds (74%)
+ rewrite wbb/player_box/rds/player_box_2022.rds (65%)
+ rewrite wbb/player_box/rds/player_box_2023.rds (65%)
+ rewrite wbb/schedules/parquet/wbb_schedule_2023.parquet (76%)
+ rewrite wbb/schedules/qs/wbb_schedule_2023.qs (93%)
+ rewrite wbb/schedules/rds/wbb_schedule_2018.rds (93%)
+ rewrite wbb/schedules/rds/wbb_schedule_2021.rds (93%)
+ rewrite wbb/schedules/rds/wbb_schedule_2022.rds (91%)
+ rewrite wbb/schedules/rds/wbb_schedule_2023.rds (91%)
+ rewrite wbb/wbb_games_in_data_repo.parquet (76%)
+ rewrite wbb/wbb_games_in_data_repo.qs (73%)
+Already up to date.
