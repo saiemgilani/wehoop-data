@@ -182,7 +182,7 @@ wbb_team_box_games <- function(y) {
                   "freeThrowPct",
                   "threePointFieldGoalPct"
                 ), ~as.numeric(.x))) %>%
-                dplyr::mutate(dplyr::across(c(
+                dplyr::mutate(dplyr::across(dplyr::any_of(c(
                   "assists",
                   "blocks",
                   "defensiveRebounds",
@@ -202,7 +202,7 @@ wbb_team_box_games <- function(y) {
                   "totalTechnicalFouls",
                   "totalTurnovers",
                   "turnovers",
-                ), ~as.integer(.x)))
+                )), ~as.integer(.x)))
             )
             team_box_score <- complete_statistics_df %>%
               janitor::clean_names() %>%
