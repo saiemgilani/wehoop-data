@@ -52,11 +52,16 @@ wbb_player_box_games <- function(y) {
         resp <- glue::glue("wbb/json/final/{x}.json")
         game_json <- resp %>%
           jsonlite::fromJSON()
-        players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten=TRUE))
+
+        players_box_score_df <- game_json[["boxscore"]][["players"]] %>%
+          jsonlite::toJSON() %>%
+          jsonlite::fromJSON(flatten=TRUE) %>%
+          as.data.frame()
 
         gameId <- as.integer(game_json[["header"]][["id"]])
         season <- game_json[["header"]][["season"]][["year"]]
         season_type <- game_json[["header"]][["season"]][["type"]]
+        game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
         boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
 
         boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
@@ -71,7 +76,7 @@ wbb_player_box_games <- function(y) {
 
         homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
         awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
-        game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
+
         if (boxScoreAvailable == TRUE &&
             length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]]) > 1) {
           players_df <- players_box_score_df %>%
