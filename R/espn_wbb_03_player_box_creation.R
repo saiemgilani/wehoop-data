@@ -93,7 +93,7 @@ wbb_player_box_games <- function(y) {
 
             players_df <- players_df %>%
               dplyr::filter(!.data$didNotPlay) %>%
-              dplyr::select(tidyselect::any_of(cols))
+              dplyr::select(dplyr::any_of(cols))
             if (length(stats_df) > 0) {
               players_df <- dplyr::bind_cols(stats_df, players_df) %>%
                 dplyr::select(
