@@ -40,16 +40,17 @@ wbb_team_box_games <- function(y) {
 
   future::plan("multisession")
   team_box_g <- furrr::future_map_dfr(team_box_list, function(x) {
-    game_json <- glue::glue("wbb/json/final/{x}.json") %>%
-        jsonlite::fromJSON()
 
     team_box_score <- data.frame()
     teams_box_score_df <- data.frame()
-    gameId <- as.integer(game_json[["gameId"]])
-    box_score_available <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
-    
+
     tryCatch(
       expr = {
+        resp <- glue::glue("wbb/json/final/{x}.json")
+        game_json <- resp %>%
+            jsonlite::fromJSON()
+        gameId <- as.integer(game_json[["header"]][["id"]])
+        box_score_available <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
         if (box_score_available == TRUE) {
           teams_box_score_df <- game_json[["boxscore"]][["teams"]] %>%
             jsonlite::toJSON() %>%
@@ -164,7 +165,7 @@ wbb_team_box_games <- function(y) {
             complete_statistics_df$season <- game_json[["header"]][["season"]][["year"]]
             complete_statistics_df$season_type <- game_json[["header"]][["season"]][["type"]]
             complete_statistics_df$game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
-            complete_statistics_df$game_id <- as.integer(x)
+            complete_statistics_df$game_id <- as.integer(gameId)
 
             suppressWarnings(
               complete_statistics_df <- complete_statistics_df %>%

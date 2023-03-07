@@ -13,8 +13,8 @@ git pull
 git pull
 git add .
 # Rscript R/espn_wbb_01_pbp_creation.R -s $START_YEAR -e $END_YEAR
-Rscript R/espn_wbb_02_team_box_creation.R -s $START_YEAR -e $END_YEAR
-# Rscript R/espn_wbb_03_player_box_creation.R -s $START_YEAR -e $END_YEAR
+# Rscript R/espn_wbb_02_team_box_creation.R -s $START_YEAR -e $END_YEAR
+Rscript R/espn_wbb_03_player_box_creation.R -s $START_YEAR -e $END_YEAR
 git pull
 git add wbb/* wbb_schedule_master.parquet
 git pull

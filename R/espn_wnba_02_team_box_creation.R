@@ -40,13 +40,15 @@ wnba_team_box_games <- function(y) {
 
   future::plan("multisession")
   team_box_g <- furrr::future_map_dfr(team_box_list, function(x) {
-    game_json <- glue::glue("wnba/json/final/{x}.json") %>%
-        jsonlite::fromJSON()
 
     team_box_score <- data.frame()
 
     tryCatch(
       expr = {
+        resp <- glue::glue("wnba/json/final/{x}.json")
+        game_json <- resp %>%
+            jsonlite::fromJSON()
+        gameId <- as.integer(game_json[["header"]][["id"]])
         box_score_available <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
 
         if (box_score_available == TRUE) {
@@ -163,7 +165,7 @@ wnba_team_box_games <- function(y) {
             complete_statistics_df$season <- game_json[["header"]][["season"]][["year"]]
             complete_statistics_df$season_type <- game_json[["header"]][["season"]][["type"]]
             complete_statistics_df$game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
-            complete_statistics_df$game_id <- as.integer(x)
+            complete_statistics_df$game_id <- as.integer(gameId)
 
             suppressWarnings(
               complete_statistics_df <- complete_statistics_df %>%
@@ -181,7 +183,7 @@ wnba_team_box_games <- function(y) {
                   "freeThrowPct",
                   "threePointFieldGoalPct"
                 ), ~as.numeric(.x))) %>%
-                dplyr::mutate(dplyr::across(c(
+                dplyr::mutate(dplyr::across(dplyr::any_of(c(
                   "assists",
                   "blocks",
                   "defensiveRebounds",
@@ -201,12 +203,12 @@ wnba_team_box_games <- function(y) {
                   "totalRebounds",
                   "totalTechnicalFouls",
                   "totalTurnovers",
-                  "turnovers",
-                ), ~as.integer(.x)))
+                  "turnovers"
+                )), ~as.integer(.x)))
             )
             team_box_score <- complete_statistics_df %>%
               janitor::clean_names() %>%
-              dplyr::select(
+              dplyr::select(dplyr::any_of(c(
                 "game_id",
                 "season",
                 "season_type",
@@ -224,7 +226,7 @@ wnba_team_box_games <- function(y) {
                 "team_logo",
                 "team_home_away",
                 "team_score",
-                "team_winner",
+                "team_winner")),
                 tidyr::everything()) %>%
               wehoop:::make_wehoop_data("ESPN WNBA Team Box Information from ESPN.com", Sys.time())
           }

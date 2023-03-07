@@ -40,7 +40,10 @@ wnba_pbp_games <- function(y){
 
   future::plan("multisession")
   pbp_g <- furrr::future_map_dfr(pbp_list, function(x){
-    pbp <- jsonlite::fromJSON(glue::glue("wnba/json/final/{x}.json"))$plays
+    resp <- glue::glue("wnba/json/final/{x}.json")
+    game_json <- resp %>%
+        jsonlite::fromJSON()
+    pbp <- game_json$plays
     if(length(pbp)>1){
       pbp$game_id <- x
     }

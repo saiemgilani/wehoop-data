@@ -43,33 +43,35 @@ wbb_player_box_games <- function(y) {
 
   future::plan("multisession")
   player_box_g <- furrr::future_map_dfr(player_box_list, function(x) {
-    game_json <- jsonlite::fromJSON(glue::glue("wbb/json/final/{x}.json"))
 
     player_box_score <- data.frame()
     players_box_score_df <- data.frame()
-    players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten=TRUE))
-    gameId <- as.integer(game_json[["gameId"]])
-
-    season <- game_json[["header"]][["season"]][["year"]]
-    season_type <- game_json[["header"]][["season"]][["type"]]
-    boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
-
-    boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
-    homeAwayTeam1 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][1]
-    homeAwayTeam2 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][2]
-    homeTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][1]
-    awayTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][2]
-    homeTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][1]
-    awayTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][2]
-    homeTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][1]
-    awayTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][2]
-
-    homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
-    awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
-    game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
 
     tryCatch(
       expr = {
+        resp <- glue::glue("wbb/json/final/{x}.json")
+        game_json <- resp %>%
+          jsonlite::fromJSON()
+        players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten=TRUE))
+
+        gameId <- as.integer(game_json[["header"]][["id"]])
+        season <- game_json[["header"]][["season"]][["year"]]
+        season_type <- game_json[["header"]][["season"]][["type"]]
+        boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
+
+        boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
+        homeAwayTeam1 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][1]
+        homeAwayTeam2 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][2]
+        homeTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][1]
+        awayTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][2]
+        homeTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][1]
+        awayTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][2]
+        homeTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][1]
+        awayTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][2]
+
+        homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
+        awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
+        game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
         if (boxScoreAvailable == TRUE &&
             length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]]) > 1) {
           players_df <- players_box_score_df %>%
