@@ -39,8 +39,8 @@ wbb_pbp_games <- function(y) {
     dplyr::filter(.data$game_id %in% pbp_game_ids) %>%
     dplyr::pull("game_id")
 
-  future::plan("multisession")
-  pbp_g <- furrr::future_map_dfr(pbp_list, function(x) {
+
+  pbp_g <- purrr::map_dfr(pbp_list, function(x) {
     resp <- glue::glue("wbb/json/final/{x}.json")
     game_json <- resp %>%
         jsonlite::fromJSON()

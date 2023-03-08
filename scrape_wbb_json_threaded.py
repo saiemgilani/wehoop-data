@@ -12,6 +12,7 @@ import time
 import urllib.request
 import argparse
 import concurrent.futures
+import gc
 from tqdm import tqdm
 from urllib.error import URLError, HTTPError, ContentTooShortError
 from datetime import datetime
@@ -74,6 +75,7 @@ def download_game(game, process, path_to_raw, path_to_final):
             print("DecodeError: game_id = {}\n {}".format(game, e))
         except (AttributeError) as e:
             print("AttributeError: game_id = {}\n {}".format(game, e))
+    time.sleep(0.5)
 def main():
 
     if args.start_year < 2002:
@@ -113,7 +115,7 @@ def main():
 
 
         print("Finished Scraping year {}...".format(year))
-
+    gc.collect()
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_year', '-s', type=int, required=True, help='Start year of WBB Schedule period (YYYY), eg. 2023 for 2022-23 season')

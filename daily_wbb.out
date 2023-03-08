@@ -104,3 +104,138 @@ Already up to date.
          used (Mb) gc trigger (Mb) max used (Mb)
 Ncells 273710 14.7     660900 35.3   451920 24.2
 Vcells 459112  3.6    8388608 64.0  1800272 13.8
+          used (Mb) gc trigger  (Mb)  max used   (Mb)
+Ncells 1237253 66.1    4245665 226.8   3037037  162.2
+Vcells 4405141 33.7  123039316 938.8 175973866 1342.6
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 273710 14.7     660900 35.3   451920 24.2
+Vcells 459112  3.6    8388608 64.0  1800272 13.8
+          used (Mb) gc trigger  (Mb) max used  (Mb)
+Ncells 1222827 65.4    2356885 125.9  2356885 125.9
+Vcells 2210789 16.9    8388608  64.0  7369598  56.3
+          used (Mb) gc trigger  (Mb) max used  (Mb)
+Ncells 1230457 65.8    2356885 125.9  2356885 125.9
+Vcells 2575707 19.7   22781991 173.9 28476043 217.3
+         used (Mb) gc trigger (Mb) max used (Mb)
+Ncells 273710 14.7     660900 35.3   451920 24.2
+Vcells 459112  3.6    8388608 64.0  1800272 13.8
+          used (Mb) gc trigger  (Mb) max used  (Mb)
+Ncells 1229094 65.7    2366217 126.4  2366217 126.4
+Vcells 2573213 19.7   23294128 177.8 24193564 184.6
+Already up to date.
+Already up to date.
+[main 6229dfea05c] WBB Play-by-Play and Schedules update (Start: 2023 End: 2023)
+ 12474 files changed, 2209445 insertions(+), 181957 deletions(-)
+ create mode 100644 scrape_wbb_json_threaded.py
+ create mode 100644 wbb/json/final/401513492.json
+ create mode 100644 wbb/json/final/401513502.json
+ create mode 100644 wbb/json/final/401513503.json
+ create mode 100644 wbb/json/final/401513570.json
+ create mode 100644 wbb/json/final/401513571.json
+ create mode 100644 wbb/json/final/401513572.json
+ create mode 100644 wbb/json/final/401513576.json
+ create mode 100644 wbb/json/final/401513577.json
+ create mode 100644 wbb/json/final/401513578.json
+ create mode 100644 wbb/json/final/401513657.json
+ create mode 100644 wbb/json/final/401513658.json
+ create mode 100644 wbb/json/final/401513659.json
+ create mode 100644 wbb/json/final/401513660.json
+ create mode 100644 wbb/json/final/401513708.json
+ create mode 100644 wbb/json/final/401513709.json
+ create mode 100644 wbb/json/final/401513710.json
+ create mode 100644 wbb/json/final/401513723.json
+ create mode 100644 wbb/json/final/401513724.json
+ create mode 100644 wbb/json/final/401513725.json
+ create mode 100644 wbb/json/final/401513726.json
+ create mode 100644 wbb/json/final/401513727.json
+ create mode 100644 wbb/json/final/401513741.json
+ create mode 100644 wbb/json/final/401513747.json
+ create mode 100644 wbb/json/final/401513789.json
+ create mode 100644 wbb/json/final/401516410.json
+ create mode 100644 wbb/json/final/401516411.json
+ create mode 100644 wbb/json/final/401516412.json
+ create mode 100644 wbb/json/final/401516413.json
+ create mode 100644 wbb/json/final/401516414.json
+ create mode 100644 wbb/json/final/401516415.json
+ create mode 100644 wbb/json/final/401516416.json
+ create mode 100644 wbb/json/final/401516458.json
+ create mode 100644 wbb/json/final/401516459.json
+ create mode 100644 wbb/json/final/401516460.json
+ create mode 100644 wbb/json/final/401516461.json
+ create mode 100644 wbb/json/final/401516462.json
+ create mode 100644 wbb/json/final/401516463.json
+ create mode 100644 wbb/json/final/401519454.json
+ create mode 100644 wbb/json/final/401519455.json
+ create mode 100644 wbb/json/final/401519456.json
+ create mode 100644 wbb/json/final/401519458.json
+ create mode 100644 wbb/json/final/401524088.json
+ create mode 100644 wbb/json/final/401524089.json
+ create mode 100644 wbb/json/final/401524090.json
+ create mode 100644 wbb/json/final/401524091.json
+ create mode 100644 wbb/json/final/401524195.json
+ create mode 100644 wbb/json/final/401524196.json
+ create mode 100644 wbb/json/final/401524197.json
+ create mode 100644 wbb/json/final/401524198.json
+ create mode 100644 wbb/json/raw/401513492.json
+ create mode 100644 wbb/json/raw/401513502.json
+ create mode 100644 wbb/json/raw/401513503.json
+ create mode 100644 wbb/json/raw/401513570.json
+ create mode 100644 wbb/json/raw/401513571.json
+ create mode 100644 wbb/json/raw/401513572.json
+ create mode 100644 wbb/json/raw/401513576.json
+ create mode 100644 wbb/json/raw/401513577.json
+ create mode 100644 wbb/json/raw/401513578.json
+ create mode 100644 wbb/json/raw/401513657.json
+ create mode 100644 wbb/json/raw/401513658.json
+ create mode 100644 wbb/json/raw/401513659.json
+ create mode 100644 wbb/json/raw/401513660.json
+ create mode 100644 wbb/json/raw/401513708.json
+ create mode 100644 wbb/json/raw/401513709.json
+ create mode 100644 wbb/json/raw/401513710.json
+ create mode 100644 wbb/json/raw/401513723.json
+ create mode 100644 wbb/json/raw/401513724.json
+ create mode 100644 wbb/json/raw/401513725.json
+ create mode 100644 wbb/json/raw/401513726.json
+ create mode 100644 wbb/json/raw/401513727.json
+ create mode 100644 wbb/json/raw/401513741.json
+ create mode 100644 wbb/json/raw/401513747.json
+ create mode 100644 wbb/json/raw/401513789.json
+ create mode 100644 wbb/json/raw/401516410.json
+ create mode 100644 wbb/json/raw/401516411.json
+ create mode 100644 wbb/json/raw/401516412.json
+ create mode 100644 wbb/json/raw/401516413.json
+ create mode 100644 wbb/json/raw/401516414.json
+ create mode 100644 wbb/json/raw/401516415.json
+ create mode 100644 wbb/json/raw/401516416.json
+ create mode 100644 wbb/json/raw/401516458.json
+ create mode 100644 wbb/json/raw/401516459.json
+ create mode 100644 wbb/json/raw/401516460.json
+ create mode 100644 wbb/json/raw/401516461.json
+ create mode 100644 wbb/json/raw/401516462.json
+ create mode 100644 wbb/json/raw/401516463.json
+ create mode 100644 wbb/json/raw/401519454.json
+ create mode 100644 wbb/json/raw/401519455.json
+ create mode 100644 wbb/json/raw/401519456.json
+ create mode 100644 wbb/json/raw/401519458.json
+ create mode 100644 wbb/json/raw/401524088.json
+ create mode 100644 wbb/json/raw/401524089.json
+ create mode 100644 wbb/json/raw/401524090.json
+ create mode 100644 wbb/json/raw/401524091.json
+ create mode 100644 wbb/json/raw/401524195.json
+ create mode 100644 wbb/json/raw/401524196.json
+ create mode 100644 wbb/json/raw/401524197.json
+ create mode 100644 wbb/json/raw/401524198.json
+ rewrite wbb/pbp/parquet/play_by_play_2023.parquet (100%)
+ rewrite wbb/player_box/parquet/player_box_2023.parquet (74%)
+ rewrite wbb/player_box/qs/player_box_2023.qs (75%)
+ rewrite wbb/player_box/rds/player_box_2023.rds (64%)
+ rewrite wbb/schedules/parquet/wbb_schedule_2023.parquet (75%)
+ rewrite wbb/schedules/qs/wbb_schedule_2023.qs (93%)
+ rewrite wbb/schedules/rds/wbb_schedule_2023.rds (92%)
+ rewrite wbb/team_box/csv/team_box_2023.csv.gz (87%)
+ rewrite wbb/team_box/parquet/team_box_2023.parquet (87%)
+ rewrite wbb/team_box/qs/team_box_2023.qs (89%)
+ rewrite wbb/team_box/rds/team_box_2023.rds (88%)
+ rewrite wbb/wbb_games_in_data_repo.parquet (72%)
+ rewrite wbb/wbb_games_in_data_repo.qs (69%)
+Already up to date.

@@ -8,14 +8,20 @@ import pyarrow as pa
 import pandas as pd
 import sportsdataverse as sdv
 import argparse
+import time
+import urllib.request
+import argparse
+import concurrent.futures
+import gc
 from urllib.error import URLError, HTTPError, ContentTooShortError
 from datetime import datetime
-from itertools import chain, starmap
+from itertools import chain, starmap, repeat
 from pathlib import Path
 from tqdm import tqdm
 
 path_to_schedules = "wbb/schedules"
 final_file_name = "wbb_schedule_master.csv"
+MAX_THREADS = 30
 
 def download_schedule(season, path_to_schedules=None):
     df = sdv.wbb.espn_wbb_calendar(season, ondays=True)
