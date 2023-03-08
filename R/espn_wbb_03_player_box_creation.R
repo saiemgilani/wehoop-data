@@ -51,12 +51,8 @@ wbb_player_box_games <- function(y) {
       expr = {
         resp <- glue::glue("wbb/json/final/{x}.json")
         game_json <- resp %>%
-          jsonlite::fromJSON()
+          jsonlite::fromJSON(flatten = TRUE)
 
-        players_box_score_df <- game_json[["boxscore"]][["players"]] %>%
-          jsonlite::toJSON() %>%
-          jsonlite::fromJSON(flatten=TRUE) %>%
-          as.data.frame()
 
         gameId <- as.integer(game_json[["header"]][["id"]])
         season <- game_json[["header"]][["season"]][["year"]]
@@ -65,17 +61,10 @@ wbb_player_box_games <- function(y) {
         boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
 
         boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
-        homeAwayTeam1 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][1]
-        homeAwayTeam2 <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][2]
-        homeTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][1]
-        awayTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][2]
-        homeTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][1]
-        awayTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][2]
-        homeTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][1]
-        awayTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][2]
-
-        homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
-        awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
+        players_box_score_df <- game_json[["boxscore"]][["players"]] %>%
+          jsonlite::toJSON() %>%
+          jsonlite::fromJSON(flatten = TRUE) %>%
+          as.data.frame()
 
         if (boxScoreAvailable == TRUE &&
             length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]]) > 1) {
@@ -84,45 +73,131 @@ wbb_player_box_games <- function(y) {
             tidyr::unnest("athletes")
           if (length(players_box_score_df[["statistics"]]) > 1 &&
               length(players_df$stats[[1]] > 0)) {
+            players_df <- jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten=TRUE) %>%
+              tidyr::unnest("statistics") %>%
+              tidyr::unnest("athletes")
             stat_cols <- players_df$names[[1]]
+            stat_cols <- players_df$keys[[1]]
             stats <- players_df$stats
-            stats_df <- as.data.frame(do.call(rbind, stats))
-            colnames(stats_df) <- stat_cols
-            cols <- c("starter", "ejected", "didNotPlay", "active",
-                      "athlete.displayName", "athlete.jersey",
-                      "athlete.id", "athlete.shortName",
-                      "athlete.headshot.href", "athlete.position.name",
-                      "athlete.position.abbreviation", "team.shortDisplayName",
-                      "team.name", "team.logo", "team.id", "team.abbreviation",
-                      "team.color")
 
+            stats_df <- as.data.frame(do.call(rbind,stats))
+            colnames(stats_df) <- stat_cols
+            suppressWarnings(
+              stats_df <- stats_df %>%
+                tidyr::separate("fieldGoalsMade-fieldGoalsAttempted",
+                                into = c("fieldGoalsMade", "fieldGoalsAttempted"),
+                                sep = "-") %>%
+                tidyr::separate("freeThrowsMade-freeThrowsAttempted",
+                                into = c("freeThrowsMade", "freeThrowsAttempted"),
+                                sep = "-") %>%
+                tidyr::separate("threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+                                into = c("threePointFieldGoalsMade", "threePointFieldGoalsAttempted"),
+                                sep = "-") %>%
+                dplyr::mutate(dplyr::across(dplyr::any_of(c(
+                  "minutes",
+                  "fieldGoalPct",
+                  "freeThrowPct",
+                  "threePointFieldGoalPct"
+                )), ~as.numeric(.x))) %>%
+                dplyr::mutate(dplyr::across(dplyr::any_of(c(
+                  "assists",
+                  "blocks",
+                  "defensiveRebounds",
+                  "fieldGoalsMade",
+                  "fieldGoalsAttempted",
+                  "flagrantFouls",
+                  "fouls",
+                  "freeThrowsMade",
+                  "freeThrowsAttempted",
+                  "offensiveRebounds",
+                  "steals",
+                  "teamTurnovers",
+                  "technicalFouls",
+                  "threePointFieldGoalsMade",
+                  "threePointFieldGoalsAttempted",
+                  "rebounds",
+                  "totalTechnicalFouls",
+                  "totalTurnovers",
+                  "turnovers",
+                  "points"
+                )), ~as.integer(.x)))
+            )
             players_df <- players_df %>%
               dplyr::filter(!.data$didNotPlay) %>%
-              dplyr::select(dplyr::any_of(cols))
-            if (length(stats_df) > 0) {
-              players_df <- dplyr::bind_cols(stats_df, players_df) %>%
-                dplyr::select(
-                  "athlete.displayName",
-                  "team.shortDisplayName",
-                  tidyr::everything())
+              dplyr::select(dplyr::any_of(c(
+                "starter",
+                "ejected",
+                "didNotPlay",
+                "active",
+                "athlete.displayName",
+                "athlete.jersey",
+                "athlete.id",
+                "athlete.shortName",
+                "athlete.headshot.href",
+                "athlete.position.name",
+                "athlete.position.abbreviation",
+                "team.shortDisplayName",
+                "team.name",
+                "team.logo",
+                "team.id",
+                "team.abbreviation",
+                "team.color",
+                "team.alternateColor"
+              )))
 
+            players_df <- dplyr::bind_cols(stats_df,players_df) %>%
+              dplyr::select(dplyr::any_of(c(
+                "athlete.displayName",
+                "team.shortDisplayName")),
+                tidyr::everything()) %>%
+              janitor::clean_names() %>%
+              dplyr::mutate(
+                game_id = gameId,
+                season = season,
+                season_type = season_type,
+                game_date = game_date)
 
-              players_df <- players_df %>%
-                janitor::clean_names() %>%
-                dplyr::rename(
-                  "fg3" = "x3pt"
-                )
-              player_box_score <- players_df %>%
-                dplyr::mutate(
-                  game_id = gameId,
-                  season = season,
-                  season_type = season_type,
-                  game_date = game_date
-                )
-              drop <- c("statistics")
-              player_box_score <- player_box_score[, !(names(player_box_score) %in% drop)]
-
-            }
+            player_box_score <- players_df %>%
+              dplyr::select(dplyr::any_of(c(
+                "game_id",
+                "season",
+                "season_type",
+                "game_date",
+                "athlete_id",
+                "athlete_display_name",
+                "team_id",
+                "team_name",
+                "team_short_display_name",
+                "minutes",
+                "field_goals_made",
+                "field_goals_attempted",
+                "three_point_field_goals_made",
+                "three_point_field_goals_attempted",
+                "free_throws_made",
+                "free_throws_attempted",
+                "offensive_rebounds",
+                "defensive_rebounds",
+                "rebounds",
+                "assists",
+                "steals",
+                "blocks",
+                "turnovers",
+                "fouls",
+                "points",
+                "starter",
+                "ejected",
+                "did_not_play",
+                "active",
+                "athlete_jersey",
+                "athlete_short_name",
+                "athlete_headshot_href",
+                "athlete_position_name",
+                "athlete_position_abbreviation",
+                "team_logo",
+                "team_abbreviation",
+                "team_color",
+                "team_alternate_color"))) %>%
+              wehoop:::make_wehoop_data("ESPN WBB Player Box Information from ESPN.com", Sys.time())
           }
         }
       },
