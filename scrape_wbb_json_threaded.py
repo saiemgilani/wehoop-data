@@ -41,6 +41,8 @@ def download_game(game, process, path_to_raw, path_to_final):
     Path(path_to_final_json).mkdir(parents=True, exist_ok=True)
     try:
         g = sdv.wbb.espn_wbb_pbp(game_id = game, raw=True)
+        with open("{}{}.json".format(path_to_raw_json, game),'w') as f:
+            json.dump(g, f, indent=2, sort_keys=False)
     except (TypeError) as e:
         print("TypeError: game_id = {}\n {}".format(game, e))
     except (IndexError) as e:
@@ -51,8 +53,6 @@ def download_game(game, process, path_to_raw, path_to_final):
         print("DecodeError: game_id = {}\n {}".format(game, e))
     except (AttributeError) as e:
         print("AttributeError: game_id = {}\n {}".format(game, e))
-    with open("{}{}.json".format(path_to_raw_json, game),'w') as f:
-        json.dump(g, f, indent=2, sort_keys=False)
     if process == True:
         try:
             processed_data = sdv.wbb.wbb_pbp_disk(
@@ -104,10 +104,6 @@ def main():
         games = schedule[(schedule['season']==year)].reset_index()['game_id'].tolist()
         print(f"Number of Games: {len(games)}")
         bad_schedule_keys = pd.DataFrame()
-
-        # json_files = [pos_json.replace('.json', '') for pos_json in os.listdir(path_to_raw_json) if pos_json.endswith('.json')]
-
-
         t0 = time.time()
         download_game_pbps(games, process, path_to_raw, path_to_final)
         t1 = time.time()

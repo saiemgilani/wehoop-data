@@ -9,7 +9,7 @@ do
 done
 git pull
 python3 scrape_wnba_schedules.py -s $START_YEAR -e $END_YEAR
-python3 scrape_wnba_json.py -s $START_YEAR -e $END_YEAR
+python3 scrape_wnba_json_threaded.py -s $START_YEAR -e $END_YEAR
 git pull
 git add .
 Rscript R/espn_wnba_01_pbp_creation.R -s $START_YEAR -e $END_YEAR
