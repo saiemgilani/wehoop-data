@@ -8,7 +8,7 @@ do
     esac
 done
 git pull
-# python3 scrape_wbb_schedules.py -s $START_YEAR -e $END_YEAR
+python3 scrape_wbb_schedules_threaded.py -s $START_YEAR -e $END_YEAR
 python3 scrape_wbb_json_threaded.py -s $START_YEAR -e $END_YEAR -r $RESCRAPE
 git pull
 git add .

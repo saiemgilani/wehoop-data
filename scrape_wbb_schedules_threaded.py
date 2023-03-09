@@ -1,4 +1,5 @@
-import os, json
+import os
+import json
 import re
 import http
 import time
@@ -58,7 +59,7 @@ def main():
     years_arr = range(start_year, end_year + 1)
 
     t0 = time.time()
-    download_schedule(years_arr, path_to_schedules)
+    download_game_schedules(years_arr, path_to_schedules)
     t1 = time.time()
     print(f"{(t1-t0)/60} minutes to download {len(years_arr)} years of season schedules.")
     csv_files = [pos_csv.replace('.csv', '') for pos_csv in os.listdir(path_to_schedules+'/csv') if pos_csv.endswith('.csv')]
@@ -69,6 +70,7 @@ def main():
     glued_data['status_display_clock'] = glued_data['status_display_clock'].astype(str)
     glued_data.to_csv(final_file_name, index=False)
     glued_data.to_parquet(final_file_name.replace('.csv', '.parquet'), index=False)
+    gcol = gc.collect()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

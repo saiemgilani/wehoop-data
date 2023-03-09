@@ -1,4 +1,5 @@
-import os, json
+import os
+import json
 import re
 import http
 import time
@@ -8,16 +9,29 @@ import pyarrow as pa
 import pandas as pd
 import sportsdataverse as sdv
 import argparse
+import time
+import urllib.request
+import argparse
+import concurrent.futures
+import gc
 from urllib.error import URLError, HTTPError, ContentTooShortError
 from datetime import datetime
-from itertools import chain, starmap
+from itertools import chain, starmap, repeat
 from pathlib import Path
 from tqdm import tqdm
 
 path_to_schedules = "wnba/schedules"
 final_file_name = "wnba_schedule_master.csv"
+MAX_THREADS = 30
 
+def download_game_schedules(seasons, path_to_schedules):
+    threads = min(MAX_THREADS, len(seasons))
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
+        result = list(tqdm(executor.map(download_schedule, seasons, repeat(path_to_schedules)), total = len(seasons)))
+        return result
 def download_schedule(season, path_to_schedules=None):
+    print("Scraping WNBA schedules for year {}...".format(season))
     df = sdv.wnba.espn_wnba_calendar(season, ondays=True)
     calendar = df['dateURL'].tolist()
     ev = pd.DataFrame()
@@ -43,9 +57,12 @@ def main():
     else:
         end_year = args.end_year
     years_arr = range(start_year, end_year + 1)
-    for year in years_arr:
-        print("Scraping WNBA schedules for year {}...".format(year))
-        download_schedule(year, path_to_schedules)
+
+    t0 = time.time()
+    download_game_schedules(years_arr, path_to_schedules)
+    t1 = time.time()
+    print(f"{(t1-t0)/60} minutes to download {len(years_arr)} years of season schedules.")
+
     csv_files = [pos_csv.replace('.csv', '') for pos_csv in os.listdir(path_to_schedules+'/csv') if pos_csv.endswith('.csv')]
     glued_data = pd.DataFrame()
     for index, js in enumerate(csv_files):
@@ -54,6 +71,7 @@ def main():
     glued_data['status_display_clock'] = glued_data['status_display_clock'].astype(str)
     glued_data.to_csv(final_file_name, index=False)
     glued_data.to_parquet(final_file_name.replace('.csv', '.parquet'), index=False)
+    gcol = gc.collect()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

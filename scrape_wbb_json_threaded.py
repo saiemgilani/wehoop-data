@@ -1,23 +1,24 @@
-import os, json
+import os
+import json
 import re
 import http
+import time
+import urllib.request
 import pyreadr
+import pyarrow as pa
 import pandas as pd
-import numpy as np
-import pyarrow.parquet as pq
 import sportsdataverse as sdv
-import xgboost as xgb
-import multiprocessing
+import argparse
 import time
 import urllib.request
 import argparse
 import concurrent.futures
 import gc
-from tqdm import tqdm
 from urllib.error import URLError, HTTPError, ContentTooShortError
 from datetime import datetime
 from itertools import chain, starmap, repeat
 from pathlib import Path
+from tqdm import tqdm
 
 path_to_raw = "wbb/json/raw"
 path_to_final = "wbb/json/final"
@@ -107,7 +108,7 @@ def main():
         t0 = time.time()
         download_game_pbps(games, process, path_to_raw, path_to_final)
         t1 = time.time()
-        print(f"{t1-t0} seconds to download {len(games)} game play-by-plays.")
+        print(f"{(t1-t0)/60} seconds to download {len(games)} game play-by-plays.")
 
 
         print("Finished Scraping year {}...".format(year))
