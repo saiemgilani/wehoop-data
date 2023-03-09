@@ -26,19 +26,29 @@ suppressPackageStartupMessages(suppressMessages(library(zoo, lib.loc=lib_path)))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
 years_vec <- 2017:wehoop::most_recent_wnba_season()
-
+proxies <- data.table::fread("../proxylist.csv")
+select_proxy <- function(proxies) {
+  proxy <- sample(proxies$ip, 1)          # pick a random proxy from the list above
+  proxy_selected <- proxies %>%
+    dplyr::filter(.data$ip == proxy)
+  my_proxy <- httr::use_proxy(url = proxy_selected$ip,
+                              port = proxy_selected$port,
+                              username = proxy_selected$login,
+                              password = proxy_selected$password)
+  return(my_proxy)
+}
 # --- wnba_stats_pbp_with_lineups ---------
 wnba_stats_pbp_with_lineups <- function(y){
 
   cli::cli_process_start("Starting WNBA Stats (Data API) play-by-play parse for {y}!")
-  player_logs <- wehoop::wnba_leaguegamelog(season = y, player_or_team = "P") %>%  # change season here
+  player_logs <- wehoop::wnba_leaguegamefinder(season = y, player_or_team = "P", proxy = select_proxy(proxies)) %>%  # change season here
     purrr::pluck("LeagueGameLog") %>%
     janitor::clean_names() %>%
     dplyr::mutate(team_location = ifelse(stringr::str_detect(matchup, "\\@"), "away", "home"),
                   dplyr::across(c("player_id", "team_id", "game_id"), as.integer))
 
   function_pbp <- function(x){
-    wehoop::wnba_data_pbp(x) %>%
+    wehoop::wnba_data_pbp(x, proxy = select_proxy(proxies)) %>%
       dplyr::mutate(game_id = x)
   }
 
@@ -157,7 +167,12 @@ wnba_stats_pbp_with_lineups <- function(y){
 
   # Find missing starter from period
   missing_st_qtr <- function(game_id_miss, period_miss){
-    wehoop::wnba_boxscoretraditionalv2(game_id = game_id_miss, start_period = period_miss, end_period = period_miss, range_type = 1) %>%
+    wehoop::wnba_boxscoretraditionalv2(
+      game_id = game_id_miss,
+      start_period = period_miss,
+      end_period = period_miss,
+      range_type = 1,
+      proxy = select_proxy(proxies)) %>%
       purrr::pluck("PlayerStats") %>%
       dplyr::mutate(period = period_miss) %>%
       dplyr::filter((period_miss > 4 & MIN == "5:00") | (period_miss <= 4 & MIN == "10:00")) %>%

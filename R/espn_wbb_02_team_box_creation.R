@@ -1,5 +1,5 @@
 rm(list = ls())
-gc()
+gcol <- gc()
 
 lib_path <- Sys.getenv("R_LIBS")
 
@@ -296,7 +296,7 @@ all_games <- purrr::map(years_vec, function(y) {
   wbb_team_box_games(y)
   return(NULL)
 })
-gc()
+
 sched_list <- list.files(path = glue::glue("wbb/schedules/csv/"))
 sched_g <-  purrr::map_dfr(sched_list, function(x) {
   sched <- data.table::fread(paste0("wbb/schedules/csv/", x)) %>%
@@ -322,4 +322,4 @@ rm(all_games)
 rm(sched_g)
 rm(sched_list)
 rm(years_vec)
-gc()
+gcol <- gc()

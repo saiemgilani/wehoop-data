@@ -1,5 +1,5 @@
 rm(list = ls())
-gc()
+gcol <- gc()
 
 lib_path <- Sys.getenv("R_LIBS")
 
@@ -144,4 +144,4 @@ arrow::write_parquet(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arr
 rm(sched_g)
 rm(sched_list)
 rm(years_vec)
-gc()
+gcol <- gc()
