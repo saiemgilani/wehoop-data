@@ -28,7 +28,7 @@ options(scipen = 999)
 years_vec <- 2017:wehoop::most_recent_wnba_season()
 proxies <- data.table::fread("../proxylist.csv")
 select_proxy <- function(proxies) {
-  proxy <- sample(proxies$ip, 1)          # pick a random proxy from the list above
+  proxy <- sample(proxies$ip, 1)
   proxy_selected <- proxies %>%
     dplyr::filter(.data$ip == proxy)
   my_proxy <- httr::use_proxy(url = proxy_selected$ip,
@@ -40,7 +40,7 @@ select_proxy <- function(proxies) {
 # --- wnba_stats_pbp_with_lineups ---------
 
 proxy <- select_proxy(proxies)
-print(proxy)
-player_logs <- wehoop::wnba_leaguegamefinder(season = 2017, player_or_team = "P", proxy = select_proxy(proxies))   # change season here
+
+player_logs <- wehoop::wnba_leaguegamelog(season = 2017, player_or_team = "P", proxy = proxy)   # change season here
 
 print(player_logs)

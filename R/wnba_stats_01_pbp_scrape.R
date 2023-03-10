@@ -25,7 +25,7 @@ suppressPackageStartupMessages(suppressMessages(library(zoo, lib.loc=lib_path)))
 
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
-years_vec <- 2017:wehoop::most_recent_wnba_season()
+years_vec <- 2016
 proxies <- data.table::fread("../proxylist.csv")
 select_proxy <- function(proxies) {
   proxy <- sample(proxies$ip, 1)          # pick a random proxy from the list above
@@ -41,14 +41,15 @@ select_proxy <- function(proxies) {
 wnba_stats_pbp_with_lineups <- function(y){
 
   cli::cli_process_start("Starting WNBA Stats (Data API) play-by-play parse for {y}!")
-  player_logs <- wehoop::wnba_leaguegamefinder(season = y, player_or_team = "P", proxy = select_proxy(proxies)) %>%  # change season here
+  proxy <- select_proxy(proxies)
+  player_logs <- wehoop::wnba_leaguegamelog(season = y, player_or_team = "P", proxy = proxy) %>%  # change season here
     purrr::pluck("LeagueGameLog") %>%
     janitor::clean_names() %>%
     dplyr::mutate(team_location = ifelse(stringr::str_detect(matchup, "\\@"), "away", "home"),
                   dplyr::across(c("player_id", "team_id", "game_id"), as.integer))
 
   function_pbp <- function(x){
-    wehoop::wnba_data_pbp(x, proxy = select_proxy(proxies)) %>%
+    wehoop::wnba_data_pbp(x, proxy = proxy) %>%
       dplyr::mutate(game_id = x)
   }
 
@@ -172,7 +173,7 @@ wnba_stats_pbp_with_lineups <- function(y){
       start_period = period_miss,
       end_period = period_miss,
       range_type = 1,
-      proxy = select_proxy(proxies)) %>%
+      proxy = proxy) %>%
       purrr::pluck("PlayerStats") %>%
       dplyr::mutate(period = period_miss) %>%
       dplyr::filter((period_miss > 4 & MIN == "5:00") | (period_miss <= 4 & MIN == "10:00")) %>%
