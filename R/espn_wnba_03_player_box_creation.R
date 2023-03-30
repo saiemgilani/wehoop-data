@@ -136,7 +136,7 @@ wnba_player_box_games <- function(y) {
 
   if (nrow(player_box_g) > 1) {
     player_box_g <- player_box_g %>%
-      wehoop:::make_wehoop_data("ESPN WNBA Player Boxscore Information from wehoop data repository",Sys.time())
+      wehoop:::make_wehoop_data("ESPN WNBA Player Boxscores from wehoop data repository", Sys.time())
 
     ifelse(!dir.exists(file.path("wnba/player_box")), dir.create(file.path("wnba/player_box")), FALSE)
 
@@ -151,6 +151,15 @@ wnba_player_box_games <- function(y) {
 
     ifelse(!dir.exists(file.path("wnba/player_box/parquet")), dir.create(file.path("wnba/player_box/parquet")), FALSE)
     arrow::write_parquet(player_box_g, glue::glue("wnba/player_box/parquet/player_box_{y}.parquet"))
+
+    sportsdataversedata::sportsdataverse_save(
+      data_frame = player_box_g,
+      file_name =  glue::glue("player_box_{y}"),
+      sportsdataverse_type = "player boxscores data",
+      release_tag = "espn_wnba_player_boxscores",
+      file_types = c("rds", "csv", "parquet"),
+      .token = Sys.getenv("GITHUB_PAT")
+    )
   }
   sched <- sched %>%
     dplyr::mutate(
@@ -166,8 +175,19 @@ wnba_player_box_games <- function(y) {
     sched$player_box <- FALSE
   }
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
+
   final_sched <- final_sched %>%
-    wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository", Sys.time())
+    wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
+
+  sportsdataversedata::sportsdataverse_save(
+    data_frame = final_sched,
+    file_name =  glue::glue("wnba_schedule_{y}"),
+    sportsdataverse_type = "schedule data",
+    release_tag = "espn_wnba_schedules",
+    file_types = c("rds", "csv", "parquet"),
+    .token = Sys.getenv("GITHUB_PAT")
+  )
+
   data.table::fwrite(final_sched,paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
   qs::qsave(final_sched, glue::glue("wnba/schedules/qs/wnba_schedule_{y}.qs"))
   saveRDS(final_sched, glue::glue("wnba/schedules/rds/wnba_schedule_{y}.rds"))

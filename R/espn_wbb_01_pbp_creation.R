@@ -68,7 +68,7 @@ wbb_pbp_games <- function(y) {
   ifelse(!dir.exists(file.path("wbb/pbp/csv")), dir.create(file.path("wbb/pbp/csv")), FALSE)
   if (nrow(pbp_g) > 1) {
     pbp_g <- pbp_g %>%
-      wehoop:::make_wehoop_data("ESPN WBB Play-by-Play Information from wehoop data repository", Sys.time())
+      wehoop:::make_wehoop_data("ESPN WBB Play-by-Play from wehoop data repository", Sys.time())
     data.table::fwrite(pbp_g, file=paste0("wbb/pbp/csv/play_by_play_", y, ".csv.gz"))
 
     ifelse(!dir.exists(file.path("wbb/pbp/qs")), dir.create(file.path("wbb/pbp/qs")), FALSE)
@@ -79,6 +79,15 @@ wbb_pbp_games <- function(y) {
 
     ifelse(!dir.exists(file.path("wbb/pbp/parquet")), dir.create(file.path("wbb/pbp/parquet")), FALSE)
     arrow::write_parquet(pbp_g, glue::glue("wbb/pbp/parquet/play_by_play_{y}.parquet"))
+
+    sportsdataversedata::sportsdataverse_save(
+      data_frame = pbp_g,
+      file_name =  glue::glue("play_by_play_{y}"),
+      sportsdataverse_type = "play-by-play data",
+      release_tag = "espn_womens_college_basketball_pbp",
+      file_types = c("rds", "csv", "parquet"),
+      .token = Sys.getenv("GITHUB_PAT")
+    )
   }
 
   sched <- sched %>%
@@ -96,7 +105,7 @@ wbb_pbp_games <- function(y) {
 
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
   final_sched <- final_sched %>%
-    wehoop:::make_wehoop_data("ESPN WBB Schedule Information from wehoop data repository", Sys.time())
+    wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
   data.table::fwrite(final_sched, paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
   qs::qsave(final_sched, glue::glue("wbb/schedules/qs/wbb_schedule_{y}.qs"))
   saveRDS(final_sched, glue::glue("wbb/schedules/rds/wbb_schedule_{y}.rds"))
@@ -122,7 +131,7 @@ sched_g <-  purrr::map_dfr(sched_list, function(x){
   return(sched)
 })
 sched_g <- sched_g %>%
-  wehoop:::make_wehoop_data("ESPN WBB Schedule Information from wehoop data repository", Sys.time())
+  wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
 data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), "wbb_schedule_master.csv")
 data.table::fwrite(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wbb/wbb_games_in_data_repo.csv")
 qs::qsave(sched_g %>% dplyr::arrange(desc(.data$date)), "wbb_schedule_master.qs")

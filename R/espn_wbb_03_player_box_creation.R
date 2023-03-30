@@ -214,7 +214,7 @@ wbb_player_box_games <- function(y) {
 
   if (nrow(player_box_g) > 1) {
     player_box_g <- player_box_g %>%
-      wehoop:::make_wehoop_data("ESPN WBB Player Boxscore Information from wehoop data repository", Sys.time())
+      wehoop:::make_wehoop_data("ESPN WBB Player Boxscores from wehoop data repository", Sys.time())
 
     ifelse(!dir.exists(file.path("wbb/player_box")), dir.create(file.path("wbb/player_box")), FALSE)
 
@@ -229,6 +229,15 @@ wbb_player_box_games <- function(y) {
 
     ifelse(!dir.exists(file.path("wbb/player_box/parquet")), dir.create(file.path("wbb/player_box/parquet")), FALSE)
     arrow::write_parquet(player_box_g, glue::glue("wbb/player_box/parquet/player_box_{y}.parquet"))
+
+    sportsdataversedata::sportsdataverse_save(
+      data_frame = player_box_g,
+      file_name =  glue::glue("player_box_{y}"),
+      sportsdataverse_type = "player boxscores data",
+      release_tag = "espn_womens_college_basketball_player_boxscores",
+      file_types = c("rds", "csv", "parquet"),
+      .token = Sys.getenv("GITHUB_PAT")
+    )
   }
   sched <- data.table::fread(paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
   sched <- sched %>%
@@ -247,7 +256,17 @@ wbb_player_box_games <- function(y) {
 
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
   final_sched <- final_sched %>%
-    wehoop:::make_wehoop_data("ESPN WBB Schedule Information from wehoop data repository", Sys.time())
+    wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
+
+  sportsdataversedata::sportsdataverse_save(
+    data_frame = final_sched,
+    file_name =  glue::glue("wbb_schedule_{y}"),
+    sportsdataverse_type = "schedule data",
+    release_tag = "espn_womens_college_basketball_schedules",
+    file_types = c("rds", "csv", "parquet"),
+    .token = Sys.getenv("GITHUB_PAT")
+  )
+
   data.table::fwrite(final_sched, paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
   qs::qsave(final_sched, glue::glue("wbb/schedules/qs/wbb_schedule_{y}.qs"))
   saveRDS(final_sched, glue::glue("wbb/schedules/rds/wbb_schedule_{y}.rds"))

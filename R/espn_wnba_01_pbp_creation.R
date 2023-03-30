@@ -72,7 +72,7 @@ wnba_pbp_games <- function(y){
   }
   if (nrow(pbp_g) > 1) {
     pbp_g <- pbp_g %>%
-      wehoop:::make_wehoop_data("ESPN WNBA Play-by-Play Information from wehoop data repository",Sys.time())
+      wehoop:::make_wehoop_data("ESPN WNBA Play-by-Play from wehoop data repository",Sys.time())
 
     ifelse(!dir.exists(file.path("wnba/pbp")), dir.create(file.path("wnba/pbp")), FALSE)
     ifelse(!dir.exists(file.path("wnba/pbp/csv")), dir.create(file.path("wnba/pbp/csv")), FALSE)
@@ -86,6 +86,15 @@ wnba_pbp_games <- function(y){
 
     ifelse(!dir.exists(file.path("wnba/pbp/parquet")), dir.create(file.path("wnba/pbp/parquet")), FALSE)
     arrow::write_parquet(pbp_g, paste0("wnba/pbp/parquet/play_by_play_",y,".parquet"))
+
+    sportsdataversedata::sportsdataverse_save(
+      data_frame = pbp_g,
+      file_name =  glue::glue("play_by_play_{y}"),
+      sportsdataverse_type = "play-by-play data",
+      release_tag = "espn_wnba_pbp",
+      file_types = c("rds", "csv", "parquet"),
+      .token = Sys.getenv("GITHUB_PAT")
+    )
   }
 
   sched <- sched %>%
@@ -96,14 +105,16 @@ wnba_pbp_games <- function(y){
   if (nrow(pbp_g) > 0) {
     sched <- sched %>%
       dplyr::mutate(
-        PBP = ifelse(.data$game_id %in% unique(pbp_g$game_id), TRUE,FALSE)
+        PBP = ifelse(.data$game_id %in% unique(pbp_g$game_id), TRUE, FALSE)
       )
   } else {
     sched$PBP <- FALSE
   }
   final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
+
   final_sched <- final_sched %>%
-    wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository", Sys.time())
+    wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
+
   data.table::fwrite(final_sched, paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
   qs::qsave(final_sched, glue::glue("wnba/schedules/qs/wnba_schedule_{y}.qs"))
   saveRDS(final_sched, glue::glue("wnba/schedules/rds/wnba_schedule_{y}.rds"))
@@ -131,7 +142,7 @@ sched_g <-  purrr::map_dfr(sched_list, function(x) {
 })
 
 sched_g <- sched_g %>%
-  wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository",Sys.time())
+  wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository",Sys.time())
 
 data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), "wnba_schedule_master.csv")
 data.table::fwrite(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.csv")
