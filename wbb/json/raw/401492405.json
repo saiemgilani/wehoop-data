@@ -5533,6 +5533,18 @@
         "shortText": "Team Stats",
         "isExternal": false,
         "isPremium": false
+      },
+      {
+        "rel": [
+          "videos",
+          "desktop",
+          "event"
+        ],
+        "href": "https://www.espn.com/womens-college-basketball/video?gameId=401492405",
+        "text": "Videos",
+        "shortText": "Videos",
+        "isExternal": false,
+        "isPremium": false
       }
     ],
     "week": 13,
@@ -14156,7 +14168,101 @@
     }
   ],
   "article": [],
-  "videos": [],
+  "videos": [
+    {
+      "source": "espn",
+      "id": 35584839,
+      "headline": "Princeton Defeats Cornell on the Road  - Via Ivy League",
+      "description": "Madison St. Rose Registered 18 Points To Lead Princeton Past Cornell",
+      "ad": {
+        "sport": "ncw",
+        "bundle": "no_show"
+      },
+      "tracking": {
+        "sportName": "ncw",
+        "leagueName": "No League",
+        "coverageType": "Final Game Highlight",
+        "trackingName": "princeton_defeats_cornel_63ddbf508a1080018077ab2c",
+        "trackingId": "63ddbf508a1080018077ab2c"
+      },
+      "cerebroId": "63ddbfa6be6ab31ff73d9674",
+      "lastModified": "2023-02-04T02:17:15Z",
+      "originalPublishDate": "2023-02-04T02:09:48Z",
+      "timeRestrictions": {
+        "embargoDate": "2023-02-04T02:09:48Z",
+        "expirationDate": "2025-02-04T02:09:48Z"
+      },
+      "deviceRestrictions": {
+        "type": "whitelist",
+        "devices": [
+          "desktop",
+          "settop",
+          "handset",
+          "tablet"
+        ]
+      },
+      "duration": 102,
+      "thumbnail": "https://a.espncdn.com/media/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967.jpg",
+      "links": {
+        "api": {
+          "self": {
+            "href": "http://api.espn.com/v1/video/clips/35584839"
+          },
+          "artwork": {
+            "href": "https://artwork.api.espn.com/artwork/collections/media/2f1b21a9-a9bb-4634-99b2-811ba5041e03"
+          }
+        },
+        "web": {
+          "href": "https://www.espn.com/video/clip?id=35584839&ex_cid=espnapi_internal",
+          "short": {
+            "href": "https://www.espn.com/video/clip?id=35584839"
+          },
+          "self": {
+            "href": "https://www.espn.com/video/clip?id=35584839&ex_cid=espnapi_internal"
+          }
+        },
+        "source": {
+          "mezzanine": {
+            "href": "https://media.video-origin.espn.com/espnvideo/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967.mp4"
+          },
+          "flash": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967.smil"
+          },
+          "hds": {
+            "href": "https://hds.video-cdn.espn.com/z/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967_rel.smil/manifest.f4m"
+          },
+          "HLS": {
+            "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967/playlist.m3u8",
+            "HD": {
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967/playlist.m3u8"
+            }
+          },
+          "HD": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967_720p30_2896k.mp4"
+          },
+          "full": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967_360p30_1464k.mp4"
+          },
+          "href": "https://media.video-cdn.espn.com/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967_360p30_1464k.mp4"
+        },
+        "mobile": {
+          "alert": {
+            "href": "http://m.espn.go.com/general/video/videoAlert?vid=35584839&ex_cid=espnapi_internal"
+          },
+          "source": {
+            "href": "https://media.video-cdn.espn.com/motion/2023/0203/ss_20230203_211504189_2177967/ss_20230203_211504189_2177967.mp4"
+          },
+          "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f1b21a9-a9bb-4634-99b2-811ba5041e03/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35584839",
+          "streaming": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f1b21a9-a9bb-4634-99b2-811ba5041e03/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35584839"
+          },
+          "progressiveDownload": {
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f1b21a9-a9bb-4634-99b2-811ba5041e03/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35584839"
+          }
+        }
+      }
+    }
+  ],
   "standings": {
     "fullViewLink": {
       "text": "Full Standings",
@@ -14180,8 +14286,8 @@
                   "shortDisplayName": "Season",
                   "description": "Overall Record",
                   "type": "total",
-                  "summary": "28-5",
-                  "displayValue": "28-5"
+                  "summary": "28-6",
+                  "displayValue": "28-6"
                 },
                 {
                   "name": "gamesBehind",
