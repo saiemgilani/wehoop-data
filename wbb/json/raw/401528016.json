@@ -18198,71 +18198,72 @@
     "video": [
       {
         "source": "espn",
-        "id": 35946071,
-        "dataSourceIdentifier": "fc81b2ac973ed",
-        "headline": "Lil Wayne FaceTimes with Miami after its Elite Eight berth",
-        "caption": "Lil Wayne FaceTimes the Miami women's basketball team to congratulate the Canes on their Sweet 16 upset of Villanova.",
-        "description": "Lil Wayne FaceTimes the Miami women's basketball team to congratulate the Canes on their Sweet 16 upset of Villanova.",
+        "id": 35934905,
+        "headline": "Jasmyne Roberts' big-time and-1 sends Miami to the Elite 8",
+        "caption": "Jasmyne Roberts' late and-1 proves decisive as Miami hold on to beat Villanova to advance to the Elite Eight.",
+        "description": "Jasmyne Roberts' late and-1 proves decisive as Miami hold on to beat Villanova to advance to the Elite Eight.",
         "premium": false,
         "ad": {
           "sport": "ncw",
-          "bundle": "cbb_womens_highlights"
+          "bundle": "cbb_womens_tournament_highlights"
         },
         "tracking": {
           "sportName": "ncw",
           "leagueName": "No League",
-          "coverageType": "Misc",
-          "trackingName": "COM_NCW Misc. (Lil Wayne FaceTimes with Miami after its Elite Eight berth) 2023/3/25 3PV",
-          "trackingId": "dm_230325_miami_lil_wayne"
+          "coverageType": "Final Game Highlight",
+          "trackingName": "NCW_One-Play (Jasmyne Roberts' big-time and-1 sends Miami to the Elite 8) 2023/03/24 ESHEET",
+          "trackingId": "dm_20230324_NCW_jasmyne_roberts_bigtime_and1_sends_miami_to_the_elite_8"
         },
-        "cerebroId": "641f40b8ca84b7099e0ffa4e",
-        "lastModified": "2023-03-25T18:51:29Z",
-        "originalPublishDate": "2023-03-25T18:39:41Z",
+        "cerebroId": "641e0de7be6ab3428417ed5e",
+        "pccId": "eb6339d4-e305-42dd-b968-427a410698c6",
+        "contributingPartner": "wsc",
+        "contributingSystem": "wsc",
+        "lastModified": "2023-03-24T21:02:07Z",
+        "originalPublishDate": "2023-03-24T20:53:56Z",
         "timeRestrictions": {
-          "embargoDate": "2023-03-25T18:39:41Z",
-          "expirationDate": "2023-04-02T18:39:41Z"
+          "embargoDate": "2023-03-24T20:53:56Z",
+          "expirationDate": "2023-05-04T04:00:00Z"
         },
         "deviceRestrictions": {
           "type": "whitelist",
           "devices": [
             "desktop",
-            "ipad",
             "settop",
             "handset",
             "tablet"
           ]
         },
         "syndicatable": true,
-        "duration": 26,
+        "duration": 22,
         "categories": [
           {
-            "id": 9578,
-            "description": "Women's College Basketball",
-            "type": "league",
+            "id": 4753,
+            "description": "Villanova Wildcats",
+            "type": "team",
             "sportId": 54,
-            "leagueId": 54,
-            "league": {
-              "id": 54,
-              "description": "Women's College Basketball",
+            "teamId": 222,
+            "team": {
+              "id": 222,
+              "description": "Villanova Wildcats",
               "links": {
                 "api": {
-                  "leagues": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball"
+                  "teams": {
+                    "href": "http://api.espn.com/v1/sports/basketball/womens-college-basketball/teams/222"
                   }
                 },
                 "web": {
-                  "leagues": {
-                    "href": "https://www.espn.com/womens-college-basketball/"
+                  "teams": {
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/222/villanova-wildcats?ex_cid=espnapi_internal"
                   }
                 },
                 "mobile": {
-                  "leagues": {
-                    "href": "http://m.espn.com/ncw/"
+                  "teams": {
+                    "href": "http://m.espn.go.com/ncw/clubhouse?teamId=222&ex_cid=espnapi_internal"
                   }
                 }
               }
             },
-            "uid": "s:40~l:54"
+            "uid": "s:40~l:54~t:222"
           },
           {
             "id": 36313,
@@ -18276,17 +18277,17 @@
               "links": {
                 "api": {
                   "teams": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2390"
+                    "href": "http://api.espn.com/v1/sports/basketball/womens-college-basketball/teams/2390"
                   }
                 },
                 "web": {
                   "teams": {
-                    "href": "https://www.espn.com/womens-college-basketball/team/_/id/2390/miami-hurricanes"
+                    "href": "https://www.espn.com/womens-basketball/team/_/id/2390/miami-hurricanes?ex_cid=espnapi_internal"
                   }
                 },
                 "mobile": {
                   "teams": {
-                    "href": "http://m.espn.com/ncw/clubhouse?teamId=2390"
+                    "href": "http://m.espn.go.com/ncw/clubhouse?teamId=2390&ex_cid=espnapi_internal"
                   }
                 }
               }
@@ -18294,87 +18295,64 @@
             "uid": "s:40~l:54~t:2390"
           },
           {
-            "id": 412258,
-            "description": "Haley Cavinder",
-            "type": "athlete",
+            "id": 9578,
+            "description": "Women's College Basketball",
+            "type": "league",
             "sportId": 54,
-            "athleteId": 4433658,
-            "athlete": {
-              "id": 4433658,
-              "description": "Haley Cavinder",
+            "leagueId": 54,
+            "league": {
+              "id": 54,
+              "description": "Women's College Basketball",
               "links": {
                 "api": {
-                  "athletes": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4433658"
+                  "leagues": {
+                    "href": "http://api.espn.com/v1/sports/basketball/womens-college-basketball"
                   }
                 },
                 "web": {
-                  "athletes": {
-                    "href": "https://www.espn.com/womens-college-basketball/player/_/id/4433658/haley-cavinder"
+                  "leagues": {
+                    "href": "https://www.espn.com/womens-basketball/?ex_cid=espnapi_internal"
                   }
                 },
                 "mobile": {
-                  "athletes": {
-                    "href": "http://m.espn.com/ncw/playercard?playerId=4433658"
+                  "leagues": {
+                    "href": "http://m.espn.go.com/ncw/?ex_cid=espnapi_internal"
                   }
                 }
               }
             },
-            "uid": "s:40~l:54~a:4433658"
+            "uid": "s:40~l:54"
           },
           {
-            "id": 412360,
-            "description": "Hanna Cavinder",
-            "type": "athlete",
-            "sportId": 54,
-            "athleteId": 4433372,
-            "athlete": {
-              "id": 4433372,
-              "description": "Hanna Cavinder",
-              "links": {
-                "api": {
-                  "athletes": {
-                    "href": "http://now.core.api.espn.com/v1/sports/basketball/womens-college-basketball/athletes/4433372"
-                  }
-                },
-                "web": {
-                  "athletes": {
-                    "href": "https://www.espn.com/womens-college-basketball/player/_/id/4433372/hanna-cavinder"
-                  }
-                },
-                "mobile": {
-                  "athletes": {
-                    "href": "http://m.espn.com/ncw/playercard?playerId=4433372"
-                  }
-                }
-              }
-            },
-            "uid": "s:40~l:54~a:4433372"
+            "id": 116550,
+            "description": "espnw",
+            "type": "topic",
+            "sportId": 0,
+            "topicId": 5
           }
         ],
-        "keywords": [
-          "Lil Wayne"
-        ],
+        "gameId": 401528016,
+        "keywords": [],
         "posterImages": {
           "default": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890_default.jpg",
+            "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017_default.jpg",
             "width": 576,
             "height": 324
           },
           "full": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017.jpg"
           },
           "wide": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890_5x2.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017_5x2.jpg"
           },
           "square": {
-            "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890_1x1.jpg"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017_1x1.jpg"
           }
         },
         "images": [
           {
             "name": "Poster Image",
-            "url": "https://media.video-cdn.espn.com/images/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890.jpg",
+            "url": "https://media.video-cdn.espn.com/images/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017.jpg",
             "alt": "",
             "caption": "",
             "credit": "",
@@ -18382,66 +18360,65 @@
             "height": 324
           }
         ],
-        "thumbnail": "https://a.espncdn.com/media/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890.jpg",
+        "thumbnail": "https://a.espncdn.com/media/motion/2023/0324/ss_20230324_165400820_22295841017/ss_20230324_165400820_22295841017.jpg",
         "links": {
           "api": {
             "self": {
-              "href": "http://api-app.espn.com/v1/video/clips/35946071"
+              "href": "http://api.espn.com/v1/video/clips/35934905"
             },
             "artwork": {
-              "href": "https://artwork.api.espn.com/artwork/collections/media/3a19b098-325c-487f-a915-34a3e7d5be55"
+              "href": "https://artwork.api.espn.com/artwork/collections/media/eb6339d4-e305-42dd-b968-427a410698c6"
             }
           },
           "web": {
-            "href": "http://espn.com/video/clip?id=35946071",
+            "href": "https://www.espn.com/video/clip?id=35934905&ex_cid=espnapi_internal",
             "short": {
-              "href": "https://es.pn/3ZiEPuO"
+              "href": "https://www.espn.com/video/clip?id=35934905"
             },
             "self": {
-              "href": "http://espn.com/video/clip?id=35946071"
+              "href": "https://www.espn.com/video/clip?id=35934905&ex_cid=espnapi_internal"
             }
           },
           "source": {
             "mezzanine": {
-              "href": "http://media.video-origin.espn.com/espnvideo/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne.mp4"
+              "href": "https://media.video-origin.espn.com/espnvideo/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584.mp4"
             },
             "flash": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne.smil"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584.smil"
             },
             "hds": {
-              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne_rel.smil/manifest.f4m"
+              "href": "https://hds.video-cdn.espn.com/z/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584_rel.smil/manifest.f4m"
             },
             "HLS": {
-              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne/playlist.m3u8",
+              "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584/playlist.m3u8",
               "HD": {
-                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne/playlist.m3u8"
+                "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584/playlist.m3u8"
               }
             },
             "HD": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne_720p30_2896k.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584_720p30_2896k.mp4"
             },
             "full": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne_360p30_1464k.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584_360p30_1464k.mp4"
             },
-            "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne_360p30_1464k.mp4"
+            "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584_360p30_1464k.mp4"
           },
           "mobile": {
             "alert": {
-              "href": "http://m.espn.com/general/video/videoAlert?vid=35946071"
+              "href": "http://m.espn.go.com/general/video/videoAlert?vid=35934905&ex_cid=espnapi_internal"
             },
             "source": {
-              "href": "https://media.video-cdn.espn.com/motion/2023/0325/dm_230325_miami_lil_wayne/dm_230325_miami_lil_wayne.mp4"
+              "href": "https://media.video-cdn.espn.com/motion/2023/0324/ss_20230324_165400820_2229584/ss_20230324_165400820_2229584.mp4"
             },
-            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/3a19b098-325c-487f-a915-34a3e7d5be55/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35946071",
+            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/eb6339d4-e305-42dd-b968-427a410698c6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35934905",
             "streaming": {
-              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/3a19b098-325c-487f-a915-34a3e7d5be55/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35946071"
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/eb6339d4-e305-42dd-b968-427a410698c6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35934905"
             },
             "progressiveDownload": {
-              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/3a19b098-325c-487f-a915-34a3e7d5be55/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35946071"
+              "href": "https://watch.auth.api.espn.com/video/auth/brightcove/eb6339d4-e305-42dd-b968-427a410698c6/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=35934905"
             }
           }
-        },
-        "title": "Lil Wayne FaceTimes with Miami after its Elite Eight berth"
+        }
       }
     ],
     "type": "Recap",
@@ -18563,16 +18540,7 @@
     ],
     "headline": "Miami women hold on, beat Villanova for 1st trip to Elite 8",
     "gameId": "401528016",
-    "images": [
-      {
-        "name": "Lil Wayne FaceTimes with Miami after its Elite Eight berth",
-        "width": 576,
-        "alt": "",
-        "caption": "Lil Wayne FaceTimes the Miami women's basketball team to congratulate the Canes on their Sweet 16 upset of Villanova.",
-        "url": "https://a.espncdn.com/media/motion/2023/0325/dm_230325_miami_lil_wayne890/dm_230325_miami_lil_wayne890.jpg",
-        "height": 324
-      }
-    ],
+    "images": [],
     "linkText": "Miami women hold on, beat Villanova for 1st trip to Elite 8",
     "published": "2023-03-24T21:07:21Z",
     "allowComments": true,
