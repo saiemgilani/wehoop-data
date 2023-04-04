@@ -7,17 +7,13 @@ do
         r) RESCRAPE=${OPTARG};;
     esac
 done
-git pull
-python3 scrape_wbb_schedules_threaded.py -s $START_YEAR -e $END_YEAR
-python3 scrape_wbb_json_threaded.py -s $START_YEAR -e $END_YEAR -r $RESCRAPE
-git pull
-git add .
-Rscript R/espn_wbb_01_pbp_creation.R -s $START_YEAR -e $END_YEAR
-Rscript R/espn_wbb_02_team_box_creation.R -s $START_YEAR -e $END_YEAR
-Rscript R/espn_wbb_03_player_box_creation.R -s $START_YEAR -e $END_YEAR
-git pull
-git add wbb/* wbb_schedule_master.parquet
-git pull
-git commit -m "WBB Play-by-Play and Schedules update (Start: $START_YEAR End: $END_YEAR)" || echo "No changes to commit"
-git pull
-git push
+for i in $(seq "${START_YEAR}" "${END_YEAR}")
+do
+    echo "$i"
+    git pull
+    python3 scrape_wbb_schedules_threaded.py -s $i -e $i
+    python3 scrape_wbb_json_threaded.py -s $i -e $i -r $RESCRAPE
+    git pull
+    git add .
+    bash daily_wbb_R_processor.sh -s $i -e $i
+done

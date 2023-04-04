@@ -1,12 +1,9 @@
 rm(list = ls())
 gcol <- gc()
-
 lib_path <- Sys.getenv("R_LIBS")
-
-if (!requireNamespace("pacman", quietly = TRUE)) {
-  install.packages("pacman", lib = lib_path, repos = "http://cran.us.r-project.org")
+if (!requireNamespace('pacman', quietly = TRUE)) {
+  install.packages('pacman', lib = Sys.getenv("R_LIBS"), repos = 'http://cran.us.r-project.org')
 }
-
 suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(jsonlite, lib.loc = lib_path)))
@@ -18,142 +15,68 @@ suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc = lib_pat
 suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc = lib_path)))
 
-option_list <- list(
-  make_option(c("-s", "--start_year"), action = "store", default = wehoop:::most_recent_wnba_season(),
-    type = "integer", help = "Start year of the seasons to process"),
-  make_option(c("-e", "--end_year"), action = "store", default = wehoop:::most_recent_wnba_season(),
-    type = "integer", help = "End year of the seasons to process")
+option_list = list(
+  make_option(c("-s", "--start_year"),
+              action = "store",
+              default = wehoop:::most_recent_wnba_season(),
+              type = 'integer',
+              help = "Start year of the seasons to process"),
+  make_option(c("-e", "--end_year"),
+              action = "store",
+              default = wehoop:::most_recent_wnba_season(),
+              type = 'integer',
+              help = "End year of the seasons to process")
 )
-opt <- parse_args(OptionParser(option_list = option_list))
+opt = parse_args(OptionParser(option_list = option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
 years_vec <- opt$s:opt$e
 # --- compile into player_box_{year}.parquet ---------
 
-wnba_player_box_games <- function(y) {
-  player_box_g <- data.frame()
-  player_box_list <- list.files(path = glue::glue("wnba/json/final/"))
-  sched <- data.table::fread(paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
-  player_box_game_ids <- as.integer(gsub(".json", "", player_box_list))
-  player_box_list <- sched %>%
+wnba_player_box_games <- function(y){
+  espn_df <- data.frame()
+  player_box_list <- list.files(path = glue::glue('wnba/json/final/'))
+  sched <- data.table::fread(paste0('wnba/schedules/csv/wnba_schedule_', y, '.csv'))
+  player_box_game_ids <- as.integer(gsub('.json', '', player_box_list))
+  season_player_box_list <- sched %>%
     dplyr::filter(.data$game_id %in% player_box_game_ids) %>%
     dplyr::pull("game_id")
-  cli::cli_process_start("Starting wnba player_box parse for {y}!")
+
+  cli::cli_progress_step(msg = "Compiling {y} ESPN WNBA Player Boxscores ({length(season_player_box_list)} games)",
+                         msg_done = "Compiled {y} ESPN WNBA Player Boxscores!")
 
   future::plan("multisession")
-  player_box_g <- furrr::future_map_dfr(player_box_list, function(x){
-
-    player_box_score <- data.frame()
-    players_box_score_df <- data.frame()
-
-    tryCatch(
-      expr = {
-        resp <- glue::glue("wnba/json/final/{x}.json")
-        game_json <- resp %>%
-            jsonlite::fromJSON()
-        players_box_score_df <- data.frame(jsonlite::fromJSON(jsonlite::toJSON(game_json[["boxscore"]][["players"]]), flatten = TRUE))
-        gameId <- as.integer(game_json[["header"]][["id"]])
-        season <- game_json[["header"]][["season"]][["year"]]
-        season_type <- game_json[["header"]][["season"]][["type"]]
-        boxScoreAvailable <- game_json[["header"]][["competitions"]][["boxscoreAvailable"]]
-
-        boxScoreSource <- game_json[["header"]][["competitions"]][["boxscoreSource"]]
-        homeAwayTeam1 <- toupper(game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][1])
-        homeAwayTeam2 <- toupper(game_json[["header"]][["competitions"]][["competitors"]][[1]][["homeAway"]][2])
-        homeTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][1]
-        awayTeamId <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["id"]][2]
-        homeTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][1]
-        awayTeamMascot <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["name"]][2]
-        homeTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][1]
-        awayTeamName <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["location"]][2]
-
-        homeTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][1]
-        awayTeamAbbrev <- game_json[["header"]][["competitions"]][["competitors"]][[1]][["team"]][["abbreviation"]][2]
-        game_date <- as.Date(substr(game_json[["header"]][["competitions"]][["date"]], 0, 10))
-        if (boxScoreAvailable == TRUE &&
-            length(players_box_score_df[["statistics"]][[1]][["athletes"]][[1]]) > 1) {
-          players_df <- players_box_score_df %>%
-            tidyr::unnest("statistics") %>%
-            tidyr::unnest("athletes")
-          if (length(players_box_score_df[["statistics"]]) > 1 &&
-              length(players_df$stats[[1]] > 0)) {
-            stat_cols <- players_df$names[[1]]
-            stats <- players_df$stats
-
-            stats_df <- as.data.frame(do.call(rbind, stats))
-            colnames(stats_df) <- stat_cols
-            cols <- c("starter", "ejected", "didNotPlay", "active",
-                      "athlete.displayName", "athlete.jersey",
-                      "athlete.id", "athlete.shortName",
-                      "athlete.headshot.href", "athlete.position.name",
-                      "athlete.position.abbreviation", "team.shortDisplayName",
-                      "team.name", "team.logo", "team.id", "team.abbreviation",
-                      "team.color")
-
-            players_df <- players_df %>%
-              dplyr::filter(!.data$didNotPlay) %>%
-              dplyr::select(tidyselect::any_of(cols))
-            if (length(stats_df) > 0) {
-              players_df <- dplyr::bind_cols(stats_df, players_df) %>%
-                dplyr::select(
-                  "athlete.displayName",
-                  "team.shortDisplayName",
-                  tidyr::everything())
-
-
-              players_df <- players_df %>%
-                janitor::clean_names() %>%
-                dplyr::rename(
-                  "plus_minus" = "x",
-                  "fg3" = "x3pt"
-                )
-              player_box_score <- players_df %>%
-                dplyr::mutate(
-                  game_id = gameId,
-                  season = season,
-                  season_type = season_type,
-                  game_date = game_date
-                )
-            }
-          }
-        }
-      },
-      error = function(e) {
-        message(glue::glue("{Sys.time()}: Invalid arguments or no player box data available {gameId}!"))
-      },
-      warning = function(w) {
-      },
-      finally = {
-      }
-    )
-
-    drop <- c("statistics")
-    player_box_score <- player_box_score[, !(names(player_box_score) %in% drop)]
-
+  espn_df <- furrr::future_map_dfr(season_player_box_list, function(x){
+    resp <- glue::glue('wnba/json/final/{x}.json')
+    player_box_score <- wehoop:::helper_espn_wnba_player_box(resp)
     return(player_box_score)
   }, .options = furrr::furrr_options(seed = TRUE))
 
+  cli::cli_progress_step(msg = "Updating {y} ESPN WNBA Player Boxscores GitHub Release",
+                         msg_done = "Updated {y} ESPN WNBA Player Boxscores GitHub Release!")
 
-  if (nrow(player_box_g) > 1) {
-    player_box_g <- player_box_g %>%
-      wehoop:::make_wehoop_data("ESPN WNBA Player Boxscores from wehoop data repository", Sys.time())
+  if (nrow(espn_df) > 1) {
+
+    espn_df <- espn_df %>%
+      dplyr::arrange(dplyr::desc(.data$game_date)) %>%
+      wehoop:::make_wehoop_data("ESPN WNBA Player Boxscores from wehoop data repository",Sys.time())
 
     ifelse(!dir.exists(file.path("wnba/player_box")), dir.create(file.path("wnba/player_box")), FALSE)
 
     ifelse(!dir.exists(file.path("wnba/player_box/csv")), dir.create(file.path("wnba/player_box/csv")), FALSE)
-    data.table::fwrite(player_box_g, file=paste0("wnba/player_box/csv/player_box_",y,".csv.gz"))
+    data.table::fwrite(espn_df, file = paste0("wnba/player_box/csv/player_box_", y, ".csv.gz"))
 
     ifelse(!dir.exists(file.path("wnba/player_box/qs")), dir.create(file.path("wnba/player_box/qs")), FALSE)
-    qs::qsave(player_box_g,glue::glue("wnba/player_box/qs/player_box_{y}.qs"))
+    qs::qsave(espn_df, glue::glue("wnba/player_box/qs/player_box_{y}.qs"))
 
     ifelse(!dir.exists(file.path("wnba/player_box/rds")), dir.create(file.path("wnba/player_box/rds")), FALSE)
-    saveRDS(player_box_g,glue::glue("wnba/player_box/rds/player_box_{y}.rds"))
+    saveRDS(espn_df, glue::glue("wnba/player_box/rds/player_box_{y}.rds"))
 
     ifelse(!dir.exists(file.path("wnba/player_box/parquet")), dir.create(file.path("wnba/player_box/parquet")), FALSE)
-    arrow::write_parquet(player_box_g, glue::glue("wnba/player_box/parquet/player_box_{y}.parquet"))
+    arrow::write_parquet(espn_df, glue::glue("wnba/player_box/parquet/player_box_{y}.parquet"))
 
     sportsdataversedata::sportsdataverse_save(
-      data_frame = player_box_g,
+      data_frame = espn_df,
       file_name =  glue::glue("player_box_{y}"),
       sportsdataverse_type = "player boxscores data",
       release_tag = "espn_wnba_player_boxscores",
@@ -161,20 +84,31 @@ wnba_player_box_games <- function(y) {
       .token = Sys.getenv("GITHUB_PAT")
     )
   }
+
   sched <- sched %>%
     dplyr::mutate(
       game_id = as.integer(.data$id),
-      status_display_clock = as.character(.data$status_display_clock)
-    )
-  if (nrow(player_box_g) > 0) {
+      id = as.integer(.data$id),
+      status_display_clock = as.character(.data$status_display_clock),
+      game_date_time = lubridate::ymd_hm(substr(.data$date, 1, nchar(.data$date) - 1)) %>%
+        lubridate::with_tz(tzone = "America/New_York"),
+      game_date = as.Date(substr(.data$game_date_time, 1, 10)))
+
+  if (nrow(espn_df) > 0) {
+
     sched <- sched %>%
       dplyr::mutate(
-        player_box = ifelse(.data$game_id %in% unique(player_box_g$game_id), TRUE, FALSE)
-      )
+        player_box = ifelse(.data$game_id %in% unique(espn_df$game_id), TRUE, FALSE))
+
   } else {
+
     sched$player_box <- FALSE
+
   }
-  final_sched <- dplyr::distinct(sched) %>% dplyr::arrange(desc(.data$date))
+
+  final_sched <- sched %>%
+    dplyr::distinct() %>%
+    dplyr::arrange(dplyr::desc(.data$date))
 
   final_sched <- final_sched %>%
     wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
@@ -189,42 +123,51 @@ wnba_player_box_games <- function(y) {
   )
 
   data.table::fwrite(final_sched,paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
-  qs::qsave(final_sched, glue::glue("wnba/schedules/qs/wnba_schedule_{y}.qs"))
-  saveRDS(final_sched, glue::glue("wnba/schedules/rds/wnba_schedule_{y}.rds"))
-  arrow::write_parquet(final_sched, glue::glue("wnba/schedules/parquet/wnba_schedule_{y}.parquet"))
+  qs::qsave(final_sched,glue::glue('wnba/schedules/qs/wnba_schedule_{y}.qs'))
+  saveRDS(final_sched, glue::glue('wnba/schedules/rds/wnba_schedule_{y}.rds'))
+  arrow::write_parquet(final_sched, glue::glue('wnba/schedules/parquet/wnba_schedule_{y}.parquet'))
   rm(sched)
   rm(final_sched)
 
-  rm(player_box_g)
-  rm(player_box_list)
+  rm(espn_df)
   gc()
-  cli::cli_process_done(msg_done = "Finished wnba player_box parse for {y}!")
   return(NULL)
 }
 
-all_games <- purrr::map(years_vec, function(y) {
+all_games <- purrr::map(years_vec, function(y){
   wnba_player_box_games(y)
+  return(NULL)
 })
 
-sched_list <- list.files(path = glue::glue("wnba/schedules/csv/"))
+
+cli::cli_progress_step(msg = "Compiling ESPN WNBA master schedule",
+                       msg_done = "ESPN WNBA master schedule compiled and written to disk")
+
+sched_list <- list.files(path = glue::glue('wnba/schedules/csv/'))
 sched_g <-  purrr::map_dfr(sched_list, function(x){
-  sched <- data.table::fread(paste0("wnba/schedules/csv/", x)) %>%
+  sched <- data.table::fread(paste0('wnba/schedules/csv/', x)) %>%
     dplyr::mutate(
       status_display_clock = as.character(.data$status_display_clock)
     )
   return(sched)
 })
 
-
 sched_g <- sched_g %>%
-  wehoop:::make_wehoop_data("ESPN WNBA Schedule Information from wehoop data repository", Sys.time())
+  wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
 
-data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), "wnba_schedule_master.csv")
-data.table::fwrite(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.csv")
-qs::qsave(sched_g %>% dplyr::arrange(desc(.data$date)), "wnba_schedule_master.qs")
-qs::qsave(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.qs")
-arrow::write_parquet(sched_g %>% dplyr::arrange(desc(.data$date)), glue::glue("wnba_schedule_master.parquet"))
-arrow::write_parquet(sched_g %>% dplyr::filter(.data$PBP == TRUE) %>% dplyr::arrange(desc(.data$date)), "wnba/wnba_games_in_data_repo.parquet")
+data.table::fwrite(sched_g %>%
+                     dplyr::arrange(dplyr::desc(.data$date)), 'wnba_schedule_master.csv')
+data.table::fwrite(sched_g %>%
+                     dplyr::filter(.data$PBP == TRUE) %>%
+                     dplyr::arrange(dplyr::desc(.data$date)), 'wnba/wnba_games_in_data_repo.csv')
+
+arrow::write_parquet(sched_g %>%
+                       dplyr::arrange(dplyr::desc(.data$date)),glue::glue('wnba_schedule_master.parquet'))
+arrow::write_parquet(sched_g %>%
+                       dplyr::filter(.data$PBP == TRUE) %>%
+                       dplyr::arrange(dplyr::desc(.data$date)), 'wnba/wnba_games_in_data_repo.parquet')
+
+cli::cli_progress_message("")
 
 rm(all_games)
 rm(sched_g)

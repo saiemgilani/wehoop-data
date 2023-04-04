@@ -108,7 +108,7 @@ def main():
         t0 = time.time()
         download_game_pbps(games, process, path_to_raw, path_to_final)
         t1 = time.time()
-        print(f"{(t1-t0)/60} seconds to download {len(games)} game play-by-plays.")
+        print(f"{(t1-t0)/60} minutes to download {len(games)} game play-by-plays.")
 
 
         print("Finished Scraping year {}...".format(year))
