@@ -50,6 +50,7 @@ wbb_player_box_games <- function(y){
 
   future::plan("multisession")
   espn_df <- furrr::future_map_dfr(season_player_box_list, function(x){
+    print(x)
     resp <- glue::glue('wbb/json/final/{x}.json')
     player_box_score <- wehoop:::helper_espn_wbb_player_box(resp)
     return(player_box_score)
@@ -79,7 +80,7 @@ wbb_player_box_games <- function(y){
       data_frame = espn_df,
       file_name =  glue::glue("player_box_{y}"),
       sportsdataverse_type = "player boxscores data",
-      release_tag = "espn_mens_college_basketball_player_boxscores",
+      release_tag = "espn_womens_college_basketball_player_boxscores",
       file_types = c("rds", "csv", "parquet"),
       .token = Sys.getenv("GITHUB_PAT")
     )
