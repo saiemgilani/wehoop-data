@@ -43,7 +43,7 @@ def download_game(game, process, path_to_raw, path_to_final):
     try:
         g = sdv.wnba.espn_wnba_pbp(game_id = game, raw=True)
         with open("{}{}.json".format(path_to_raw_json, game),'w') as f:
-            json.dump(g, f, indent=2, sort_keys=False)
+            json.dump(g, f, indent = 0, sort_keys = False)
     except (TypeError) as e:
         print("TypeError: game_id = {}\n {}".format(game, e))
     except (IndexError) as e:
@@ -67,7 +67,7 @@ def download_game(game, process, path_to_raw, path_to_final):
             )
             fp = "{}{}.json".format(path_to_final_json, game)
             with open(fp,'w') as f:
-                json.dump(result, f, indent=2, sort_keys=False)
+                json.dump(result, f, indent = 0, sort_keys = False)
         except (IndexError) as e:
             print("IndexError: game_id = {}\n {}".format(game, e))
         except (KeyError) as e:
@@ -89,20 +89,20 @@ def main():
         end_year = args.end_year
     process = args.process
     years_arr = range(start_year, end_year + 1)
-    schedule = pd.read_parquet('wnba_schedule_master.parquet', engine='auto', columns=None)
+    schedule = pd.read_parquet('wnba_schedule_master.parquet', engine = 'auto', columns = None)
     schedule = schedule.sort_values(by=['season','season_type'], ascending = True)
     schedule["game_id"] = schedule["game_id"].astype(int)
-    schedule = schedule[schedule['status_type_completed']==True]
+    schedule = schedule[schedule['status_type_completed'] == True]
     if args.rescrape == False:
-        schedule_in_repo = pd.read_parquet('wnba/wnba_games_in_data_repo.parquet', engine='auto', columns=None)
+        schedule_in_repo = pd.read_parquet('wnba/wnba_games_in_data_repo.parquet', engine = 'auto', columns = None)
         schedule_in_repo["game_id"] = schedule_in_repo["game_id"].astype(int)
         done_already = schedule_in_repo['game_id']
         schedule = schedule[~schedule['game_id'].isin(done_already)]
-    schedule_with_pbp = schedule[schedule['season']>=2002]
+    schedule_with_pbp = schedule[schedule['season'] >= 2002]
 
     for year in years_arr:
         print("Scraping WNBA PBP for {}...".format(year))
-        games = schedule[(schedule['season']==year)].reset_index()['game_id'].tolist()
+        games = schedule[(schedule['season'] == year)].reset_index()['game_id'].tolist()
         print(f"Number of Games: {len(games)}")
         bad_schedule_keys = pd.DataFrame()
 
@@ -119,10 +119,10 @@ def main():
     gc.collect()
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--start_year', '-s', type=int, required=True, help='Start year of WNBA Schedule period (YYYY), eg. 2023 for 2022-23 season')
-    parser.add_argument('--end_year', '-e', type=int, help='End year of WNBA Schedule period (YYYY), eg. 2023 for 2022-23 season')
-    parser.add_argument('--rescrape', '-r', type=bool, default=True, help='Rescrape all games in the schedule period')
-    parser.add_argument('--process', '-p', type=bool, default=True, help='Run processing pipeline for games in the schedule period')
+    parser.add_argument('--start_year', '-s', type = int, required = True, help = 'Start year of WNBA Schedule period (YYYY), eg. 2023 for 2022-23 season')
+    parser.add_argument('--end_year', '-e', type = int, help = 'End year of WNBA Schedule period (YYYY), eg. 2023 for 2022-23 season')
+    parser.add_argument('--rescrape', '-r', type = bool, default = True, help = 'Rescrape all games in the schedule period')
+    parser.add_argument('--process', '-p', type = bool, default = True, help = 'Run processing pipeline for games in the schedule period')
     args = parser.parse_args()
 
     main()

@@ -83,9 +83,6 @@ wnba_pbp_games <- function(y){
     ifelse(!dir.exists(file.path("wnba/pbp/csv")), dir.create(file.path("wnba/pbp/csv")), FALSE)
     data.table::fwrite(espn_df, file = paste0("wnba/pbp/csv/play_by_play_", y, ".csv.gz"))
 
-    ifelse(!dir.exists(file.path("wnba/pbp/qs")), dir.create(file.path("wnba/pbp/qs")), FALSE)
-    qs::qsave(espn_df, glue::glue("wnba/pbp/qs/play_by_play_{y}.qs"))
-
     ifelse(!dir.exists(file.path("wnba/pbp/rds")), dir.create(file.path("wnba/pbp/rds")), FALSE)
     saveRDS(espn_df, glue::glue("wnba/pbp/rds/play_by_play_{y}.rds"))
 
@@ -129,7 +126,6 @@ wnba_pbp_games <- function(y){
     wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
 
   data.table::fwrite(final_sched, paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
-  qs::qsave(final_sched, glue::glue('wnba/schedules/qs/wnba_schedule_{y}.qs'))
   saveRDS(final_sched, glue::glue('wnba/schedules/rds/wnba_schedule_{y}.rds'))
   arrow::write_parquet(final_sched, glue::glue('wnba/schedules/parquet/wnba_schedule_{y}.parquet'))
   rm(sched)

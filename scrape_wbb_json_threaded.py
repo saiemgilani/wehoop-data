@@ -43,7 +43,7 @@ def download_game(game, process, path_to_raw, path_to_final):
     try:
         g = sdv.wbb.espn_wbb_pbp(game_id = game, raw=True)
         with open("{}{}.json".format(path_to_raw_json, game),'w') as f:
-            json.dump(g, f, indent=2, sort_keys=False)
+            json.dump(g, f, indent = 0, sort_keys = False)
     except (TypeError) as e:
         print("TypeError: game_id = {}\n {}".format(game, e))
     except (IndexError) as e:
@@ -67,7 +67,7 @@ def download_game(game, process, path_to_raw, path_to_final):
             )
             fp = "{}{}.json".format(path_to_final_json, game)
             with open(fp,'w') as f:
-                json.dump(result, f, indent=2, sort_keys=False)
+                json.dump(result, f, indent = 0, sort_keys = False)
         except (IndexError) as e:
             print("IndexError: game_id = {}\n {}".format(game, e))
         except (KeyError) as e:

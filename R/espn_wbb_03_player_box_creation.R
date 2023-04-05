@@ -51,8 +51,8 @@ wbb_player_box_games <- function(y){
   future::plan("multisession")
   espn_df <- furrr::future_map_dfr(season_player_box_list, function(x){
     resp <- glue::glue('wbb/json/final/{x}.json')
-    team_box_score <- wehoop:::helper_espn_wbb_team_box(resp)
-    return(team_box_score)
+    player_box_score <- wehoop:::helper_espn_wbb_player_box(resp)
+    return(player_box_score)
   }, .options = furrr::furrr_options(seed = TRUE))
 
   cli::cli_progress_step(msg = "Updating {y} ESPN WBB Player Boxscores GitHub Release",
@@ -68,9 +68,6 @@ wbb_player_box_games <- function(y){
 
     ifelse(!dir.exists(file.path("wbb/player_box/csv")), dir.create(file.path("wbb/player_box/csv")), FALSE)
     data.table::fwrite(espn_df, file = paste0("wbb/player_box/csv/player_box_", y ,".csv.gz"))
-
-    ifelse(!dir.exists(file.path("wbb/player_box/qs")), dir.create(file.path("wbb/player_box/qs")), FALSE)
-    qs::qsave(espn_df, glue::glue("wbb/player_box/qs/player_box_{y}.qs"))
 
     ifelse(!dir.exists(file.path("wbb/player_box/rds")), dir.create(file.path("wbb/player_box/rds")), FALSE)
     saveRDS(espn_df, glue::glue("wbb/player_box/rds/player_box_{y}.rds"))
@@ -144,7 +141,6 @@ wbb_player_box_games <- function(y){
   )
 
   data.table::fwrite(final_sched, paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
-  qs::qsave(final_sched, glue::glue('wbb/schedules/qs/wbb_schedule_{y}.qs'))
   saveRDS(final_sched, glue::glue('wbb/schedules/rds/wbb_schedule_{y}.rds'))
   arrow::write_parquet(final_sched, glue::glue('wbb/schedules/parquet/wbb_schedule_{y}.parquet'))
   rm(sched)

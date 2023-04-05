@@ -138,7 +138,6 @@ wbb_pbp_games <- function(y){
     wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
 
   data.table::fwrite(final_sched, paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
-  qs::qsave(final_sched, glue::glue('wbb/schedules/qs/wbb_schedule_{y}.qs'))
   saveRDS(final_sched, glue::glue('wbb/schedules/rds/wbb_schedule_{y}.rds'))
   arrow::write_parquet(final_sched, glue::glue('wbb/schedules/parquet/wbb_schedule_{y}.parquet'))
   rm(sched)

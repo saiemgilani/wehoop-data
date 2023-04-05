@@ -66,9 +66,6 @@ wnba_player_box_games <- function(y){
     ifelse(!dir.exists(file.path("wnba/player_box/csv")), dir.create(file.path("wnba/player_box/csv")), FALSE)
     data.table::fwrite(espn_df, file = paste0("wnba/player_box/csv/player_box_", y, ".csv.gz"))
 
-    ifelse(!dir.exists(file.path("wnba/player_box/qs")), dir.create(file.path("wnba/player_box/qs")), FALSE)
-    qs::qsave(espn_df, glue::glue("wnba/player_box/qs/player_box_{y}.qs"))
-
     ifelse(!dir.exists(file.path("wnba/player_box/rds")), dir.create(file.path("wnba/player_box/rds")), FALSE)
     saveRDS(espn_df, glue::glue("wnba/player_box/rds/player_box_{y}.rds"))
 
@@ -123,7 +120,6 @@ wnba_player_box_games <- function(y){
   )
 
   data.table::fwrite(final_sched,paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
-  qs::qsave(final_sched,glue::glue('wnba/schedules/qs/wnba_schedule_{y}.qs'))
   saveRDS(final_sched, glue::glue('wnba/schedules/rds/wnba_schedule_{y}.rds'))
   arrow::write_parquet(final_sched, glue::glue('wnba/schedules/parquet/wnba_schedule_{y}.parquet'))
   rm(sched)
