@@ -49,9 +49,16 @@ wbb_team_box_games <- function(y){
 
   future::plan("multisession")
   espn_df <- furrr::future_map_dfr(season_team_box_list, function(x){
-    resp <- glue::glue('wbb/json/final/{x}.json')
-    team_box_score <- wehoop:::helper_espn_wbb_team_box(resp)
-    return(team_box_score)
+    tryCatch(
+      expr = {
+        resp <- glue::glue('wbb/json/final/{x}.json')
+        team_box_score <- wehoop:::helper_espn_wbb_team_box(resp)
+        return(team_box_score)
+      },
+      error = function(e) {
+         message(glue::glue("{Sys.time()}: Team box score data issue for {x}!"))
+      }
+    )
   }, .options = furrr::furrr_options(seed = TRUE))
 
   if (nrow(espn_df) > 0 && !("largest_lead" %in% colnames(espn_df))) {

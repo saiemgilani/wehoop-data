@@ -48,9 +48,16 @@ wnba_pbp_games <- function(y){
 
   future::plan("multisession")
   espn_df <- furrr::future_map_dfr(season_pbp_list, function(x){
-    resp <- glue::glue('wnba/json/final/{x}.json')
-    pbp <- wehoop:::helper_espn_wnba_pbp(resp)
-    return(pbp)
+    tryCatch(
+      expr = {
+        resp <- glue::glue('wnba/json/final/{x}.json')
+        pbp <- wehoop:::helper_espn_wnba_pbp(resp)
+        return(pbp)
+      },
+      error = function(e) {
+         message(glue::glue("{Sys.time()}: PBP data issue for {x}!"))
+      }
+    )
   }, .options = furrr::furrr_options(seed = TRUE))
 
   if (!('coordinate_x' %in% colnames(espn_df)) && length(espn_df) > 1) {

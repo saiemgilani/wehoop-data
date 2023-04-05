@@ -50,10 +50,16 @@ wbb_player_box_games <- function(y){
 
   future::plan("multisession")
   espn_df <- furrr::future_map_dfr(season_player_box_list, function(x){
-    print(x)
-    resp <- glue::glue('wbb/json/final/{x}.json')
-    player_box_score <- wehoop:::helper_espn_wbb_player_box(resp)
-    return(player_box_score)
+    tryCatch(
+      expr = {
+        resp <- glue::glue('wbb/json/final/{x}.json')
+        player_box_score <- wehoop:::helper_espn_wbb_player_box(resp)
+        return(player_box_score)
+      },
+      error = function(e) {
+         message(glue::glue("{Sys.time()}: Player box score data for {x} issue!"))
+      }
+    )
   }, .options = furrr::furrr_options(seed = TRUE))
 
   cli::cli_progress_step(msg = "Updating {y} ESPN WBB Player Boxscores GitHub Release",
