@@ -1,8 +1,8 @@
 rm(list = ls())
 gcol <- gc()
 lib_path <- Sys.getenv("R_LIBS")
-if (!requireNamespace('pacman', quietly = TRUE)) {
-  install.packages('pacman', lib = Sys.getenv("R_LIBS"), repos = 'http://cran.us.r-project.org')
+if (!requireNamespace("pacman", quietly = TRUE)) {
+  install.packages("pacman", lib = Sys.getenv("R_LIBS"), repos = "http://cran.us.r-project.org")
 }
 suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc = lib_path)))
@@ -15,30 +15,30 @@ suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc = lib_pat
 suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc = lib_path)))
 
-option_list = list(
+option_list <- list(
   make_option(c("-s", "--start_year"),
               action = "store",
               default = wehoop:::most_recent_wnba_season(),
-              type = 'integer',
+              type = "integer",
               help = "Start year of the seasons to process"),
   make_option(c("-e", "--end_year"),
               action = "store",
               default = wehoop:::most_recent_wnba_season(),
-              type = 'integer',
+              type = "integer",
               help = "End year of the seasons to process")
 )
-opt = parse_args(OptionParser(option_list = option_list))
+opt <- parse_args(OptionParser(option_list = option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
 years_vec <- opt$s:opt$e
 # --- compile into team_box_{year}.parquet ---------
 
-wnba_team_box_games <- function(y){
+wnba_team_box_games <- function(y) {
 
   espn_df <- data.frame()
-  team_box_list <- list.files(path = glue::glue('wnba/json/final/'))
-  sched <- data.table::fread(paste0('wnba/schedules/csv/wnba_schedule_', y, '.csv'))
-  team_box_game_ids <- as.integer(gsub('.json', '', team_box_list))
+  team_box_list <- list.files(path = glue::glue("wnba/json/final/"))
+  sched <- data.table::fread(paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
+  team_box_game_ids <- as.integer(gsub(".json", "", team_box_list))
   season_team_box_list <- sched %>%
     dplyr::filter(.data$game_id %in% team_box_game_ids) %>%
     dplyr::pull("game_id")
@@ -47,10 +47,10 @@ wnba_team_box_games <- function(y){
                          msg_done = "Compiled {y} ESPN WNBA Team Boxscores!")
 
   future::plan("multisession")
-  espn_df <- furrr::future_map_dfr(season_team_box_list, function(x){
+  espn_df <- furrr::future_map_dfr(season_team_box_list, function(x) {
     tryCatch(
       expr = {
-        resp <- glue::glue('wnba/json/final/{x}.json')
+        resp <- glue::glue("wnba/json/final/{x}.json")
         team_box_score <- wehoop:::helper_espn_wnba_team_box(resp)
         return(team_box_score)
       },
@@ -125,8 +125,8 @@ wnba_team_box_games <- function(y){
     wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
 
   data.table::fwrite(final_sched, paste0("wnba/schedules/csv/wnba_schedule_", y, ".csv"))
-  saveRDS(final_sched, glue::glue('wnba/schedules/rds/wnba_schedule_{y}.rds'))
-  arrow::write_parquet(final_sched, glue::glue('wnba/schedules/parquet/wnba_schedule_{y}.parquet'))
+  saveRDS(final_sched, glue::glue("wnba/schedules/rds/wnba_schedule_{y}.rds"))
+  arrow::write_parquet(final_sched, glue::glue("wnba/schedules/parquet/wnba_schedule_{y}.parquet"))
   rm(sched)
   rm(final_sched)
   rm(espn_df)
@@ -134,7 +134,7 @@ wnba_team_box_games <- function(y){
   return(NULL)
 }
 
-all_games <- purrr::map(years_vec, function(y){
+all_games <- purrr::map(years_vec, function(y) {
   wnba_team_box_games(y)
   return(NULL)
 })
@@ -143,9 +143,9 @@ all_games <- purrr::map(years_vec, function(y){
 cli::cli_progress_step(msg = "Compiling ESPN WNBA master schedule",
                        msg_done = "ESPN WNBA master schedule compiled and written to disk")
 
-sched_list <- list.files(path = glue::glue('wnba/schedules/csv/'))
-sched_g <-  purrr::map_dfr(sched_list, function(x){
-  sched <- data.table::fread(paste0('wnba/schedules/csv/', x)) %>%
+sched_list <- list.files(path = glue::glue("wnba/schedules/csv/"))
+sched_g <-  purrr::map_dfr(sched_list, function(x) {
+  sched <- data.table::fread(paste0("wnba/schedules/csv/", x)) %>%
     dplyr::mutate(
       status_display_clock = as.character(.data$status_display_clock)
     )
@@ -156,16 +156,16 @@ sched_g <- sched_g %>%
   wehoop:::make_wehoop_data("ESPN WNBA Schedule from wehoop data repository", Sys.time())
 
 data.table::fwrite(sched_g %>%
-                     dplyr::arrange(dplyr::desc(.data$date)), 'wnba_schedule_master.csv')
+                     dplyr::arrange(dplyr::desc(.data$date)), "wnba/wnba_schedule_master.csv")
 data.table::fwrite(sched_g %>%
                      dplyr::filter(.data$PBP == TRUE) %>%
-                     dplyr::arrange(dplyr::desc(.data$date)), 'wnba/wnba_games_in_data_repo.csv')
+                     dplyr::arrange(dplyr::desc(.data$date)), "wnba/wnba_games_in_data_repo.csv")
 
 arrow::write_parquet(sched_g %>%
-                       dplyr::arrange(dplyr::desc(.data$date)),glue::glue('wnba_schedule_master.parquet'))
+                       dplyr::arrange(dplyr::desc(.data$date)), glue::glue("wnba/wnba_schedule_master.parquet"))
 arrow::write_parquet(sched_g %>%
                        dplyr::filter(.data$PBP == TRUE) %>%
-                       dplyr::arrange(dplyr::desc(.data$date)), 'wnba/wnba_games_in_data_repo.parquet')
+                       dplyr::arrange(dplyr::desc(.data$date)), "wnba/wnba_games_in_data_repo.parquet")
 
 cli::cli_progress_message("")
 

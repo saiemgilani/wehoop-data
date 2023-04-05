@@ -1,8 +1,8 @@
 rm(list = ls())
 gcol <- gc()
 lib_path <- Sys.getenv("R_LIBS")
-if (!requireNamespace('pacman', quietly = TRUE)) {
-  install.packages('pacman', lib = Sys.getenv("R_LIBS"), repos = 'http://cran.us.r-project.org')
+if (!requireNamespace("pacman", quietly = TRUE)) {
+  install.packages("pacman", lib = Sys.getenv("R_LIBS"), repos = "http://cran.us.r-project.org")
 }
 suppressPackageStartupMessages(suppressMessages(library(dplyr, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(magrittr, lib.loc = lib_path)))
@@ -15,30 +15,30 @@ suppressPackageStartupMessages(suppressMessages(library(arrow, lib.loc = lib_pat
 suppressPackageStartupMessages(suppressMessages(library(glue, lib.loc = lib_path)))
 suppressPackageStartupMessages(suppressMessages(library(optparse, lib.loc = lib_path)))
 
-option_list = list(
+option_list <- list(
   make_option(c("-s", "--start_year"),
               action = "store",
               default = wehoop:::most_recent_wbb_season(),
-              type = 'integer',
+              type = "integer",
               help = "Start year of the seasons to process"),
   make_option(c("-e", "--end_year"),
               action = "store",
               default = wehoop:::most_recent_wbb_season(),
-              type = 'integer',
+              type = "integer",
               help = "End year of the seasons to process")
 )
-opt = parse_args(OptionParser(option_list = option_list))
+opt <- parse_args(OptionParser(option_list = option_list))
 options(stringsAsFactors = FALSE)
 options(scipen = 999)
 years_vec <- opt$s:opt$e
 
 # --- compile into play_by_play_{year}.parquet ---------
-wbb_pbp_games <- function(y){
+wbb_pbp_games <- function(y) {
 
   espn_df <- data.frame()
-  pbp_list <- list.files(path = glue::glue('wbb/json/final/'))
-  sched <- data.table::fread(paste0('wbb/schedules/csv/wbb_schedule_', y, '.csv'))
-  pbp_game_ids <- as.integer(gsub('.json','',pbp_list))
+  pbp_list <- list.files(path = glue::glue("wbb/json/final/"))
+  sched <- data.table::fread(paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
+  pbp_game_ids <- as.integer(gsub(".json", "", pbp_list))
   season_pbp_list <- sched %>%
     dplyr::filter(.data$game_id %in% pbp_game_ids) %>%
     dplyr::pull("game_id")
@@ -47,10 +47,10 @@ wbb_pbp_games <- function(y){
                          msg_done = "Compiled {y} ESPN WBB pbps!")
 
   future::plan("multisession")
-  espn_df <- furrr::future_map_dfr(season_pbp_list, function(x){
+  espn_df <- furrr::future_map_dfr(season_pbp_list, function(x) {
     tryCatch(
       expr = {
-        resp <- glue::glue('wbb/json/final/{x}.json')
+        resp <- glue::glue("wbb/json/final/{x}.json")
         pbp <- wehoop:::helper_espn_wbb_pbp(resp)
         return(pbp)
       },
@@ -60,7 +60,7 @@ wbb_pbp_games <- function(y){
     )
   }, .options = furrr::furrr_options(seed = TRUE))
 
-  if (!('coordinate_x' %in% colnames(espn_df)) && length(espn_df) > 1) {
+  if (!("coordinate_x" %in% colnames(espn_df)) && length(espn_df) > 1) {
     espn_df <- espn_df %>%
       dplyr::mutate(
         coordinate_x = NA_real_,
@@ -98,7 +98,7 @@ wbb_pbp_games <- function(y){
     )
   }
 
-  sched <- arrow::read_parquet(paste0('wbb/schedules/parquet/wbb_schedule_', y, '.parquet'))
+  sched <- arrow::read_parquet(paste0("wbb/schedules/parquet/wbb_schedule_", y, ".parquet"))
   sched <- sched %>%
     dplyr::mutate(dplyr::across(dplyr::any_of(c(
       "id",
@@ -145,8 +145,8 @@ wbb_pbp_games <- function(y){
     wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
 
   data.table::fwrite(final_sched, paste0("wbb/schedules/csv/wbb_schedule_", y, ".csv"))
-  saveRDS(final_sched, glue::glue('wbb/schedules/rds/wbb_schedule_{y}.rds'))
-  arrow::write_parquet(final_sched, glue::glue('wbb/schedules/parquet/wbb_schedule_{y}.parquet'))
+  saveRDS(final_sched, glue::glue("wbb/schedules/rds/wbb_schedule_{y}.rds"))
+  arrow::write_parquet(final_sched, glue::glue("wbb/schedules/parquet/wbb_schedule_{y}.parquet"))
   rm(sched)
   rm(final_sched)
   rm(espn_df)
@@ -155,7 +155,7 @@ wbb_pbp_games <- function(y){
 }
 
 tictoc::tic()
-all_games <- purrr::map(years_vec, function(y){
+all_games <- purrr::map(years_vec, function(y) {
   wbb_pbp_games(y)
   return(NULL)
 })
@@ -164,9 +164,9 @@ tictoc::toc()
 cli::cli_progress_step(msg = "Compiling ESPN WBB master schedule",
                        msg_done = "ESPN WBB master schedule compiled and written to disk")
 
-sched_list <- list.files(path = glue::glue('wbb/schedules/parquet/'))
-sched_g <-  purrr::map_dfr(sched_list, function(x){
-  sched <- arrow::read_parquet(paste0('wbb/schedules/parquet/',x)) %>%
+sched_list <- list.files(path = glue::glue("wbb/schedules/parquet/"))
+sched_g <-  purrr::map_dfr(sched_list, function(x) {
+  sched <- arrow::read_parquet(paste0("wbb/schedules/parquet/", x)) %>%
     dplyr::mutate(dplyr::across(dplyr::any_of(c(
       "id",
       "game_id",
@@ -195,17 +195,17 @@ sched_g <-  purrr::map_dfr(sched_list, function(x){
 sched_g <- sched_g %>%
   wehoop:::make_wehoop_data("ESPN WBB Schedule from wehoop data repository", Sys.time())
 
-# data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), 'wbb_schedule_master.csv')
+# data.table::fwrite(sched_g %>% dplyr::arrange(desc(.data$date)), "wbb_schedule_master.csv")
 data.table::fwrite(sched_g %>%
                      dplyr::filter(.data$PBP == TRUE) %>%
-                     dplyr::arrange(dplyr::desc(.data$date)), 'wbb/wbb_games_in_data_repo.csv')
+                     dplyr::arrange(dplyr::desc(.data$date)), "wbb/wbb_games_in_data_repo.csv")
 
 arrow::write_parquet(sched_g %>%
-                       dplyr::arrange(dplyr::desc(.data$date)), glue::glue('wbb_schedule_master.parquet'))
+                       dplyr::arrange(dplyr::desc(.data$date)), glue::glue("wbb/wbb_schedule_master.parquet"))
 
 arrow::write_parquet(sched_g %>%
                        dplyr::filter(.data$PBP == TRUE) %>%
-                       dplyr::arrange(dplyr::desc(.data$date)), 'wbb/wbb_games_in_data_repo.parquet')
+                       dplyr::arrange(dplyr::desc(.data$date)), "wbb/wbb_games_in_data_repo.parquet")
 
 cli::cli_progress_message("")
 
