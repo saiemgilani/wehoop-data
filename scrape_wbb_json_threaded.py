@@ -46,14 +46,19 @@ def download_game(game, process, path_to_raw, path_to_final):
             json.dump(g, f, indent = 0, sort_keys = False)
     except (TypeError) as e:
         print("TypeError: game_id = {}\n {}".format(game, e))
+        pass
     except (IndexError) as e:
         print("IndexError: game_id = {}\n {}".format(game, e))
+        pass
     except (KeyError) as e:
         print("KeyError: game_id = {}\n {}".format(game, e))
+        pass
     except (ValueError) as e:
         print("DecodeError: game_id = {}\n {}".format(game, e))
+        pass
     except (AttributeError) as e:
         print("AttributeError: game_id = {}\n {}".format(game, e))
+        pass
     if process == True:
         try:
             processed_data = sdv.wbb.wbb_pbp_disk(
@@ -70,12 +75,19 @@ def download_game(game, process, path_to_raw, path_to_final):
                 json.dump(result, f, indent = 0, sort_keys = False)
         except (IndexError) as e:
             print("IndexError: game_id = {}\n {}".format(game, e))
+            pass
         except (KeyError) as e:
             print("KeyError: game_id = {}\n {}".format(game, e))
+            pass
         except (ValueError) as e:
             print("DecodeError: game_id = {}\n {}".format(game, e))
+            pass
         except (AttributeError) as e:
             print("AttributeError: game_id = {}\n {}".format(game, e))
+            pass
+        except (FileNotFoundError) as e:
+            print("FileNotFoundError: game_id = {}\n {}".format(game, e))
+            pass
     time.sleep(0.5)
 def main():
 
