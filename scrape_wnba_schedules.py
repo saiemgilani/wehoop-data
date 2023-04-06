@@ -15,7 +15,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 path_to_schedules = "wnba/schedules"
-final_file_name = "wnba_schedule_master.csv"
+final_file_name = "wnba/wnba_schedule_master.csv"
 
 def download_schedule(season, path_to_schedules=None):
     df = sdv.wnba.espn_wnba_calendar(season, ondays=True)
