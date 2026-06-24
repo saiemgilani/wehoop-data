@@ -1,0 +1,26 @@
+# pre-commit for the wehoop-data orchestrator (Python scrapers + R creation scripts):
+#   - ruff lint + format on staged .py (the scrapers were previously un-linted)
+#   - SDV no-AI-attribution policy at commit time (human is the sole attributable author)
+#
+# Conventional-commit formatting is intentionally NOT enforced -- the automated
+# scrape/processor commits ("WNBA Play-by-Play and Schedules update (Start: ... End: ...)")
+# are not conventional and must pass. ruff only touches .py, so the JSON/parquet/csv
+# data-update commits are unaffected.
+#
+# Wire it up once per clone:  pre-commit install
+# (default_install_hook_types installs both the pre-commit and commit-msg stages).
+default_install_hook_types: [pre-commit, commit-msg]
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.17
+    hooks:
+      - id: ruff-check
+        args: ["--fix"]
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: no-ai-coauthor
+        name: forbid AI co-author trailers (SDV policy)
+        entry: python tools/hooks/check_commit_msg.py
+        language: system
+        stages: [commit-msg]
